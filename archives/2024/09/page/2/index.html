@@ -2110,7 +2110,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726494078680),
+    lastupdate: new Date(1726499406344),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2437,7 +2437,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       <div class="cover-wrapper  dock" id='half'>
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msMpy.img"></div>
+  <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2511,7 +2511,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/MySQL部署-CentOS7-2/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Oracle为什么要用三层嵌套实现分页/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="博客">
   </span>
@@ -2529,25 +2529,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/MySQL%E9%83%A8%E7%BD%B2-CentOS7-2/"  itemprop="url">
-        MySQL部署[CentOS7.2]
+      <a href="/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/"  itemprop="url">
+        Oracle为什么要用三层嵌套实现分页
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        总结在前
-设置mysql 跟随mysqladmin用户切换启动
-  su - mysqladmin -c &quot;/etc/init.d/mysql start --federated&quot;
+        Oracle为什么要用三层嵌套实现分页
+先说结论：嵌套出两层SELECT对应的两个原因：  
 
 
-解决切换用户丢失样式
-  cp /etc/skel/.* /usr/local/mysql
-
-
-设置mysql允许外界以什么ip什么用户密码来访问
-  mysql&gt;grant all...
+ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存在同一趟SELECT中，order by排序后的ROWNUM不是有序的，不会和查询结果行号对应，所以不能做条件过滤。需要在一次select  order by 后得到的虚拟表中，再获取ROWNUM这样order by才能生效...
       
     
   </div>
@@ -2558,21 +2552,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/">mysql</a>
+          <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/">Oracle</a>
           
             <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
               <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
             </span>
           
             <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" itemprop="url"><span itemprop="name">mysql</span></a>
+              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/" itemprop="url"><span itemprop="name">Oracle</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/2024/09/15/MySQL%E9%83%A8%E7%BD%B2-CentOS7-2/' itemprop="url">
+          <a class='readmore' href='/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2729,6 +2723,70 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/【Vim】模式的切换、常用命令总结/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="博客">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="博客">
+    <meta itemprop="description" content="久有凌云志，重上井冈山">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/09/15/%E3%80%90Vim%E3%80%91%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%88%87%E6%8D%A2%E3%80%81%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/"  itemprop="url">
+        【Vim】模式的切换、常用命令总结
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        参考总结自：https://blog.csdn.net/qq_39147299/article/details/108972206https://www.cnblogs.com/mabingxue/p/10281132.htmlhttps://zhidao.baidu.com/question/277761048.html
+使用vi 打开文件时，默认是命令行模式（普通），编辑模式、尾行模式的...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Linux/">Linux</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/Linux/" itemprop="url"><span itemprop="name">Linux</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/09/15/%E3%80%90Vim%E3%80%91%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%88%87%E6%8D%A2%E3%80%81%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
   <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/linux入门-常用命令/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="博客">
@@ -2786,70 +2844,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/2024/09/15/linux%E5%85%A5%E9%97%A8-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/【Vim】模式的切换、常用命令总结/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/%E3%80%90Vim%E3%80%91%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%88%87%E6%8D%A2%E3%80%81%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/"  itemprop="url">
-        【Vim】模式的切换、常用命令总结
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        参考总结自：https://blog.csdn.net/qq_39147299/article/details/108972206https://www.cnblogs.com/mabingxue/p/10281132.htmlhttps://zhidao.baidu.com/question/277761048.html
-使用vi 打开文件时，默认是命令行模式（普通），编辑模式、尾行模式的...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Linux/">Linux</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Linux/" itemprop="url"><span itemprop="name">Linux</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/%E3%80%90Vim%E3%80%91%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%88%87%E6%8D%A2%E3%80%81%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/' itemprop="url">
             阅读全文
           </a>
         </div>

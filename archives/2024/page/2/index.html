@@ -2110,7 +2110,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726480442139),
+    lastupdate: new Date(1726485872732),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2511,7 +2511,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/MySQL部署-CentOS7-2/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Spring注解式编程/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="博客">
   </span>
@@ -2529,25 +2529,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/MySQL%E9%83%A8%E7%BD%B2-CentOS7-2/"  itemprop="url">
-        MySQL部署[CentOS7.2]
+      <a href="/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/"  itemprop="url">
+        Spring注解式编程
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        总结在前
-设置mysql 跟随mysqladmin用户切换启动
-  su - mysqladmin -c &quot;/etc/init.d/mysql start --federated&quot;
+        spring注解编程-IOC
+配置类&amp;Bean注解@Configuration123加了这个注解的类就相当于传统的一个applicationContext-xxx.xml ，告诉spring这是一个注解类 最初的Spring只支持xml方式配置Bean，从Spring 3.0起支持：基于Java类的配置方式，Java开发者可以从标签语法里解放了出来。
 
+配置放在哪里  
 
-解决切换用户丢失样式
-  cp /etc/skel/.* /usr/local/mysql
-
-
-设置mysql允许外界以什么ip什么用户密码来访问
-  mysql&gt;grant all...
+配置类要与...
       
     
   </div>
@@ -2558,21 +2553,89 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/">mysql</a>
+          <a class="category-link" href="/categories/Spring/">Spring</a>
           
             <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" itemprop="url"><span itemprop="name">mysql</span></a>
+              <a href="/categories/Spring/" itemprop="url"><span itemprop="name">Spring</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/2024/09/15/MySQL%E9%83%A8%E7%BD%B2-CentOS7-2/' itemprop="url">
+          <a class='readmore' href='/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/linux入门-常用命令/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="博客">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="博客">
+    <meta itemprop="description" content="久有凌云志，重上井冈山">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/09/15/linux%E5%85%A5%E9%97%A8-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"  itemprop="url">
+        linux入门+常用命令
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        初识 linux~：家目录 root 用户~规定为 &#x2F;root  
+
+[root@localhost ~]$ pwd&#x2F;root 
+
+ 普通用户~默认 &#x2F;home&#x2F;username  
+
+[liqiang@localhost ~]$ pwd&#x2F;home&#x2F;liqiang 
+
+ pwd 显示当前光标所在路径
+~ 与 &#x2F; 的区别  ...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Linux/">Linux</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/Linux/" itemprop="url"><span itemprop="name">Linux</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/09/15/linux%E5%85%A5%E9%97%A8-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2646,78 +2709,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/2024/09/15/java%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/linux入门-常用命令/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/linux%E5%85%A5%E9%97%A8-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"  itemprop="url">
-        linux入门+常用命令
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        初识 linux~：家目录 root 用户~规定为 &#x2F;root  
-
-[root@localhost ~]$ pwd&#x2F;root 
-
- 普通用户~默认 &#x2F;home&#x2F;username  
-
-[liqiang@localhost ~]$ pwd&#x2F;home&#x2F;liqiang 
-
- pwd 显示当前光标所在路径
-~ 与 &#x2F; 的区别  ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Linux/">Linux</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Linux/" itemprop="url"><span itemprop="name">Linux</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/linux%E5%85%A5%E9%97%A8-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/' itemprop="url">
             阅读全文
           </a>
         </div>

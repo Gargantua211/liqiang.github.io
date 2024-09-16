@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="http://example.com/"/>
+  
+  <link rel="canonical" href="http://example.com/2024/09/15/mysql部署-centos7-2/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>博客</title>
-  <meta name="keywords" content="">
+  <title>MySQL部署[CentOS7.2] - 博客</title>
+  <meta name="keywords" content="mysql,null">
   <meta desc name="description" content="久有凌云志，重上井冈山 - 昱东 - 博客">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="博客">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL部署[CentOS7.2]">
+<meta property="og:url" content="http://example.com/2024/09/15/MySQL%E9%83%A8%E7%BD%B2-CentOS7-2/index.html">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="久有凌云志，重上井冈山">
+<meta property="og:description" content="总结在前 设置mysql 跟随mysqladmin用户切换启动   su - mysqladmin -c &quot;&#x2F;etc&#x2F;init.d&#x2F;mysql start --federated&quot;   解决切换用户丢失样式   cp &#x2F;etc&#x2F;skel&#x2F;.* &#x2F;usr&#x2F;local&#x2F;mysql   设置mysql允许外界以什么ip什么用户密码来访问   mysql&gt;grant all pr">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-09-15T07:15:00.000Z">
+<meta property="article:modified_time" content="2024-09-15T07:15:00.000Z">
 <meta property="article:author" content="昱东">
+<meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2102,7 +2105,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2167,7 +2170,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="https://schema.org.cn/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="https://schema.org.cn/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2434,129 +2437,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div id="l_body">
       <div id="l_cover">
   
-    
-      <div class="cover-wrapper  dock" id='full'>
-        
-  <div class='cover-bg lazyload placeholder' data-bg="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msMpy.img"></div>
-
-<div class='cover-body'>
-  <div class='top'>
-    
-    
-      <p class="title">首页</p>
-    
-    
-  </div>
-  <div class='bottom'>
-    <div class='menu navigation'>
-      <div class='list-h'>
-        
-          
-            <a href="/"
-              
-              
-              active-action="action-home">
-              <img src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/link/8f277b4ee0ecd.svg'><p>首页</p>
-            </a>
-          
-            <a href="/archives/"
-              
-              
-              active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
-            </a>
-          
-            <a href="/v4/getting-started/"
-              
-              
-              active-action="action-v4getting-started">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f5c3.svg'><p>文档</p>
-            </a>
-          
-            <a href="/contributors/"
-              
-              
-              active-action="action-contributors">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
-            </a>
-          
-            <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
-              
-              
-              active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f9ec.svg'><p>源码</p>
-            </a>
-          
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-        <div id="scroll-down"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
-      </div>
-    
-  
 </div>
 
       <div id="safearea">
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  
-  <section class="post-list">
-    
-      
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/ASCII、Unicode、UTF-8编码关系/">
+  <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/MySQL部署-CentOS7-2/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="博客">
   </span>
@@ -2565,704 +2453,630 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="久有凌云志，重上井冈山">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/ASCII%E3%80%81Unicode%E3%80%81UTF-8%E7%BC%96%E7%A0%81%E5%85%B3%E7%B3%BB/"  itemprop="url">
-        ASCII 、Unicode、UTF-8编码关系
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        参考：https://www.cnblogs.com/tsingke/p/10853936.html
-为什么会出现乱码一份文件，根据编码A的规则将文件转换为二进制存储起来。被使用另一种编码B打开，根据编码B的规则将二进制解析。就解析出不一样的文件，甚至是乱码。
-所以，要想打开一个文件，就必须提前知道它的编码方式，或者约定，所有文件的读写都使用统一的编码。
-字符编码的作用计算机内部，所有信息最...
-      
+    
+      <h1 class="title" itemprop="name headline">
+        MySQL部署[CentOS7.2]
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/">mysql</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+        <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+        <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" itemprop="url"><span itemprop="name">mysql</span></a>
+      </span>
     
   </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:40:10+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BC%96%E7%A0%81/">编码</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E7%BC%96%E7%A0%81/" itemprop="url"><span itemprop="name">编码</span></a>
-            </span>
+
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年9月15日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="总结在前"><a href="#总结在前" class="headerlink" title="总结在前"></a>总结在前</h2><ul>
+<li><p>设置mysql 跟随mysqladmin用户切换启动</p>
+<pre><code>  su - mysqladmin -c &quot;/etc/init.d/mysql start --federated&quot;
+</code></pre>
+</li>
+<li><p>解决切换用户丢失样式</p>
+<pre><code>  cp /etc/skel/.* /usr/local/mysql
+</code></pre>
+</li>
+<li><p>设置mysql允许外界以什么ip什么用户密码来访问</p>
+<pre><code>  mysql&gt;grant all privileges on *.* to &#39;root&#39;@&#39;%&#39; identified by &#39;密码&#39;;  
+  mysql&gt;flush privileges;
+</code></pre>
+</li>
+<li><p>修改登录mysql的密码</p>
+<pre><code>  mysql&gt;update user set password=password(&#39;密码&#39;) where user = &#39;root&#39;;
+</code></pre>
+</li>
+<li><p>查看当前mysql 版本</p>
+<pre><code>  mysql -uroot -p 【登录的时候会显示版本号】
+  msyql&gt; select version() ;
+  mysql&gt; \s   【能显示当前database的详细信息】
+</code></pre>
+</li>
+</ul>
+<h2 id="MySql-部署准备"><a href="#MySql-部署准备" class="headerlink" title="MySql 部署准备"></a>MySql 部署准备</h2><blockquote>
+<p>查看一下有没有其他的rpm包</p>
+</blockquote>
+<pre><code> [root@localhost ~]# rpm -qa|grep -i mysql  
+    
+</code></pre>
+<blockquote>
+<p>查看服务器是否已有MySql进程</p>
+</blockquote>
+<pre><code>[root@localhost ~]# ps -ef|grep mysqld
+root      2252  2234  0 19:55 pts/0    00:00:00 grep --color=auto mysqld   【代表还没有mysql】
+</code></pre>
+<blockquote>
+<p>完成部署后的样子：</p>
+</blockquote>
+<pre><code>[mysqladmin@localhost etc]$ ps -ef|grep mysqld  
+mysqlad+  2697     1  0 01:05 ?        00:00:00 /bin/sh /usr/local/mysql/bin/mysqld_safe --datadir=/usr/local/mysql/data --pid-file=/usr/local/mysql/data/hostname.pid --federated  
+mysqlad+  3381  2697  1 01:05 ?        00:00:01 /usr/local/mysql/bin/mysqld 
+       --basedir=/usr/local/mysql   
+    --datadir=/usr/local/mysql/data  【数据目录】
+    --plugin-dir=/usr/local/mysql/lib/plugin  --federated 
+    --log-error=/usr/local/mysql/data/hostname.err 	 【启动时的错误日志】
+    --pid-file=/usr/local/mysql/data/hostname.pid 	【存放进程号即3381】
+    --socket=/usr/local/mysql/data/mysql.sock 【socket目录】 
+    --port=3306   【当前启动在3306端口号】
+mysqlad+  4118  3407  0 01:07 pts/0    00:00:00 grep --color=auto mysqld
+    
+</code></pre>
+<h4 id="准备安装包"><a href="#准备安装包" class="headerlink" title="准备安装包"></a>准备安装包</h4><pre><code>[root@localhost ~]# cd /usr/local   【按推荐安装在此目录下】
+[root@localhost local]# rz -p       【或使用xftp 从windows上传mysql压缩包 到 /usr/local】  
+
+【rz -p 需要：yum install lrzsz】
+</code></pre>
+<blockquote>
+<p>将tar.gz 包解压缩  </p>
+</blockquote>
+<pre><code>tar zxvf mysql-5.6.23-linux-glibc2.5-x86_64.tar.gz   // 解压在当前目录生成文件夹
+
+    
+</code></pre>
+<blockquote>
+<p>重命名 [不建议]  </p>
+</blockquote>
+<pre><code>mv mysql-5.6.23-linux-glibc2.5-x86_64.tar.gz mysql
+</code></pre>
+<blockquote>
+<p>软连接代替重命名  </p>
+</blockquote>
+<pre><code>ln -s mysql-5.6.23-linux-glibc2.5-x86_64.tar.gz mysql  // 软连接 mysql是一个快捷方式
+</code></pre>
+<h4 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h4><blockquote>
+<p>vi .bashrc  </p>
+</blockquote>
+<pre><code>【增加：】
+# User specific environment and startup programs
+export MYSQL_HOME=/usr/local/mysql
+export PATH=$MYSQL_HOME/bin:$PATH
+</code></pre>
+<blockquote>
+<p>   source .bashrc<br>    echo $MYSQL_HOME<br>    which mysql</p>
+</blockquote>
+<h4 id="创建-MySql-管理员用户"><a href="#创建-MySql-管理员用户" class="headerlink" title="创建 MySql 管理员用户"></a>创建 MySql 管理员用户</h4><pre><code>groupadd -g 101 dba
+useradd -u 514 -g dba -G root -d /usr/local/mysql mysqladmin
+</code></pre>
+<blockquote>
+<p>当usradd 以前就已经存在家目录的时候，会出现样式丢失 ，报错如下： </p>
+</blockquote>
+<pre><code>useradd: warning: the home directory already exists.
+Not copying any file from skel directory into it.
+</code></pre>
+<blockquote>
+<p>需要从 &#x2F;etc&#x2F;skel 将缺失的文件复制一份  </p>
+</blockquote>
+<pre><code>cp /etc/skel/.* /usr/local/mysql
+</code></pre>
+<h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><blockquote>
+<p>&#x2F;etc&#x2F;my.cnf </p>
+</blockquote>
+<pre><code>在 /etc下创建my.cnf  【已存在就 vi /etc/my.cnf  gg dG清空。已存在可能是因为预装了maria_DB】
+touch /etc/my.cnf
+</code></pre>
+<blockquote>
+<p>从 <a target="_blank" rel="noopener" href="https://github.com/Hackeruncle/MySQL/blob/master/MySQL%205.6.23%20Install.txtl" title="/etc/my.cnf">Github</a> 复制出参考配置文件  </p>
+</blockquote>
+<pre><code>vi /etc/my.cnf
+gg dG
+【切记：进入编辑模式再粘贴，命令行模式下粘贴会丢失内容】
+</code></pre>
+<blockquote>
+<p>修改默认端口号</p>
+</blockquote>
+<pre><code>vi /etc/my.cnf
+
+[client]  
+port            = 3306
+
+[mysqld]  
+port            = 3306
+</code></pre>
+<blockquote>
+<p>其他配置说明</p>
+</blockquote>
+<pre><code>socket   = /usr/local/mysql/data/mysql.sock    #指定mysql启动和通信依赖的sock文件
+basedir  = /usr/local/mysql            # mysql 安装的主目录，这也是为啥推荐安装mysql时都安装在 /usr/local/mysql ，不然就需要更改这几项
+datadir  = /usr/local/mysql/data       # 数据目录，也就是表数据存在的物理地址
+pid-file = /usr/local/mysql/data/hostname.pid  # 每次启动时将进程号pid保存在这里，当停止mysql服务时根据这里面记录的pid号然后执行kill -9 &lt;pid&gt;
+log-error= /usr/local/mysql/data/hostname.err  # 服务启动的错误日志
+log-bin  = /usr/local/mysql/arch/mysql-bin     # binlog数据日志的目录，所以下文也提到要在启动服务前要创建 arch 目录，否则报错
+
+    
+</code></pre>
+<h4 id="配置文件修正权限"><a href="#配置文件修正权限" class="headerlink" title="配置文件修正权限"></a>配置文件修正权限</h4><pre><code>chown mysqladmin:dba /etc/my.cnf  
+chmod 640 /etc/my.cnf
+</code></pre>
+<blockquote>
+<p>安装目录 设置权限</p>
+</blockquote>
+<pre><code>chmod -R 755 /usr/loacl/mysql  
+chmod -R 755 /usr/local/mysql/*  
+chmod -R 755 /usr/local/mysql-5.6.23-linux-glibc2.5-x86_64
+
+
+chown -R mysqladmin:dba /usr/local/mysql  
+chown -R mysqladmin:dba /usr/local/mysql/*  
+chown -R mysqladmin:dba /usr/local/mysql-5.6.23-linux-glibc2.5-x86_64
+
+# 在mysql启动，自动完成创建如 /usr/local/mysql/data/hostname.pid 文件后，
+# 再检查这部分文件权限情况，可以再次使用 chmod 和 chown 将/usr/local/mysql/data/* 权限修正，否则以后启动仍可能报错
+</code></pre>
+<blockquote>
+<p>创建 binlog 日志文件的目录</p>
+</blockquote>
+<pre><code>[mysqladmin@localhost ~]# mkdir /usr/local/mysql/arch  【提前创建不然部署过程报错】
+</code></pre>
+<blockquote>
+<p>安装脚本</p>
+</blockquote>
+<pre><code> [mysqladmin@Gargantua ~]$ scripts/mysql_install_db  \
+ --user=mysqladmin \
+ --basedir=/usr/local/mysql \
+ --datadir=/usr/local/mysql/data 
+</code></pre>
+<blockquote>
+<p>报错</p>
+</blockquote>
+<pre><code>yum install -y perl  
+yum install -y autoconf  
+yum install -y libaio   
+</code></pre>
+<blockquote>
+<p>yum 安装又报错：【Loaded plugins: fastestmirror】</p>
+</blockquote>
+<pre><code>vi /etc/yum/pluginconf.d/fastestmirror.conf
+enabled = 1 【由1改为0，禁用该插件】
+
+vi /etc/yum.conf
+plugins = 1 【改为0，不使用插件】
+
+【清除缓存并重新构建yum源】
+yum clean all
+yum clean dbcache
+yum makecache
+</code></pre>
+<h2 id="启动-MySql"><a href="#启动-MySql" class="headerlink" title="启动 MySql"></a>启动 MySql</h2><h4 id="把服务文件拷贝到指定目录"><a href="#把服务文件拷贝到指定目录" class="headerlink" title="把服务文件拷贝到指定目录"></a>把服务文件拷贝到指定目录</h4><pre><code> 【serivece启动的前提】
+ 
+cp /usr/local/mysql/support-files/mysql.server  /etc/rc.d/init.d/mysql
+
+chmod +x /etc/rc.d/init.d/mysql
+</code></pre>
+<blockquote>
+<p>删除已经部署过的服务</p>
+</blockquote>
+<pre><code>chkconfig --del mysql
+</code></pre>
+<blockquote>
+<p>添加服务</p>
+</blockquote>
+<pre><code>chkconfig --add mysql
+chkconfig --level 345 mysql on
+</code></pre>
+<h4 id="设置开机自启动"><a href="#设置开机自启动" class="headerlink" title="设置开机自启动"></a>设置开机自启动</h4><blockquote>
+<p>vi &#x2F;etc&#x2F;rc.local</p>
+</blockquote>
+<pre><code>添加一句：su - mysqladmin -c &quot;/etc/init.d/mysql start --federated&quot;
+</code></pre>
+<blockquote>
+<p>切换到mysqladmin用户</p>
+</blockquote>
+<blockquote>
+<p>把没用到的配置文件删掉</p>
+</blockquote>
+<pre><code>rm -rf ~/my.cnf   # mysql默认是按 /etc/my.cnf 启动，所以~/my.cnf可以删掉，避免后续修改配置时产生误导
+</code></pre>
+<h4 id="以service启动"><a href="#以service启动" class="headerlink" title="以service启动"></a>以service启动</h4><pre><code>service mysql start
+
+# 其他命令
+service mysql status  【查看状态】
+service mysql restart 【重启】
+service mysql stop    【停止】
+
+
+ps -ef|grep mysqld        【查看mysql 进程】
+netstat -nlp|grep 59308   【查看mysql端口号】
+</code></pre>
+<h2 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h2><pre><code>mysql -uroot -p            # MySql 5.6 默认空密码可以登录
+</code></pre>
+<p>报错：</p>
+<pre><code>Can&#39;t connect to local MySQL server through socket &#39;/tmp/mysql.sock&#39; (2)
+
+# mysql -uroot -h 127.0.0.1 -p  【可以登录，说明服务是成功部署的】
+</code></pre>
+<p> 【检查 my.cnf文件中 <strong>socket   &#x3D; &#x2F;usr&#x2F;local&#x2F;mysql&#x2F;data&#x2F;mysql.sock</strong> 是否配置正确】</p>
+<p>  <strong>临时解决：在 &#x2F;tmp 下创建软连接</strong></p>
+<pre><code> ln -s /usr/local/mysql/data/mysql.sock  /tmp/mysql.sock
+</code></pre>
+<blockquote>
+<p>参考 <strong><a target="_blank" rel="noopener" href="https://blog.csdn.net/hjf161105/article/details/78850658">https://blog.csdn.net/hjf161105/article/details/78850658</a></strong> 后解决<br>长期未使用后还会报这个错误，因为linux会定期自动删除 &#x2F;tmp&#x2F;mysql.sock；</p>
+</blockquote>
+<h4 id="允许所有ip以root权限来访问"><a href="#允许所有ip以root权限来访问" class="headerlink" title="允许所有ip以root权限来访问"></a>允许所有ip以root权限来访问</h4><pre><code>mysql&gt;grant all privileges on *.* to &#39;root&#39;@&#39;%&#39; identified by &#39;密码&#39;;  
+mysql&gt;flush privileges;
+</code></pre>
+<p>【解释】</p>
+<pre><code>GRANT ALL PRIVILEGES ON *.* TO &#39;root&#39;@&#39;%&#39; IDENTIFIED BY &#39;密码&#39; ;
+ALL PRIVILEGES：当前用户的所有权限
+*.*：当前用户对所有数据库和表的相应操作权限
+&#39;root&#39;@&#39;%&#39;：权限赋给root用户，所有ip都能连接
+IDENTIFIED BY &#39;密码&#39;：连接时输入密码
+</code></pre>
+<p><strong>修改 mysql 默认权限&#x2F;用户&#x2F;密码</strong></p>
+<pre><code>mysql&gt;show databases;
+mysql&gt;use mysql
+
+mysql&gt;delete from user where user = &#39;&#39;;  
+mysql&gt;update user set password=password(&#39;密码&#39;) where user = &#39;root&#39;;  
+</code></pre>
+<h4 id="新建数据库"><a href="#新建数据库" class="headerlink" title="新建数据库"></a>新建数据库</h4><pre><code>mysql&gt; create database test_db;
+</code></pre>
+<h4 id="重新部署"><a href="#重新部署" class="headerlink" title="重新部署"></a>重新部署</h4><p>部署失败后重新部署 【只需要三步】：</p>
+<pre><code>rm -rf arch/*  binlog 文件：数据的二进制文件，可以解析成sql，自动保留一定时间内的binlog，超出的会自动删除
+rm -rf data/*   服务启动的错误的日志可以在data/hostname.err
+
+scripts/mysql_install_db  \--user=mysqladmin \--basedir=/usr/local/mysql \--datadir=/usr/local/mysql/data 
+</code></pre>
+<blockquote>
+<p>&#x2F;usr&#x2F;local&#x2F;mysql&#x2F;arch&#x2F;mysql-bin.0001   binlog文件会定期删除</p>
+</blockquote>
+<h4 id="使用可视化工具连接"><a href="#使用可视化工具连接" class="headerlink" title="使用可视化工具连接"></a>使用可视化工具连接</h4><p>连接不上</p>
+<pre><code>ping ip         【通】
+telnet ip 3306  【mysql 不通】
+telnet ip 22    【ssh 是通的】
+
+只能是因为端口被限制：云服务器需要在web端配置安全组，允许访问的端口。
+</code></pre>
+<p>顺利联接。</p>
+<hr>
+<h2 id="mysql-5-7-部署"><a href="#mysql-5-7-部署" class="headerlink" title="mysql 5.7 部署"></a>mysql 5.7 部署</h2><p>准备安装包：<a target="_blank" rel="noopener" href="https://mirrors.aliyun.com/mysql/MySQL-5.7/">https://mirrors.aliyun.com/mysql/MySQL-5.7/</a><br>下载的是：mysql-5.7.38-linux-glibc2.12-x86_64.tar.gz</p>
+<ul>
+<li>环境准备</li>
+</ul>
+<ol>
+<li>登录服务器 &#x2F;usr&#x2F;local<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@Gargantua <span class="built_in">local</span>]# <span class="built_in">pwd</span></span><br><span class="line">/usr/local</span><br></pre></td></tr></table></figure></li>
+<li>上传压缩包到 &#x2F;usr&#x2F;local 后解压，再软连接到 .&#x2F;mysql <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@Gargantua <span class="built_in">local</span>]# <span class="built_in">ln</span> -s mysql-5.7.38-linux-glibc2.12-x86_64 mysql</span><br></pre></td></tr></table></figure></li>
+<li>检查是否自带数据库 MySQL、MariaDB<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@Gargantua <span class="built_in">local</span>]# rpm -qa|grep -i mysql</span><br><span class="line">[root@Gargantua <span class="built_in">local</span>]# rpm -qa | grep mariadb</span><br></pre></td></tr></table></figure>
+如果有类似 输出mysql-libs-5.1.52-1.el6_0.1.x86_64，就将它删除<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 普通删除模式  </span><br><span class="line">rpm -e mysql-libs-5.1.52-1.el6_0.1.x86_64　　  </span><br><span class="line">// 强力删除模式，如果使用上面命令删除时，提示有依赖的其它文件，则用该命令可以对其进行强力删除  </span><br><span class="line">rpm -e --nodeps mysql-libs-5.1.52-1.el6_0.1.x86_64</span><br><span class="line">// 删除 mariadb</span><br><span class="line">rpm -e --nodeps mariadb-libs-5.5.56-2.el7.x86_64</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li>创建 MySql 管理员用户</li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">groupadd -g 101 dba</span><br><span class="line">useradd -u 101 -g dba -G root -d /usr/local/mysql mysqladmin</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 创建用户到指定已存在的家目录，会出现样式丢失，报错</span><br><span class="line">useradd: warning: the home directory already exists.</span><br><span class="line">Not copying any file from skel directory into it.</span><br><span class="line"></span><br><span class="line"># 从/etc/skel复制一份过来即可</span><br><span class="line">[root@Gargantua local]# cp /etc/skel/.* /usr/local/mysql</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>环境变量</li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@Gargantua <span class="built_in">local</span>]# <span class="built_in">cd</span> mysql</span><br><span class="line"></span><br><span class="line">[root@Gargantua mysql]# vi .bashrc </span><br></pre></td></tr></table></figure>
+<p>添加内容：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># User specific environment and startup programs</span></span><br><span class="line"><span class="built_in">export</span> MYSQL_HOME=/usr/local/mysql</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$MYSQL_HOME</span>/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
+<p>记得生效确认一下.bashrc文件</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@Gargantua mysql]# <span class="built_in">source</span> .bashrc</span><br><span class="line">[root@Gargantua mysql]# <span class="built_in">echo</span> <span class="variable">$MYSQL_HOME</span></span><br><span class="line">/usr/local/mysql</span><br><span class="line">[root@Gargantua mysql]# <span class="built_in">which</span> mysql</span><br><span class="line">/usr/local/mysql/bin/mysql</span><br></pre></td></tr></table></figure>
+<ul>
+<li>准备配置</li>
+</ul>
+<ol>
+<li>创建目录，存放mysql启动运行时的bin-log、初始化数据、运行日志等…<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@Gargantua mysql]# <span class="built_in">mkdir</span> <span class="built_in">arch</span> data logs</span><br></pre></td></tr></table></figure></li>
+<li>修改安装目录权限</li>
+</ol>
+<p>修改为mysqladmin用户才能操作mysql安装目录</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[root@Gargantua local]# chown mysqladmin:dba mysql</span><br><span class="line">[root@Gargantua local]# chown mysqladmin:dba mysql-5.7.38-linux-glibc2.12-x86_64</span><br><span class="line">[root@Gargantua local]# chown -R mysqladmin:dba mysql-5.7.38-linux-glibc2.12-x86_64/*</span><br><span class="line"></span><br><span class="line">[root@Gargantua local]# chmod 755 mysql</span><br><span class="line">[root@Gargantua local]# chmod 755 mysql-5.7.38-linux-glibc2.12-x86_64</span><br><span class="line">[root@Gargantua local]# chmod -R 755 mysql-5.7.38-linux-glibc2.12-x86_64/*</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>创建 &#x2F;etc&#x2F;my.cnf<br>系统默认会安装有MariaDB，如果没有卸载MariaDB的话，&#x2F;etc&#x2F;my.cnf 是已存在的文件，可以先将他清空。</li>
+</ol>
+<p>[root@Gargantua mysql]# vi &#x2F;etc&#x2F;my.cnf</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">[client]</span><br><span class="line">port = 23306</span><br><span class="line">socket = /usr/local/mysql/data/mysql.sock</span><br><span class="line"></span><br><span class="line">[mysqld]</span><br><span class="line">bind-address = 0.0.0.0</span><br><span class="line"></span><br><span class="line">basedir = /usr/local/mysql</span><br><span class="line">datadir = /usr/local/mysql/data</span><br><span class="line">port = 23306</span><br><span class="line">socket = /usr/local/mysql/data/mysql.sock</span><br><span class="line">character-set-server=utf8</span><br><span class="line">log-bin  = /usr/local/mysql/arch/mysql-bin</span><br><span class="line">server-id = 1</span><br><span class="line"></span><br><span class="line"># For advice on how to change settings please see</span><br><span class="line"># http://dev.mysql.com/doc/refman/5.7/en/server-configuration-defaults.html</span><br><span class="line"># *** DO NOT EDIT THIS FILE. It&#x27;s a template which will be copied to the</span><br><span class="line"># *** default location during install, and will be replaced if you</span><br><span class="line"># *** upgrade to a newer version of MySQL.</span><br><span class="line"></span><br><span class="line">log-error = /usr/local/mysql/data/mysqld.log</span><br><span class="line">pid-file = /usr/local/mysql/data/mysqld.pid</span><br><span class="line"></span><br><span class="line">[mysqldump]</span><br><span class="line">quick</span><br><span class="line">max_allowed_packet = 16M</span><br><span class="line"></span><br><span class="line">[mysql]</span><br><span class="line">default-character-set = utf8</span><br><span class="line">no-auto-rehash</span><br><span class="line">socket = /usr/local/mysql/data/mysql.sock</span><br><span class="line"></span><br><span class="line">[myisamchk]</span><br><span class="line">key_buffer_size = 256M</span><br><span class="line">sort_buffer_size = 256M</span><br><span class="line">read_buffer = 2M</span><br><span class="line">write_buffer = 2M</span><br><span class="line"></span><br><span class="line">[mysqlhotcopy]</span><br><span class="line">interactive-timeout</span><br></pre></td></tr></table></figure>
+<p>记得权限也要修改：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@Gargantua mysql]# <span class="built_in">chown</span> mysqladmin:dba /etc/my.cnf  </span><br><span class="line">[root@Gargantua mysql]# <span class="built_in">chmod</span> 640 /etc/my.cnf</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>手动初始化数据目录</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@Gargantua mysql]# ./bin/mysqld --initialize --user=mysqladmin --basedir=/usr/local/mysql/ --datadir=/usr/local/mysql/data/</span><br></pre></td></tr></table></figure>
+<p>（首次初始化一般会报错）:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./bin/mysqld: error while loading shared libraries: libaio.so.1: cannot open shared object file: No such file or directory</span><br></pre></td></tr></table></figure>
+<p>yum安装以下内容后重新初始化即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum -y install numactl</span><br><span class="line">yum -y install libaio</span><br></pre></td></tr></table></figure>
+<p>可以确认一下是否成功初始化到指定的数据目录下，同时可以检查一下生成文件的权限，若不对就修改。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@Gargantua mysql]# <span class="built_in">ls</span> -l ./data</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">-rw-r----- 1 mysqladmin dba       56 Nov 20 21:40 auto.cnf</span><br><span class="line">-rw------- 1 mysqladmin dba     1676 Nov 20 21:40 ca-key.pem</span><br><span class="line">-rw-r--r-- 1 mysqladmin dba     1112 Nov 20 21:40 ca.pem</span><br><span class="line">-rw-r--r-- 1 mysqladmin dba     1112 Nov 20 21:40 client-cert.pem</span><br><span class="line">-rw------- 1 mysqladmin dba     1680 Nov 20 21:40 client-key.pem</span><br><span class="line">-rw-r----- 1 mysqladmin dba      436 Nov 20 21:40 ib_buffer_pool</span><br><span class="line">-rw-r----- 1 mysqladmin dba 12582912 Nov 20 21:40 ibdata1</span><br><span class="line">-rw-r----- 1 mysqladmin dba 50331648 Nov 20 21:40 ib_logfile0</span><br><span class="line">-rw-r----- 1 mysqladmin dba 50331648 Nov 20 21:40 ib_logfile1</span><br><span class="line">drwxr-x--- 2 mysqladmin dba     4096 Nov 20 21:40 mysql</span><br><span class="line">-rw-r----- 1 mysqladmin dba     1108 Nov 20 21:40 mysqld.log</span><br><span class="line">drwxr-x--- 2 mysqladmin dba     4096 Nov 20 21:40 performance_schema</span><br><span class="line">-rw------- 1 mysqladmin dba     1680 Nov 20 21:40 private_key.pem</span><br><span class="line">-rw-r--r-- 1 mysqladmin dba      452 Nov 20 21:40 public_key.pem</span><br><span class="line">-rw-r--r-- 1 mysqladmin dba     1112 Nov 20 21:40 server-cert.pem</span><br><span class="line">-rw------- 1 mysqladmin dba     1680 Nov 20 21:40 server-key.pem</span><br><span class="line">drwxr-x--- 2 mysqladmin dba    12288 Nov 20 21:40 sys</span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p>初始化完成之后在日志中查看临时初始密码，日志mysqld.log就是在 &#x2F;etc&#x2F;my.cnf中的 log-error 项的内容。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@Gargantua mysql]# vi ./data/mysqld.log</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 最后一行会记录自动生成的临时初始密码，登录mysql会用到  </span><br><span class="line">[Note] A temporary password is generated for root@localhost: ih_vhugTz0hk</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置mysql以service启动</p>
+</li>
+</ul>
+<ol>
+<li><p>创建systemctl管理mysql的配置文件命令：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@Gargantua mysql]# vi /usr/lib/systemd/system/mysql.service</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=MySQL Server</span><br><span class="line">Documentation=man:mysqld(8)</span><br><span class="line">Documentation=http://dev.mysql.com/doc/refman/en/using-systemd.html</span><br><span class="line">After=network.target</span><br><span class="line">After=syslog.target</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">User=mysqladmin</span><br><span class="line">Group=dba</span><br><span class="line"># 本机mysql安装目录</span><br><span class="line">ExecStart=/usr/local/mysql/bin/mysqld --defaults-file=/etc/my.cnf</span><br><span class="line"># 使用$MYSQL_HOME会报错</span><br><span class="line"># ExecStart=$MYSQL_HOME/bin/mysqld --defaults-file=/etc/my.cnf</span><br><span class="line"></span><br><span class="line">LimitNOFILE = 5000</span><br><span class="line">#Restart=on-failure</span><br><span class="line">#RestartPreventExitStatus=1</span><br><span class="line">#PrivateTmp=false</span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p>切换到mysqladmin用户</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@Gargantua mysql]# su - mysqladmin</span><br><span class="line">[mysqladmin@Gargantua ~]$ </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动 MySQL 服务</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[mysqladmin@Gargantua ~]$ systemctl start mysql </span><br></pre></td></tr></table></figure>
+<p>输出密码后，显示 &#x3D;&#x3D;&#x3D;&#x3D; AUTHENTICATION COMPLETE &#x3D;&#x3D;&#x3D; 代表成功。</p>
+</li>
+</ol>
+<p>查看运行状态、停止、重启</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl status mysql  </span><br><span class="line">systemctl stop mysql  </span><br><span class="line">systemctl restart mysql  </span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>设置mysql开机自启动<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[mysqladmin@Gargantua ~]$ systemctl enable mysql</span><br></pre></td></tr></table></figure></li>
+<li>使用临时初始密码登录 MySQL <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[mysqladmin@Gargantua ~]$ mysql -uroot -p</span><br><span class="line">ih_vhugTz0hk</span><br></pre></td></tr></table></figure>
+若报错：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR 2002 (HY000): Can&#x27;t connect to local MySQL server through socket &#x27;/tmp/mysql.sock</span><br></pre></td></tr></table></figure>
+一般是 my.cnf 中遗漏了socket配置，所以它默认去tmp目录下找sock文件，发现也没有就会报错。<br>注意在 [client]、[mysqld]、[mysql] 都要指定socket</li>
+</ol>
+<p>若报错：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR 2003 (HY000): Can&#x27;t connect to MySQL server on &#x27;127.0.0.1&#x27;</span><br></pre></td></tr></table></figure>
+<p>一般是 my.cnf 中遗漏了 bind-address配置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line">bind-address = 0.0.0.0</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>修改密码</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; <span class="built_in">set</span> password=password(<span class="string">&#x27;123456&#x27;</span>);  </span><br></pre></td></tr></table></figure>
+<p>要求必须修改密码，否则会提示：ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.</p>
+</li>
+<li><p>创建mysql用户</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># CREATE USER ‘用户名’@‘限制的IP地址’ IDENTIFIED BY ‘密码’;</span></span><br><span class="line">mysql&gt; CREATE USER <span class="string">&#x27;test&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED BY <span class="string">&#x27;123456&#x27;</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置与更改用户密码</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SET PASSWORD FOR <span class="string">&#x27;test&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> = PASSWORD(<span class="string">&#x27;123456&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p>允许所有ip以root来访问</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># GRANT ALL PRIVILEGES ON 有权限的库表 TO &#x27;用户&#x27;@&#x27;允许的ip&#x27; IDENTIFIED BY &#x27;密码&#x27; ;</span></span><br><span class="line">mysql&gt; GRANT ALL PRIVILEGES ON *.* TO <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;%&#x27;</span> IDENTIFIED BY <span class="string">&#x27;密码&#x27;</span> ;</span><br><span class="line">mysql&gt; flush privileges;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除用户</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; DROP USER <span class="string">&#x27;test&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或</span></span><br><span class="line">mysql&gt; delete from user <span class="built_in">where</span> user = <span class="string">&#x27;test&#x27;</span> and host = <span class="string">&#x27;localhost&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2024/09/15/ASCII%E3%80%81Unicode%E3%80%81UTF-8%E7%BC%96%E7%A0%81%E5%85%B3%E7%B3%BB/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-15T15:15:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年9月15日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/【正则表达式】笔记/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
+          
   
   
   
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/mysql/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>mysql</p></a></div>
+  <span hidden itemprop="keywords">mysql</span>
   
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/%E3%80%90%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E3%80%91%E7%AC%94%E8%AE%B0/"  itemprop="url">
-        【正则表达式】笔记
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        基础正则表达式速查表、正则可视化工具、常用正则
-
-^$表示匹配从^到$  之间的内容，即 ^123$   必须完全匹配123。1234567正则：123输入内容：123    （匹配）输入内容：12345  （匹配）正则：^123$  输入内容：123    （匹配）输入内容：12345  （不匹配）
-
-范围：[] 、{} 、()
-[]约束内容。整个[]内只匹配一个字符[abc123]   ...
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2024/09/15/MySQL%E9%83%A8%E7%BD%B2-CentOS7-2/&title=MySQL部署[CentOS7.2] - 博客&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2024/09/15/MySQL%E9%83%A8%E7%BD%B2-CentOS7-2/&title=MySQL部署[CentOS7.2] - 博客&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2024/09/15/MySQL%E9%83%A8%E7%BD%B2-CentOS7-2/&title=MySQL部署[CentOS7.2] - 博客&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:30:10+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" itemprop="url"><span itemprop="name">正则表达式</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/%E3%80%90%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E3%80%91%E7%AC%94%E8%AE%B0/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/吉他&乐理/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/%E5%90%89%E4%BB%96&%E4%B9%90%E7%90%86/"  itemprop="url">
-        吉他&乐理
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        十二平均律
-全全半全全全半
-1234Do Re Mi Fa SoI La Si Do   --唱名1  2  3  4   5  6  7  1  全 全 半  全  全 全 半     --音程（间隔）C  D  E  F   G  A  B  C    --音名
 
 
-琴弦的顺序是
-1234567        弦         音名       唱名        1         ...
+        
       
+    </div>
+    <!-- Custom Files bottomMeta begin -->
     
+    <!-- Custom Files bottomMeta end -->
   </div>
+
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:30:10+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%9D%82%E8%AE%B0/" itemprop="url"><span itemprop="name">杂记</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/%E5%90%89%E4%BB%96&%E4%B9%90%E7%90%86/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
   
 
-</div>
-
-          </div>
-        
+  
+    <div class="prev-next">
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/磁盘阵列 RAID[0 1 5 10]/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97%20RAID%5B0%201%205%2010%5D/"  itemprop="url">
-        磁盘阵列 RAID[0 1 5 10]
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        RAID （ Redundant Array of Independent Disks ）即独立磁盘冗余阵列，简称为「磁盘阵列」，用多个独立的磁盘组成一个大的磁盘系统，目的实现比单块磁盘更好的存储性能和更高的可靠性。
-RAID方案常见的可以分为：
-
-RAID0
-RAID1
-RAID5
-RAID6
-RAID10
-
-RAID0将数据分为N份，以独立并行实现N块磁盘的读写，那么这N份数据会同时并发...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:30:10+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%9D%82%E8%AE%B0/" itemprop="url"><span itemprop="name">杂记</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97%20RAID%5B0%201%205%2010%5D/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/synchronized 同步方法和同步代码块，以及synchronized 加锁 this 和 类class 的区别/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/synchronized%20%E5%90%8C%E6%AD%A5%E6%96%B9%E6%B3%95%E5%92%8C%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%9D%97%EF%BC%8C%E4%BB%A5%E5%8F%8Asynchronized%20%E5%8A%A0%E9%94%81%20this%20%E5%92%8C%20%E7%B1%BBclass%20%E7%9A%84%E5%8C%BA%E5%88%AB/"  itemprop="url">
-        synchronized 同步方法和同步代码块，以及synchronized 加锁 this 和 类class 的区别
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        同步方法是对整个方法中所有内容加锁；同步代码块选择只同步部分代码而不是整个方法，比同步方法要更细颗粒度，也能选择加锁 this 和 类class，还可以是变量。
-同步方法的锁用的是 这个方法所在的这个对象&#x2F;类上的内置锁。
-同步代码块的锁用的是 synchronized()括号里参数对象上的锁。可以是 this、类.class、变量。要具体分析参与抢锁的对象是否持有相同的对象锁（也就...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:22:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java/">Java</a><span class="sep"></span><a class="category-link" href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Java/" itemprop="url"><span itemprop="name">Java</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" itemprop="url"><span itemprop="name">多线程</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/synchronized%20%E5%90%8C%E6%AD%A5%E6%96%B9%E6%B3%95%E5%92%8C%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%9D%97%EF%BC%8C%E4%BB%A5%E5%8F%8Asynchronized%20%E5%8A%A0%E9%94%81%20this%20%E5%92%8C%20%E7%B1%BBclass%20%E7%9A%84%E5%8C%BA%E5%88%AB/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/多线程之wait、notify-notifyAll使用，并模拟生产-消费者模式/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B9%8Bwait%E3%80%81notify-notifyAll%E4%BD%BF%E7%94%A8%EF%BC%8C%E5%B9%B6%E6%A8%A1%E6%8B%9F%E7%94%9F%E4%BA%A7-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/"  itemprop="url">
-        多线程之wait、notify/notifyAll使用，并模拟生产/消费者模式
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        要点总结：1、wait()、notify&#x2F;notifyAll() 方法是Object的本地final方法，无法被重写。
-2、在当前线程拥有监视器锁的情况下使用，且wait()的对象和锁对象相同，否则将抛出异常IllegalMonitorStateException。一般在synchronized 同步代码块里使用 wait()、notify&#x2F;notifyAll() 方法。...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:20:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java/">Java</a><span class="sep"></span><a class="category-link" href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Java/" itemprop="url"><span itemprop="name">Java</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" itemprop="url"><span itemprop="name">多线程</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B9%8Bwait%E3%80%81notify-notifyAll%E4%BD%BF%E7%94%A8%EF%BC%8C%E5%B9%B6%E6%A8%A1%E6%8B%9F%E7%94%9F%E4%BA%A7-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Autowired和Resource区别，简单测试容器中多个相同bean的情况/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/Autowired%E5%92%8CResource%E5%8C%BA%E5%88%AB%EF%BC%8C%E7%AE%80%E5%8D%95%E6%B5%8B%E8%AF%95%E5%AE%B9%E5%99%A8%E4%B8%AD%E5%A4%9A%E4%B8%AA%E7%9B%B8%E5%90%8Cbean%E7%9A%84%E6%83%85%E5%86%B5/"  itemprop="url">
-        @Autowired和@Resource区别，简单测试容器中多个相同bean的情况
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        @Autowired 和  @Resource 区别
-@Autowired 来自Spring， @Resource 来自java；
-@Autowired 默认按类型注入，容器中存在多个相同类型的 Bean，将抛出异常。 可以配合使用 @Qualifier 指定名称。
-
-两个相同类型（都 implements Formatter）的 Bean：
-123456@Component(&quot;f...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Spring/">Spring</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Spring/" itemprop="url"><span itemprop="name">Spring</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/Autowired%E5%92%8CResource%E5%8C%BA%E5%88%AB%EF%BC%8C%E7%AE%80%E5%8D%95%E6%B5%8B%E8%AF%95%E5%AE%B9%E5%99%A8%E4%B8%AD%E5%A4%9A%E4%B8%AA%E7%9B%B8%E5%90%8Cbean%E7%9A%84%E6%83%85%E5%86%B5/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/HDFS常用命令/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/HDFS%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"  itemprop="url">
-        HDFS常用命令
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        HDFS常用命令hdfs 命令最常用的就是： hdfs dfs -[linux的命令]
-通过查看Hadoop的命令 与 hdfs 的命令并不相同，且不存在包含关系。仅仅是 hadoop fs 与 hdfs dfs 可以等价。
-hadoop 常用命令查看hadoop 命令所有参数：
-1hadoop
-12345hadoop checknative  // 检查当前版本hadoop内库支持哪些压缩...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a><span class="sep"></span><a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/">HDFS</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" itemprop="url"><span itemprop="name">大数据</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/" itemprop="url"><span itemprop="name">HDFS</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/HDFS%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Spring注解式编程/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/"  itemprop="url">
-        Spring注解式编程
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        spring注解编程-IOC
-配置类&amp;Bean注解@Configuration123加了这个注解的类就相当于传统的一个applicationContext-xxx.xml ，告诉spring这是一个注解类 最初的Spring只支持xml方式配置Bean，从Spring 3.0起支持：基于Java类的配置方式，Java开发者可以从标签语法里解放了出来。
-
-配置放在哪里  
-
-配置类要与...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Spring/">Spring</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Spring/" itemprop="url"><span itemprop="name">Spring</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Oracle为什么要用三层嵌套实现分页/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/"  itemprop="url">
-        Oracle为什么要用三层嵌套实现分页
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Oracle为什么要用三层嵌套实现分页
+        <a class='prev' href='/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Oracle为什么要用三层嵌套实现分页</p>
+          <p class='content'>Oracle为什么要用三层嵌套实现分页
 先说结论：嵌套出两层SELECT对应的两个原因：  
 
 
-ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存在同一趟SELECT中，order by排序后的ROWNUM不是有序的，不会和查询结果行号对应，所以不能做条件过滤。需要在一次select  order by 后得到的虚拟表中，再获取ROWNUM这样order by才能生效...
+ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存在同一趟SELECT中，...</p>
+        </a>
       
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/">Oracle</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/" itemprop="url"><span itemprop="name">Oracle</span></a>
-            </span>
-          
-        
-      </div>
       
-        <div>
-          <a class='readmore' href='/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+        <a class='next' href='/2024/09/15/java%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6/'>
+          <p class='title'>java日志框架<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>日志打印
+建议用{}占位而不是字符串拼接
+打日志前先判断日志级别是否可用：
+
+
+先根据等级过滤规则再决定写不写；
+先往一个管道写了内容，但再经等级过滤丢弃，徒增开销。
+
+日志框架Slf4JSlf...</p>
+        </a>
       
     </div>
   
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
+  <!-- 文章推荐 -->
   
-    
-      <br>
-      <div class="prev-next">
-        
-        <p class="current">
-          1 / 2
-        </p>
-        
-          <a class="next" rel="next" href="/page/2/">
-            <section class="post next white-box shadow floatable blur">
-              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-            </section>
-          </a>
-        
-      </div>
-    
   
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2024/09/15/MySQL%E9%83%A8%E7%BD%B2-CentOS7-2/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
 
 
 </div>
@@ -3273,194 +3087,31 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
     
     
       
-<section class="widget blogger desktop mobile ">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">博客</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Java/" href="/categories/Java/"
-            active-action="action-categoriesJava"
-            ><div class='name'>Java</div><div class='badge'>(6)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Java/jvm/" href="/categories/Java/jvm/"
-            active-action="action-categoriesJavajvm"
-            ><div class='name'>jvm</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"
-            active-action="action-categoriesJavaE5A49AE7BABFE7A88B"
-            ><div class='name'>多线程</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Linux/" href="/categories/Linux/"
-            active-action="action-categoriesLinux"
-            ><div class='name'>Linux</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Spring/" href="/categories/Spring/"
-            active-action="action-categoriesSpring"
-            ><div class='name'>Spring</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"
-            active-action="action-categoriesE5A4A7E695B0E68DAE"
-            ><div class='name'>大数据</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/"
-            active-action="action-categoriesE5A4A7E695B0E68DAEHDFS"
-            ><div class='name'>HDFS</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"
-            active-action="action-categoriesE695B0E68DAEE5BA93"
-            ><div class='name'>数据库</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/"
-            active-action="action-categoriesE695B0E68DAEE5BA93Oracle"
-            ><div class='name'>Oracle</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/TiDB/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/TiDB/"
-            active-action="action-categoriesE695B0E68DAEE5BA93TiDB"
-            ><div class='name'>TiDB</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/"
-            active-action="action-categoriesE695B0E68DAEE5BA93mysql"
-            ><div class='name'>mysql</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%9D%82%E8%AE%B0/" href="/categories/%E6%9D%82%E8%AE%B0/"
-            active-action="action-categoriesE69D82E8AEB0"
-            ><div class='name'>杂记</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"
-            active-action="action-categoriesE6ADA3E58899E8A1A8E8BEBEE5BC8F"
-            ><div class='name'>正则表达式</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%BC%96%E7%A0%81/" href="/categories/%E7%BC%96%E7%A0%81/"
-            active-action="action-categoriesE7BC96E7A081"
-            ><div class='name'>编码</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/ASCII/" style="font-size: 14px; color: #999">ASCII</a> <a href="/tags/HDFS/" style="font-size: 14px; color: #999">HDFS</a> <a href="/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/tags/NAS/" style="font-size: 14px; color: #999">NAS</a> <a href="/tags/Oracle/" style="font-size: 14px; color: #999">Oracle</a> <a href="/tags/Spring/" style="font-size: 19px; color: #777">Spring</a> <a href="/tags/TiDB/" style="font-size: 14px; color: #999">TiDB</a> <a href="/tags/UTF-8/" style="font-size: 14px; color: #999">UTF-8</a> <a href="/tags/Unicode/" style="font-size: 14px; color: #999">Unicode</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/juc/" style="font-size: 19px; color: #777">juc</a> <a href="/tags/jvm/" style="font-size: 14px; color: #999">jvm</a> <a href="/tags/jvm%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/" style="font-size: 14px; color: #999">jvm垃圾回收</a> <a href="/tags/linux/" style="font-size: 19px; color: #777">linux</a> <a href="/tags/log4j/" style="font-size: 14px; color: #999">log4j</a> <a href="/tags/logback/" style="font-size: 14px; color: #999">logback</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/node-js/" style="font-size: 14px; color: #999">node.js</a> <a href="/tags/slf4j/" style="font-size: 14px; color: #999">slf4j</a> <a href="/tags/%E7%A3%81%E7%9B%98RAID/" style="font-size: 14px; color: #999">磁盘RAID</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%E5%9C%A8%E5%89%8D"><span class="toc-text">总结在前</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MySql-%E9%83%A8%E7%BD%B2%E5%87%86%E5%A4%87"><span class="toc-text">MySql 部署准备</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%AE%89%E8%A3%85%E5%8C%85"><span class="toc-text">准备安装包</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-text">环境变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA-MySql-%E7%AE%A1%E7%90%86%E5%91%98%E7%94%A8%E6%88%B7"><span class="toc-text">创建 MySql 管理员用户</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">配置文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BF%AE%E6%AD%A3%E6%9D%83%E9%99%90"><span class="toc-text">配置文件修正权限</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8-MySql"><span class="toc-text">启动 MySql</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8A%8A%E6%9C%8D%E5%8A%A1%E6%96%87%E4%BB%B6%E6%8B%B7%E8%B4%9D%E5%88%B0%E6%8C%87%E5%AE%9A%E7%9B%AE%E5%BD%95"><span class="toc-text">把服务文件拷贝到指定目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8"><span class="toc-text">设置开机自启动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A5service%E5%90%AF%E5%8A%A8"><span class="toc-text">以service启动</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%99%BB%E5%BD%95"><span class="toc-text">登录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%81%E8%AE%B8%E6%89%80%E6%9C%89ip%E4%BB%A5root%E6%9D%83%E9%99%90%E6%9D%A5%E8%AE%BF%E9%97%AE"><span class="toc-text">允许所有ip以root权限来访问</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">新建数据库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2"><span class="toc-text">重新部署</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B7%A5%E5%85%B7%E8%BF%9E%E6%8E%A5"><span class="toc-text">使用可视化工具连接</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mysql-5-7-%E9%83%A8%E7%BD%B2"><span class="toc-text">mysql 5.7 部署</span></a></li></ol>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -3950,7 +3601,7 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"博客"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"博客","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"博客"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/数据库/","name":"数据库"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/数据库/mysql/","name":"mysql"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/09/15/MySQL部署-CentOS7-2/","name":"MySQL部署[CentOS7.2]"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"博客","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"MySQL部署[CentOS7.2]","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/09/15/MySQL%E9%83%A8%E7%BD%B2-CentOS7-2/"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/09/15/MySQL%E9%83%A8%E7%BD%B2-CentOS7-2/","wordCount":0,"datePublished":"2024-09-15T07:15:00.000Z","dateModified":"2024-09-15T07:15:00.000Z","articleSection":"数据库","keywords":"mysql","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

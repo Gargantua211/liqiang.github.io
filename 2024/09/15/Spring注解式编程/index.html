@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="http://example.com/"/>
+  
+  <link rel="canonical" href="http://example.com/2024/09/15/spring注解式编程/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>博客</title>
-  <meta name="keywords" content="">
+  <title>Spring注解式编程 - 博客</title>
+  <meta name="keywords" content="Spring,null">
   <meta desc name="description" content="久有凌云志，重上井冈山 - 昱东 - 博客">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="博客">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spring注解式编程">
+<meta property="og:url" content="http://example.com/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/index.html">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="久有凌云志，重上井冈山">
+<meta property="og:description" content="spring注解编程-IOC 配置类&amp;Bean注解@Configuration123加了这个注解的类就相当于传统的一个applicationContext-xxx.xml ，告诉spring这是一个注解类 最初的Spring只支持xml方式配置Bean，从Spring 3.0起支持：基于Java类的配置方式，Java开发者可以从标签语法里解放了出来。  配置放在哪里    配置类要与启动类">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-09-15T07:15:00.000Z">
+<meta property="article:modified_time" content="2024-09-15T07:15:00.000Z">
 <meta property="article:author" content="昱东">
+<meta property="article:tag" content="Spring">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2102,7 +2105,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2167,7 +2170,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="https://schema.org.cn/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="https://schema.org.cn/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2434,679 +2437,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div id="l_body">
       <div id="l_cover">
   
-    
-      <div class="cover-wrapper  dock" id='full'>
-        
-  <div class='cover-bg lazyload placeholder' data-bg="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msMpy.img"></div>
-
-<div class='cover-body'>
-  <div class='top'>
-    
-    
-      <p class="title">首页</p>
-    
-    
-  </div>
-  <div class='bottom'>
-    <div class='menu navigation'>
-      <div class='list-h'>
-        
-          
-            <a href="/"
-              
-              
-              active-action="action-home">
-              <img src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/link/8f277b4ee0ecd.svg'><p>首页</p>
-            </a>
-          
-            <a href="/archives/"
-              
-              
-              active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
-            </a>
-          
-            <a href="/v4/getting-started/"
-              
-              
-              active-action="action-v4getting-started">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f5c3.svg'><p>文档</p>
-            </a>
-          
-            <a href="/contributors/"
-              
-              
-              active-action="action-contributors">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
-            </a>
-          
-            <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
-              
-              
-              active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f9ec.svg'><p>源码</p>
-            </a>
-          
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-        <div id="scroll-down"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
-      </div>
-    
-  
 </div>
 
       <div id="safearea">
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  
-  <section class="post-list">
-    
-      
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/ASCII、Unicode、UTF-8编码关系/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/ASCII%E3%80%81Unicode%E3%80%81UTF-8%E7%BC%96%E7%A0%81%E5%85%B3%E7%B3%BB/"  itemprop="url">
-        ASCII 、Unicode、UTF-8编码关系
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        参考：https://www.cnblogs.com/tsingke/p/10853936.html
-为什么会出现乱码一份文件，根据编码A的规则将文件转换为二进制存储起来。被使用另一种编码B打开，根据编码B的规则将二进制解析。就解析出不一样的文件，甚至是乱码。
-所以，要想打开一个文件，就必须提前知道它的编码方式，或者约定，所有文件的读写都使用统一的编码。
-字符编码的作用计算机内部，所有信息最...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:40:10+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BC%96%E7%A0%81/">编码</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E7%BC%96%E7%A0%81/" itemprop="url"><span itemprop="name">编码</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/ASCII%E3%80%81Unicode%E3%80%81UTF-8%E7%BC%96%E7%A0%81%E5%85%B3%E7%B3%BB/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/【正则表达式】笔记/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/%E3%80%90%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E3%80%91%E7%AC%94%E8%AE%B0/"  itemprop="url">
-        【正则表达式】笔记
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        基础正则表达式速查表、正则可视化工具、常用正则
-
-^$表示匹配从^到$  之间的内容，即 ^123$   必须完全匹配123。1234567正则：123输入内容：123    （匹配）输入内容：12345  （匹配）正则：^123$  输入内容：123    （匹配）输入内容：12345  （不匹配）
-
-范围：[] 、{} 、()
-[]约束内容。整个[]内只匹配一个字符[abc123]   ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:30:10+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" itemprop="url"><span itemprop="name">正则表达式</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/%E3%80%90%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E3%80%91%E7%AC%94%E8%AE%B0/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/吉他&乐理/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/%E5%90%89%E4%BB%96&%E4%B9%90%E7%90%86/"  itemprop="url">
-        吉他&乐理
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        十二平均律
-全全半全全全半
-1234Do Re Mi Fa SoI La Si Do   --唱名1  2  3  4   5  6  7  1  全 全 半  全  全 全 半     --音程（间隔）C  D  E  F   G  A  B  C    --音名
-
-
-琴弦的顺序是
-1234567        弦         音名       唱名        1         ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:30:10+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%9D%82%E8%AE%B0/" itemprop="url"><span itemprop="name">杂记</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/%E5%90%89%E4%BB%96&%E4%B9%90%E7%90%86/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/磁盘阵列 RAID[0 1 5 10]/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97%20RAID%5B0%201%205%2010%5D/"  itemprop="url">
-        磁盘阵列 RAID[0 1 5 10]
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        RAID （ Redundant Array of Independent Disks ）即独立磁盘冗余阵列，简称为「磁盘阵列」，用多个独立的磁盘组成一个大的磁盘系统，目的实现比单块磁盘更好的存储性能和更高的可靠性。
-RAID方案常见的可以分为：
-
-RAID0
-RAID1
-RAID5
-RAID6
-RAID10
-
-RAID0将数据分为N份，以独立并行实现N块磁盘的读写，那么这N份数据会同时并发...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:30:10+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%9D%82%E8%AE%B0/" itemprop="url"><span itemprop="name">杂记</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97%20RAID%5B0%201%205%2010%5D/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/synchronized 同步方法和同步代码块，以及synchronized 加锁 this 和 类class 的区别/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/synchronized%20%E5%90%8C%E6%AD%A5%E6%96%B9%E6%B3%95%E5%92%8C%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%9D%97%EF%BC%8C%E4%BB%A5%E5%8F%8Asynchronized%20%E5%8A%A0%E9%94%81%20this%20%E5%92%8C%20%E7%B1%BBclass%20%E7%9A%84%E5%8C%BA%E5%88%AB/"  itemprop="url">
-        synchronized 同步方法和同步代码块，以及synchronized 加锁 this 和 类class 的区别
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        同步方法是对整个方法中所有内容加锁；同步代码块选择只同步部分代码而不是整个方法，比同步方法要更细颗粒度，也能选择加锁 this 和 类class，还可以是变量。
-同步方法的锁用的是 这个方法所在的这个对象&#x2F;类上的内置锁。
-同步代码块的锁用的是 synchronized()括号里参数对象上的锁。可以是 this、类.class、变量。要具体分析参与抢锁的对象是否持有相同的对象锁（也就...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:22:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java/">Java</a><span class="sep"></span><a class="category-link" href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Java/" itemprop="url"><span itemprop="name">Java</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" itemprop="url"><span itemprop="name">多线程</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/synchronized%20%E5%90%8C%E6%AD%A5%E6%96%B9%E6%B3%95%E5%92%8C%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%9D%97%EF%BC%8C%E4%BB%A5%E5%8F%8Asynchronized%20%E5%8A%A0%E9%94%81%20this%20%E5%92%8C%20%E7%B1%BBclass%20%E7%9A%84%E5%8C%BA%E5%88%AB/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/多线程之wait、notify-notifyAll使用，并模拟生产-消费者模式/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B9%8Bwait%E3%80%81notify-notifyAll%E4%BD%BF%E7%94%A8%EF%BC%8C%E5%B9%B6%E6%A8%A1%E6%8B%9F%E7%94%9F%E4%BA%A7-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/"  itemprop="url">
-        多线程之wait、notify/notifyAll使用，并模拟生产/消费者模式
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        要点总结：1、wait()、notify&#x2F;notifyAll() 方法是Object的本地final方法，无法被重写。
-2、在当前线程拥有监视器锁的情况下使用，且wait()的对象和锁对象相同，否则将抛出异常IllegalMonitorStateException。一般在synchronized 同步代码块里使用 wait()、notify&#x2F;notifyAll() 方法。...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:20:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java/">Java</a><span class="sep"></span><a class="category-link" href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Java/" itemprop="url"><span itemprop="name">Java</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" itemprop="url"><span itemprop="name">多线程</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B9%8Bwait%E3%80%81notify-notifyAll%E4%BD%BF%E7%94%A8%EF%BC%8C%E5%B9%B6%E6%A8%A1%E6%8B%9F%E7%94%9F%E4%BA%A7-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Autowired和Resource区别，简单测试容器中多个相同bean的情况/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/Autowired%E5%92%8CResource%E5%8C%BA%E5%88%AB%EF%BC%8C%E7%AE%80%E5%8D%95%E6%B5%8B%E8%AF%95%E5%AE%B9%E5%99%A8%E4%B8%AD%E5%A4%9A%E4%B8%AA%E7%9B%B8%E5%90%8Cbean%E7%9A%84%E6%83%85%E5%86%B5/"  itemprop="url">
-        @Autowired和@Resource区别，简单测试容器中多个相同bean的情况
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        @Autowired 和  @Resource 区别
-@Autowired 来自Spring， @Resource 来自java；
-@Autowired 默认按类型注入，容器中存在多个相同类型的 Bean，将抛出异常。 可以配合使用 @Qualifier 指定名称。
-
-两个相同类型（都 implements Formatter）的 Bean：
-123456@Component(&quot;f...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Spring/">Spring</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Spring/" itemprop="url"><span itemprop="name">Spring</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/Autowired%E5%92%8CResource%E5%8C%BA%E5%88%AB%EF%BC%8C%E7%AE%80%E5%8D%95%E6%B5%8B%E8%AF%95%E5%AE%B9%E5%99%A8%E4%B8%AD%E5%A4%9A%E4%B8%AA%E7%9B%B8%E5%90%8Cbean%E7%9A%84%E6%83%85%E5%86%B5/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/HDFS常用命令/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/HDFS%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"  itemprop="url">
-        HDFS常用命令
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        HDFS常用命令hdfs 命令最常用的就是： hdfs dfs -[linux的命令]
-通过查看Hadoop的命令 与 hdfs 的命令并不相同，且不存在包含关系。仅仅是 hadoop fs 与 hdfs dfs 可以等价。
-hadoop 常用命令查看hadoop 命令所有参数：
-1hadoop
-12345hadoop checknative  // 检查当前版本hadoop内库支持哪些压缩...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a><span class="sep"></span><a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/">HDFS</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" itemprop="url"><span itemprop="name">大数据</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/" itemprop="url"><span itemprop="name">HDFS</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/HDFS%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Spring注解式编程/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="博客">
@@ -3116,153 +2453,347 @@ hadoop 常用命令查看hadoop 命令所有参数：
     <meta itemprop="description" content="久有凌云志，重上井冈山">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         Spring注解式编程
-      </a>
-    </h2>
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
   
-  <div class='md article-desc' itemprop="articleBody">
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Spring/">Spring</a>
     
-      
-        spring注解编程-IOC
-配置类&amp;Bean注解@Configuration123加了这个注解的类就相当于传统的一个applicationContext-xxx.xml ，告诉spring这是一个注解类 最初的Spring只支持xml方式配置Bean，从Spring 3.0起支持：基于Java类的配置方式，Java开发者可以从标签语法里解放了出来。
-
-配置放在哪里  
-
-配置类要与...
-      
+      <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+        <a href="/categories/Spring/" itemprop="url"><span itemprop="name">Spring</span></a>
+      </span>
     
   </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Spring/">Spring</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Spring/" itemprop="url"><span itemprop="name">Spring</span></a>
-            </span>
+
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年9月15日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>spring注解编程-IOC</p>
+<h3 id="配置类-Bean注解"><a href="#配置类-Bean注解" class="headerlink" title="配置类&amp;Bean注解"></a>配置类&amp;Bean注解</h3><h4 id="Configuration"><a href="#Configuration" class="headerlink" title="@Configuration"></a>@Configuration</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">加了这个注解的类就相当于传统的一个applicationContext-xxx.xml ，告诉spring这是一个注解类 </span><br><span class="line"></span><br><span class="line">最初的Spring只支持xml方式配置Bean，从Spring 3.0起支持：基于Java类的配置方式，Java开发者可以从标签语法里解放了出来。</span><br></pre></td></tr></table></figure>
+
+<p>配置放在哪里  </p>
+<ul>
+<li>配置类要与启动类同包或者在其任意子包下，满足spring的扫描条件，配置才能被成功加载。</li>
+<li>如果不满足上述同包或子包条件，需要如下办法：<br>在resources目录下新建META-INF目录，并在该目录下创建spring.factories文件。spring.factories文件内容如下：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">org.springframework.boot.autoconfigure.EnableAutoConfiguration=\</span><br><span class="line">com.ft.xx.config.DruidConfig</span><br></pre></td></tr></table></figure>
+第一行是spring自动配置的路径，第二行是我们自己要指定加载配置类的路径。</li>
+</ul>
+<h4 id="Bean"><a href="#Bean" class="headerlink" title="@Bean"></a>@Bean</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@Bean注解的作用与&lt;bean/&gt;标签相同</span><br><span class="line"></span><br><span class="line">在标注了@Configuration的类里面的方法上面打上@bean就相当于在applicationContext-xxx.xml配置的一个</span><br><span class="line">&lt;bean id=&quot;userDao&quot; class=&quot;cn.itsource.dao.UserDao&quot;&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">简单粗暴理解：@Configuration标注的类等同于一个xml文件，@Bean标注的方法等同于xml文件里的一个&lt;bean/&gt;标签</span><br></pre></td></tr></table></figure>
+<p>Bean的名字默认就是方法名，如果想改方法名使用@Bean(“beanName”)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@Configuration </span><br><span class="line">public class MainConfig &#123;</span><br><span class="line"></span><br><span class="line">    @Bean(&quot;userDao&quot;) //指定bean的名字</span><br><span class="line">    public UserDao userDao()&#123; // 方法必须是public。</span><br><span class="line">        return new UserDao();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>@Bean(initMethod&#x3D;”init”,destroyMethod&#x3D;”destroy”)定义，在构造之后执行init，在销毁之前执行destroy。</li>
+</ul>
+<h4 id="使用-Configuration和不使用-Configuration的区别"><a href="#使用-Configuration和不使用-Configuration的区别" class="headerlink" title="使用@Configuration和不使用@Configuration的区别"></a>使用@Configuration和不使用@Configuration的区别</h4><p>通常来说，我们均会把@Bean标注的方法写在@Configuration标注的类里面来配合使用。<br>但其实，没有@Configuration注解的类中的@Bean也会被扫描到，只是一般不这么用。<br>是否通过@Configuration，官方管这两种模式分别叫：Full @Configuration和lite @Bean mode。</p>
+<p>Full模式和Lite模式<br>Full模式和Lite模式均是针对于Spring配置类而言的，和xml配置文件无关。</p>
+<ul>
+<li><p>Full模式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">运行时会给该类生成一个CGLIB子类放进容器，有一定的性能、时间开销（这个开销在Spring Boot这种拥有大量配置类的情况下是不容忽视的，这也是Spring 5.2新增了proxyBeanMethods属性的最直接原因）</span><br><span class="line">正因为被代理了，所以@Bean方法 不可以是private、不可以是final</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Lite模式：<br>官方定义为：在没有标注@Configuration的类里面有@Bean方法就称为Lite模式的配置。透过源码再看这个定义是不完全正确的，而应该是有如下case均认为是Lite模式的配置类：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">类上标注有@Component注解</span><br><span class="line">类上标注有@ComponentScan注解</span><br><span class="line">类上标注有@Import注解</span><br><span class="line">类上标注有@ImportResource注解</span><br><span class="line">若类上没有任何注解，但类内存在@Bean方法</span><br></pre></td></tr></table></figure>
+<p>以上case的前提均是类上没有被标注@Configuration，在Spring 5.2之后新增了一种case也算作Lite模式：</p>
+</li>
+</ul>
+<p>标注有@Configuration(proxyBeanMethods &#x3D; false)，注意：此值默认是true，需要显示改为false才算是Lite模式。<br>自Spring5.2（对应Spring Boot 2.2.0）开始，内置的几乎所有的@Configuration配置类都被修改为了@Configuration(proxyBeanMethods &#x3D; false)，以此来降低启动时间，为Cloud Native继续做准备。  </p>
+<p>Lite模式下:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">配置类本身不会被CGLIB代理，放进IoC容器内的就是本尊</span><br><span class="line">不能直接声明@Bean之间的依赖：配置类内部不能通过方法调用来处理依赖，每次生成的都是一个新实例而并非IoC容器内的单例。</span><br><span class="line">(与之对比的full 模式时，一个@Bean的方法调用了另一@Bean方法，被调用的bean并不会执行两次噢，会保证单例~~)</span><br><span class="line">配置类就是一普通类，所以@Bean方法可以使用private/final/static等进行修饰</span><br></pre></td></tr></table></figure>
+<p>下面以实际例子说明：</p>
+<p>Full模式：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">UserConfiguration</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> UserService <span class="title function_">userService_1</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">UserService</span>(orderService());  <span class="comment">// 获取spring代理后的orderService bean</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> UserService <span class="title function_">userService_2</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">UserService</span>(orderService()); <span class="comment">// 获取spring代理后的orderService bean</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> OrderService <span class="title function_">orderService</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">OrderService</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在使用@Configuration时，通过orderService()获取到的是被Spring代理对象，并且Spring保证单例。所以在userService_1、userService_2中持有的orderService是同一个，也可以说，被调用的<br>orderService这个bean只执行一次。<br>验证：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">UserService</span> <span class="variable">userService_1</span> <span class="operator">=</span> (UserService) applicationContext.getBean(<span class="string">&quot;userService_1&quot;</span>);</span><br><span class="line"><span class="type">UserService</span> <span class="variable">userService_2</span> <span class="operator">=</span> (UserService) applicationContext.getBean(<span class="string">&quot;userService_2&quot;</span>);</span><br><span class="line">System.out.println(userService_1.getOrderService()); <span class="comment">// com.xxx.OrderService@64e1dd11</span></span><br><span class="line">System.out.println(userService_2.getOrderService()); <span class="comment">// com.xxx.OrderService@64e1dd11</span></span><br></pre></td></tr></table></figure>
+
+<p>Lite模式：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// @Component // 使用Component也是Lite</span></span><br><span class="line"><span class="meta">@Configuration(proxyBeanMethods = false)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">UserConfiguration</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> UserService <span class="title function_">userService_1</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">UserService</span>(orderService());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> UserService <span class="title function_">userService_2</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">UserService</span>(orderService());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> OrderService <span class="title function_">orderService</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">OrderService</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在使用@Configuration(proxyBeanMethods &#x3D; false)时，通过orderService()获取到的是java原生的对象，不经过代理，相当于同类中普通方法调用而已，那么每调用一次就会new 一个OrderService()对象。所以<br>userService_1、userService_2中持有的orderService是不同的，</p>
+<p>验证：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">UserService</span> <span class="variable">userService_1</span> <span class="operator">=</span> (UserService) applicationContext.getBean(<span class="string">&quot;userService_1&quot;</span>);</span><br><span class="line"><span class="type">UserService</span> <span class="variable">userService_2</span> <span class="operator">=</span> (UserService) applicationContext.getBean(<span class="string">&quot;userService_2&quot;</span>);</span><br><span class="line">System.out.println(userService_1.getOrderService()); <span class="comment">// com.xxx.OrderService@5a9800f8</span></span><br><span class="line">System.out.println(userService_2.getOrderService()); <span class="comment">// com.xxx.OrderService@143d9a93</span></span><br></pre></td></tr></table></figure>
+
+<p>总结：</p>
+<ul>
+<li>使用@Configuration的类会被代理，否则不会经过代理。</li>
+<li>使用@Configuration或@Configuration(proxyBeanMethods &#x3D; true) 时，Spring会将这个配置也代理，其中的方法也被创建代理方法。并且由Spring保证单例。 所以当其中一个bean调用另一个bean时，是从Spring容器中获取这个代理后单例的bean。</li>
+<li>不使用@Configuration，或使用@Configuration(proxyBeanMethods &#x3D; false)时，这就是一个普通的java类，虽然其中的@Bean会被扫描到并注册为Spring单例bean，但不经过代理。且类中的Bean之间调用就是普通的方法调用，也不会经过Spring代理。每一处的调用都会各自执行一遍方法本身所有的内容。</li>
+</ul>
+<h3 id="注入Bean"><a href="#注入Bean" class="headerlink" title="注入Bean"></a>注入Bean</h3><h4 id="AnnotationConfigApplicationContext"><a href="#AnnotationConfigApplicationContext" class="headerlink" title="AnnotationConfigApplicationContext"></a>AnnotationConfigApplicationContext</h4><p>基于applicationContext-xxx.xml创建的bean是通过 ClassPathXmlApplicationContext(“xxx.xml”)来获取。</p>
+<p>基于注解配置类创建的bean，要通过 new AnnotationConfigApplicationContext(MainConfig.class);来获取。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Application</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    </span><br><span class="line">        <span class="type">ApplicationContext</span> <span class="variable">context</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">AnnotationConfigApplicationContext</span>(MainConfig.class);</span><br><span class="line">        <span class="type">UserDao</span> <span class="variable">userDao</span> <span class="operator">=</span> context.getBean(UserDao.class);</span><br><span class="line">  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>前提是容器中注入了这个bean，向容器中注入bean的方式：</p>
+<ol>
+<li><p>@Bean + @Configuration：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MainConfig</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> UserDao <span class="title function_">userDao</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">UserDao</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>此种方式常用于将第三方jar中的某个类，注册为当前项目的一个bean。</p>
+</li>
+<li><p>@Import：  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Import(UserDao.class)</span></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MainConfig</span> &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>@Component：  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">userDao</span> &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="Repository-Service-Controller-Component"><a href="#Repository-Service-Controller-Component" class="headerlink" title="@Repository,@Service,@Controller,@Component"></a>@Repository,@Service,@Controller,@Component</h4><p>使用注解的类会被创建出一个bean</p>
+<ul>
+<li>@ComponentScan<br>使用 @Component等创建的bean，需要配合使用@ComponentScan扫描才能识别到这些bean。</li>
+</ul>
+<p>@ComponentScan 其实就是： </p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">&quot;org.example.xxx&quot;</span>/&gt;</span>.</span><br></pre></td></tr></table></figure>
+<p>@ComponentScan 可以指定多个路径，还可以指定路径下只包含部门类、排除部分类</p>
+<h4 id="Lazy"><a href="#Lazy" class="headerlink" title="@Lazy"></a>@Lazy</h4><p>指定bean懒加载，容器创建时不加载，第一次使用时才加载</p>
+<h4 id="Scope"><a href="#Scope" class="headerlink" title="@Scope"></a>@Scope</h4><p>指定bean作用域</p>
+<h4 id="Conditional-按照条件注册"><a href="#Conditional-按照条件注册" class="headerlink" title="@Conditional-按照条件注册"></a>@Conditional-按照条件注册</h4><p>类和方法上都可以<br>如：@Conditional(value &#x3D; WindowsCondition.class) 表示根据当前os.name的环境来判断是否创建bean</p>
+<h4 id="Import"><a href="#Import" class="headerlink" title="@Import"></a>@Import</h4><h5 id="Import-Class-value）"><a href="#Import-Class-value）" class="headerlink" title="@Import(Class&lt;?&gt;[] value）"></a>@Import(Class&lt;?&gt;[] value）</h5><p>可用于导入任意指定的如第三方jar中的类并自动创建bean到当前容器,也可以导入配置类，则配置类中所有@Bean的bean都能注册到当前容器。  </p>
+<p>对于第三方jar中的bean,并不能直接注册到当前容器，想要办到：</p>
+<ol>
+<li>这个bean的包名是当前容器启动类的子包（哪怕在不同模块，只要编译后是子包就行）</li>
+<li>不是子包的话，可以使用包扫描指定额外的包的范围，@ComponentScan()，如果有多个额外的包就要写很多。</li>
+<li>不是子包的话，可以使用@Import指定具体的类，每一个想注册进容器的类都要单独写，也会很多。</li>
+<li>由第三方jar提供一个@Enable开头的注解，这个注解就是对@Import(自己的类Class),的封装，对每一个想注册进当前容器的bean，都需要添加一个对应的@Enable开头的注解。</li>
+<li>@EnableAutoConfig</li>
+</ol>
+<h5 id="Import-Class-value"><a href="#Import-Class-value" class="headerlink" title="@Import(Class value)"></a>@Import(Class<ImportSelector> value)</h5><p>导入自定义的ImportSelector选择器，重写selectImports()方法，方法返回需要被导入的组件的类全限定名数组 -springboot底层用的多  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@Import(MyImportSelector.class)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyImportSelector</span> <span class="keyword">implements</span> <span class="title class_">ImportSelector</span> &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> String[] selectImports(Anno..) &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">String</span>[]&#123;<span class="string">&quot;com.example.User&quot;</span>,<span class="string">&quot;com.example.Person&quot;</span>&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Springboot 就是使用 ImportSelector 的方式，详细过程整理在 Spring Boot一篇中。</li>
+</ul>
+<h5 id="Import-Class-value-1"><a href="#Import-Class-value-1" class="headerlink" title="@Import(Class value)"></a>@Import(Class<ImportBeanDefinitionRegistrar> value)</h5><p>通过bean定义注册器手动项目spring中容器中注册。 也需要覆写方法registerBeanDefinitions(),其中第二个参数，可以用于向我们的IOC容器注册bean。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@Import(MyImportBeanDefinitionRegistrar.class)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyImportBeanDefinitionRegistrar</span> <span class="keyword">implements</span> <span class="title class_">ImportBeanDefinitionRegistrar</span> &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> viod <span class="title function_">registerBeanDefinitions</span><span class="params">(Anno... anno, BeanDefinitionRegistry registry)</span> &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="type">BeanDefinition</span> <span class="variable">beanDefinition</span> <span class="operator">=</span>  BeanDefinitionBuilder.rootBeanDefinition(User.class).getBeanDefinition();</span><br><span class="line">        </span><br><span class="line">        registry.registerBeanDefinition(<span class="string">&quot;user&quot;</span>, beanDefinition)  <span class="comment">// (String beanName, BeanDefinition beanDefinition)</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="生命周期管理"><a href="#生命周期管理" class="headerlink" title="生命周期管理"></a>生命周期管理</h3><ol>
+<li>方式一 ： @Bean(initMethod &#x3D; “init”,destroyMethod &#x3D; “destory”)</li>
+<li>方式二 ： 实现InitializingBean和DisposableBean接口<br>InitializingBean：afterPropertiesSet(), 设置完属性后调用<br>DisposableBean：destroy(), 容器关闭时调用</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>方式三 ： 注解@PostConstruct  @PreDestroy<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Test</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Test ....create....&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@PostConstruct</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">init</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Test ....init....&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@PreDestroy</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">destory</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Test ....destory....&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>方式四 ： BeanPostProcessor（接口），bean后置处理器</li>
+</ol>
+<ul>
+<li>Object postProcessBeforeInitialization：初始化之前调用</li>
+<li>Object postProcessAfterInitialization：初始化之后调用<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyBeanPostProcessor</span> <span class="keyword">implements</span> <span class="title class_">BeanPostProcessor</span> &#123;</span><br><span class="line">    <span class="comment">//初始化之前调用</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> Object <span class="title function_">postProcessBeforeInitialization</span><span class="params">(Object bean, String beanName)</span> <span class="keyword">throws</span> BeansException &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;postProcessBeforeInitialization &quot;</span>+beanName);</span><br><span class="line">        <span class="keyword">return</span> bean;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//初始化之后调用</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> Object <span class="title function_">postProcessAfterInitialization</span><span class="params">(Object bean, String beanName)</span> <span class="keyword">throws</span> BeansException &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;postProcessAfterInitialization &quot;</span>+beanName);</span><br><span class="line">        <span class="keyword">return</span> bean;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="BeanFactory-和-FactoryBean"><a href="#BeanFactory-和-FactoryBean" class="headerlink" title="BeanFactory 和 FactoryBean"></a>BeanFactory 和 FactoryBean</h3><p>区别：BeanFactory是个Factory，也就是IOC容器或对象工厂，FactoryBean是个Bean。在Spring中，所有的Bean都是由BeanFactory(也就是IOC容器)来进行管理的。但对FactoryBean而言，这个Bean不是简单的Bean，而是一个能生产或者修饰对象生成的工厂Bean,它的实现与设计模式中的工厂模式和修饰器模式类似 </p>
+<h3 id="最常用MVC注解"><a href="#最常用MVC注解" class="headerlink" title="最常用MVC注解"></a>最常用MVC注解</h3><p>@PathVariable 放置在参数前，用来接受路径参数。</p>
+<p>@RequestBody 允许request的参数在request体中，而不是在直接链接在地址的后面。此注解放置在参数前。</p>
+<p>@ResponseBody 将返回值放在response体内。返回的是数据而不是页面</p>
+<p>@RestController 组合注解，组合了@Controller和@ResponseBody,当我们只开发一个和页面交互数据的控制层的时候可以使用此注解。</p>
+<p>@RequestMapping 用来映射web请求（访问路径和参数）。可以注解在类和方法上，注解在方法上的路径会继承注解在类上的路径。<br>同时支持Serlvet的request和response作为参数，也支持对request和response的媒体类型进行配置。其中有value(路径)，produces(定义返回的媒体类型和字符集)，method(指定请求方式)等属性。</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-15T15:15:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年9月15日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Oracle为什么要用三层嵌套实现分页/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
+          
   
   
   
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Spring/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Spring</p></a></div>
+  <span hidden itemprop="keywords">Spring</span>
   
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/"  itemprop="url">
-        Oracle为什么要用三层嵌套实现分页
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        Oracle为什么要用三层嵌套实现分页
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/&title=Spring注解式编程 - 博客&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/&title=Spring注解式编程 - 博客&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/&title=Spring注解式编程 - 博客&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2024/09/15/HDFS%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>HDFS常用命令</p>
+          <p class='content'>HDFS常用命令hdfs 命令最常用的就是： hdfs dfs -[linux的命令]
+通过查看Hadoop的命令 与 hdfs 的命令并不相同，且不存在包含关系。仅仅是 hadoop fs 与...</p>
+        </a>
+      
+      
+        <a class='next' href='/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/'>
+          <p class='title'>Oracle为什么要用三层嵌套实现分页<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Oracle为什么要用三层嵌套实现分页
 先说结论：嵌套出两层SELECT对应的两个原因：  
 
 
-ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存在同一趟SELECT中，order by排序后的ROWNUM不是有序的，不会和查询结果行号对应，所以不能做条件过滤。需要在一次select  order by 后得到的虚拟表中，再获取ROWNUM这样order by才能生效...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/">Oracle</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/" itemprop="url"><span itemprop="name">Oracle</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存在同一趟SELECT中，...</p>
+        </a>
       
     </div>
   
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
+  <!-- 文章推荐 -->
   
-    
-      <br>
-      <div class="prev-next">
-        
-        <p class="current">
-          1 / 2
-        </p>
-        
-          <a class="next" rel="next" href="/page/2/">
-            <section class="post next white-box shadow floatable blur">
-              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-            </section>
-          </a>
-        
-      </div>
-    
   
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
 
 
 </div>
@@ -3273,194 +2804,31 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
     
     
       
-<section class="widget blogger desktop mobile ">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">博客</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Java/" href="/categories/Java/"
-            active-action="action-categoriesJava"
-            ><div class='name'>Java</div><div class='badge'>(6)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Java/jvm/" href="/categories/Java/jvm/"
-            active-action="action-categoriesJavajvm"
-            ><div class='name'>jvm</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"
-            active-action="action-categoriesJavaE5A49AE7BABFE7A88B"
-            ><div class='name'>多线程</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Linux/" href="/categories/Linux/"
-            active-action="action-categoriesLinux"
-            ><div class='name'>Linux</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Spring/" href="/categories/Spring/"
-            active-action="action-categoriesSpring"
-            ><div class='name'>Spring</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"
-            active-action="action-categoriesE5A4A7E695B0E68DAE"
-            ><div class='name'>大数据</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/"
-            active-action="action-categoriesE5A4A7E695B0E68DAEHDFS"
-            ><div class='name'>HDFS</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"
-            active-action="action-categoriesE695B0E68DAEE5BA93"
-            ><div class='name'>数据库</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/"
-            active-action="action-categoriesE695B0E68DAEE5BA93Oracle"
-            ><div class='name'>Oracle</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/TiDB/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/TiDB/"
-            active-action="action-categoriesE695B0E68DAEE5BA93TiDB"
-            ><div class='name'>TiDB</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/"
-            active-action="action-categoriesE695B0E68DAEE5BA93mysql"
-            ><div class='name'>mysql</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%9D%82%E8%AE%B0/" href="/categories/%E6%9D%82%E8%AE%B0/"
-            active-action="action-categoriesE69D82E8AEB0"
-            ><div class='name'>杂记</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"
-            active-action="action-categoriesE6ADA3E58899E8A1A8E8BEBEE5BC8F"
-            ><div class='name'>正则表达式</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%BC%96%E7%A0%81/" href="/categories/%E7%BC%96%E7%A0%81/"
-            active-action="action-categoriesE7BC96E7A081"
-            ><div class='name'>编码</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/ASCII/" style="font-size: 14px; color: #999">ASCII</a> <a href="/tags/HDFS/" style="font-size: 14px; color: #999">HDFS</a> <a href="/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/tags/NAS/" style="font-size: 14px; color: #999">NAS</a> <a href="/tags/Oracle/" style="font-size: 14px; color: #999">Oracle</a> <a href="/tags/Spring/" style="font-size: 19px; color: #777">Spring</a> <a href="/tags/TiDB/" style="font-size: 14px; color: #999">TiDB</a> <a href="/tags/UTF-8/" style="font-size: 14px; color: #999">UTF-8</a> <a href="/tags/Unicode/" style="font-size: 14px; color: #999">Unicode</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/juc/" style="font-size: 19px; color: #777">juc</a> <a href="/tags/jvm/" style="font-size: 14px; color: #999">jvm</a> <a href="/tags/jvm%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/" style="font-size: 14px; color: #999">jvm垃圾回收</a> <a href="/tags/linux/" style="font-size: 19px; color: #777">linux</a> <a href="/tags/log4j/" style="font-size: 14px; color: #999">log4j</a> <a href="/tags/logback/" style="font-size: 14px; color: #999">logback</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/node-js/" style="font-size: 14px; color: #999">node.js</a> <a href="/tags/slf4j/" style="font-size: 14px; color: #999">slf4j</a> <a href="/tags/%E7%A3%81%E7%9B%98RAID/" style="font-size: 14px; color: #999">磁盘RAID</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E7%B1%BB-Bean%E6%B3%A8%E8%A7%A3"><span class="toc-text">配置类&amp;Bean注解</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Configuration"><span class="toc-text">@Configuration</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Bean"><span class="toc-text">@Bean</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-Configuration%E5%92%8C%E4%B8%8D%E4%BD%BF%E7%94%A8-Configuration%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">使用@Configuration和不使用@Configuration的区别</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E5%85%A5Bean"><span class="toc-text">注入Bean</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#AnnotationConfigApplicationContext"><span class="toc-text">AnnotationConfigApplicationContext</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Repository-Service-Controller-Component"><span class="toc-text">@Repository,@Service,@Controller,@Component</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Lazy"><span class="toc-text">@Lazy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Scope"><span class="toc-text">@Scope</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Conditional-%E6%8C%89%E7%85%A7%E6%9D%A1%E4%BB%B6%E6%B3%A8%E5%86%8C"><span class="toc-text">@Conditional-按照条件注册</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Import"><span class="toc-text">@Import</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Import-Class-value%EF%BC%89"><span class="toc-text">@Import(Class&lt;?&gt;[] value）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Import-Class-value"><span class="toc-text">@Import(Class value)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Import-Class-value-1"><span class="toc-text">@Import(Class value)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%AE%A1%E7%90%86"><span class="toc-text">生命周期管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BeanFactory-%E5%92%8C-FactoryBean"><span class="toc-text">BeanFactory 和 FactoryBean</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E5%B8%B8%E7%94%A8MVC%E6%B3%A8%E8%A7%A3"><span class="toc-text">最常用MVC注解</span></a></li></ol>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -3950,7 +3318,7 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"博客"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"博客","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"博客"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/Spring/","name":"Spring"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/09/15/Spring注解式编程/","name":"Spring注解式编程"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"博客","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Spring注解式编程","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/","wordCount":0,"datePublished":"2024-09-15T07:15:00.000Z","dateModified":"2024-09-15T07:15:00.000Z","articleSection":"Spring","keywords":"Spring","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

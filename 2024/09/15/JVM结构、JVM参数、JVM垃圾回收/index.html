@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="http://example.com/"/>
+  
+  <link rel="canonical" href="http://example.com/2024/09/15/jvm结构、jvm参数、jvm垃圾回收/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>博客</title>
-  <meta name="keywords" content="">
+  <title>JVM结构、JVM参数、JVM垃圾回收 - 博客</title>
+  <meta name="keywords" content="jvm,jvm垃圾回收,null">
   <meta desc name="description" content="久有凌云志，重上井冈山 - 昱东 - 博客">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="博客">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JVM结构、JVM参数、JVM垃圾回收">
+<meta property="og:url" content="http://example.com/2024/09/15/JVM%E7%BB%93%E6%9E%84%E3%80%81JVM%E5%8F%82%E6%95%B0%E3%80%81JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/index.html">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="久有凌云志，重上井冈山">
+<meta property="og:description" content="JVM：Java Virtual Machine java虚拟机虚拟机：使用软件技术模拟出与具有完整硬件系统功能、运行在一个隔离环境中的计算机系统。JVM官方文档：https:&#x2F;&#x2F;docs.oracle.com&#x2F;javase&#x2F;specs&#x2F;jvms&#x2F;se8&#x2F;html&#x2F;index.html java 一些命令javac 将文件编译成.class文件java 执行 .class文件，若类中没有main函">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-09-15T07:10:00.000Z">
+<meta property="article:modified_time" content="2024-09-15T07:10:00.000Z">
 <meta property="article:author" content="昱东">
+<meta property="article:tag" content="jvm">
+<meta property="article:tag" content="jvm垃圾回收">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2102,7 +2106,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2167,7 +2171,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="https://schema.org.cn/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="https://schema.org.cn/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2434,129 +2438,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div id="l_body">
       <div id="l_cover">
   
-    
-      <div class="cover-wrapper  dock" id='full'>
-        
-  <div class='cover-bg lazyload placeholder' data-bg="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msMpy.img"></div>
-
-<div class='cover-body'>
-  <div class='top'>
-    
-    
-      <p class="title">首页</p>
-    
-    
-  </div>
-  <div class='bottom'>
-    <div class='menu navigation'>
-      <div class='list-h'>
-        
-          
-            <a href="/"
-              
-              
-              active-action="action-home">
-              <img src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/link/8f277b4ee0ecd.svg'><p>首页</p>
-            </a>
-          
-            <a href="/archives/"
-              
-              
-              active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
-            </a>
-          
-            <a href="/v4/getting-started/"
-              
-              
-              active-action="action-v4getting-started">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f5c3.svg'><p>文档</p>
-            </a>
-          
-            <a href="/contributors/"
-              
-              
-              active-action="action-contributors">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
-            </a>
-          
-            <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
-              
-              
-              active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f9ec.svg'><p>源码</p>
-            </a>
-          
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-        <div id="scroll-down"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
-      </div>
-    
-  
 </div>
 
       <div id="safearea">
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  
-  <section class="post-list">
-    
-      
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/ASCII、Unicode、UTF-8编码关系/">
+  <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/JVM结构、JVM参数、JVM垃圾回收/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="博客">
   </span>
@@ -2565,704 +2454,416 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="久有凌云志，重上井冈山">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/ASCII%E3%80%81Unicode%E3%80%81UTF-8%E7%BC%96%E7%A0%81%E5%85%B3%E7%B3%BB/"  itemprop="url">
-        ASCII 、Unicode、UTF-8编码关系
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        参考：https://www.cnblogs.com/tsingke/p/10853936.html
-为什么会出现乱码一份文件，根据编码A的规则将文件转换为二进制存储起来。被使用另一种编码B打开，根据编码B的规则将二进制解析。就解析出不一样的文件，甚至是乱码。
-所以，要想打开一个文件，就必须提前知道它的编码方式，或者约定，所有文件的读写都使用统一的编码。
-字符编码的作用计算机内部，所有信息最...
-      
+    
+      <h1 class="title" itemprop="name headline">
+        JVM结构、JVM参数、JVM垃圾回收
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Java/">Java</a><span class="sep"></span><a class="category-link" href="/categories/Java/jvm/">jvm</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+        <a href="/categories/Java/" itemprop="url"><span itemprop="name">Java</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+        <a href="/categories/Java/jvm/" itemprop="url"><span itemprop="name">jvm</span></a>
+      </span>
     
   </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:40:10+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BC%96%E7%A0%81/">编码</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E7%BC%96%E7%A0%81/" itemprop="url"><span itemprop="name">编码</span></a>
-            </span>
+
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-09-15T15:10:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年9月15日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>JVM：Java Virtual Machine java虚拟机<br>虚拟机：使用软件技术模拟出与具有完整硬件系统功能、运行在一个隔离环境中的计算机系统。<br>JVM官方文档：<a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/specs/jvms/se8/html/index.html">https://docs.oracle.com/javase/specs/jvms/se8/html/index.html</a></p>
+<h2 id="java-一些命令"><a href="#java-一些命令" class="headerlink" title="java 一些命令"></a>java 一些命令</h2><p>javac 将文件编译成.class文件<br>java 执行 .class文件，若类中没有main函数，则不能执行。如 java -cp User.jar User  运行User.jar<br>javap 反编译器，显示编译类中可以访问的方法和数据。 如 javap -c 打开.class</p>
+<p>jar cvf User.jar User.class ：将User.class打jar包 ， 全部打包： jar -cvf xx.jar *<br>jar xvf 解压jar </p>
+<h2 id="JVM内存结构"><a href="#JVM内存结构" class="headerlink" title="JVM内存结构"></a>JVM内存结构</h2><ol>
+<li>类加载器子系统</li>
+<li>执行引擎</li>
+<li>本地方法库</li>
+<li>运行时数据区：<ul>
+<li><p><strong>程序计数器</strong>(program counter register –pc)：记录每个线程指令执行顺序、当前位置等。线程私有。</p>
+</li>
+<li><p><strong>java虚拟机栈stack</strong>：每个线程有自己的栈，栈的创建同线程创建一起。栈有一系列栈帧组成，帧可以描述当前线程的一个方法的执行过程（每一个方法从调用直至执行完成的过程, 就对应着一个栈帧在虚拟机栈中入栈和出栈的过程），方法执行完就释放这个帧，也就释放了局部变量(基本数据类型、对象引用)的内存地址。</p>
+</li>
+<li><p><strong>堆heap</strong>：存放对象实例和数组，线程共享。gc的区域，新生代和老年代。</p>
+</li>
+<li><p><strong>方法区</strong>：已被加载的类信息(类的元数据)，常量，静态变量，静态代码块，编译器编译后的代码等。<br> 1.8以后字符串常量池和静态变量移到堆；运行时常量池留在方法区中；删除永久代，替换为元空间(存数据的数据)。</p>
+</li>
+<li><p><strong>本地方法栈</strong>(native method  –底层其他语言，如C++)：执行本地方法需要的栈。</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>堆与方法区为线程共享，栈和程序计数器为线程私有。程序计数器标记了线程执行到哪儿了，线程切换了也可以回到它本来运行中断的地方；每个线程都要有个独立的程序计数器。</p>
+<h4 id="栈内存与堆内存"><a href="#栈内存与堆内存" class="headerlink" title="栈内存与堆内存"></a>栈内存与堆内存</h4><p>数据结构的栈  ≠ jvm栈内存；数据结构的堆  ≠ jvm堆内存。<br>数据结构：队列（Queue）和栈（Stack） 、链表、线性表、Map、Tree </p>
+<pre><code>数据结构：队列先进先出（排队）、栈先进后出
+</code></pre>
+<p><strong>栈（Stack）</strong>：执行程序用，比如：基本类型的变量和对象的引用变量。<br><strong>堆（Heap）</strong>：存储java中的对象和数组, 存取速度较慢。gc的区域，新生代和老年代。</p>
+<p>栈的空间大小远远小于堆。<br>栈内存线程私有 （局部变量存在于栈内存）；堆内存所有线程共有（成员变量存在于堆内存所以有线程安全一说）。</p>
+<p>栈：内存溢出 StackOverFlowError、OutofMemoryError<br>堆：内存溢出 OutofMemoryError<br>方法区：也会有 OutofMemoryError </p>
+<h4 id="常量池"><a href="#常量池" class="headerlink" title="常量池"></a>常量池</h4><h6 id="静态常量池（class文件常量池）"><a href="#静态常量池（class文件常量池）" class="headerlink" title="静态常量池（class文件常量池）"></a>静态常量池（class文件常量池）</h6><p>存储在.class文件中。</p>
+<p>每一份class文件都有一份自己的静态常量池。类和接口名字，字段名，和其他一些在class中引用的常量，如 CONSTANT_Class_info、CONSTANT_Utf8、CONSTANT_String、CONSTANT_Integer…..</p>
+<p>静态常量池是在编译时就存入且不变更。</p>
+<p>Class对象是存放在堆区的，不是方法区。而类的元数据（元数据并不是类的Class对象），即类的方法代码，变量名，方法名，访问权限，返回值等等都是在方法区的，存在方法区。</p>
+<h6 id="运行时常量池"><a href="#运行时常量池" class="headerlink" title="运行时常量池"></a>运行时常量池</h6><p>是方法区的一部分。</p>
+<p>在类加载完成之后，将每个class常量池中的符号引用值转存到运行时常量池中。每个class都对应有一个运行时常量池，类在解析之后将符号引用替换成直接引用。具备动态性，运行期间也可能将新的常量放入池中。</p>
+<h6 id="字符串常量池"><a href="#字符串常量池" class="headerlink" title="字符串常量池"></a>字符串常量池</h6><p>存放字符串对象的实例(堆)。在每个JVM中都只会维护一份，所有类共享。</p>
+<p>字符串常量池保存的是“字符”的实例，供运行时常量池引用。</p>
+<p>-XX:StringTableSize&#x3D;1009 这个参数可以指定字符串常量池的容量。（JDK1.6默认为1009，JDK1.7之后默认为60013，字符串常量池底层为HashTable，合理增大常量池大小会解决Hash冲突问题，JDK1.8开始1009是可以设置的最小值）</p>
+<h6 id="字符串常量池、运行时常量池：关系、位置演化"><a href="#字符串常量池、运行时常量池：关系、位置演化" class="headerlink" title="字符串常量池、运行时常量池：关系、位置演化"></a>字符串常量池、运行时常量池：关系、位置演化</h6><p>JDK1.7之前，字符串常量池是运行时常量池的一部分，一起存在方法区中。<br>JDK1.7，字符串常量池和静态变量，移到堆中。运行时常量池还在方法区。字符串常量池不属于运行时常量池的一部分。<br>JDK1.8，字符串常量池和静态变量还在堆中。但运行时常量池跟随方法区一起变成元空间，进入主内存。</p>
+<p>验证字符串常量池的位置，是在heap堆中：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;String&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;String&gt;();</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">100000000</span>; i++) &#123;</span><br><span class="line">    <span class="type">String</span> <span class="variable">temp</span> <span class="operator">=</span> String.valueOf(i).intern();</span><br><span class="line">    list.add(temp);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Exception in thread <span class="string">&quot;main&quot;</span> java.lang.OutOfMemoryError: Java heap space</span><br><span class="line">	...</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="JVM内存模型（JMM）"><a href="#JVM内存模型（JMM）" class="headerlink" title="JVM内存模型（JMM）"></a>JVM内存模型（JMM）</h2><p>Java线程之间的通信由Java内存模型控制，JMM决定一个线程对共享变量的写入何时对另一个线程可见，线程私有内存和主内存之间的抽象关系。</p>
+<p>JMM主要围绕可见性、原子性和有序性这三个特性而建立。具体来说：</p>
+<ol>
+<li><p>可见性与共享变量<br>在Java程序中，多个线程可能同时访问和修改共享变量。为了确保每个线程都能看到其他线程对共享变量所做的修改，Java内存模型提供了一系列规则。例如，volatile关键字可以确保变量的可见性，即当一个线程修改了一个volatile变量的值后，其他线程能够立即看到这个修改。此外，synchronized块也可以保证可见性，它确保在进入和退出synchronized块时，线程对共享变量的操作对其他线程是可见的。</p>
+</li>
+<li><p>有序性<br>为了优化程序性能，编译器和处理器可能会对指令进行重排序。然而，这种重排序可能会导致多线程程序出现意想不到的结果。为了解决这个问题，Java内存模型定义了happens-before规则来确保多线程之间的操作顺序符合预期。简单来说，如果一个操作happens-before另一个操作，那么第一个操作的结果将对第二个操作可见。</p>
+</li>
+<li><p>原子性<br>Java内存模型还规定了某些操作具有原子性。原子性意味着这些操作在执行过程中不会被其他线程中断（不发生线程上下文切换）。对于非原子性操作，我们需要使用锁等机制来保证线程安全。</p>
+</li>
+</ol>
+<h2 id="垃圾回收机制-之-如何判断对象已“死”"><a href="#垃圾回收机制-之-如何判断对象已“死”" class="headerlink" title="垃圾回收机制 之 如何判断对象已“死”"></a>垃圾回收机制 之 如何判断对象已“死”</h2><ol>
+<li>引用计数法<br> 给对象增加一个引用计数器，每当有一个地方引用它时，计数器就+1；当引用失效时，计数器就-1；任何时刻计数器为0的对象就是不能再被使用的，即对象已“死”。</li>
+</ol>
+<p>但是, 对象之间存在相互引用, 就不会被回收.  JAVA并没有采用此算法.</p>
+<ol start="2">
+<li>可达性分析算法<br> 通过一系列称为“GC Roots”的对象作为起始点，从这些节点开始向下搜索，搜索走过的路径称为“引用链”，当一个对象到 GC Roots 没有任何的引用链相连时(从 GC Roots 到这个对象不可达)时，证明此对象不可用。</li>
+</ol>
+<p>当一个对象 与  GC Roots 没有任何引用链项链,  证明此对象不可用.</p>
+<pre><code>可作为GC Root的对象包含以下几种：
+- 虚拟机栈(栈帧中的本地变量表)中的引用
+- 方法区中静态属性
+- 方法区中常量
+- 本地方法栈中(Native方法)引用的对象
+</code></pre>
+<h2 id="垃圾回收机制-之-垃圾回收算法"><a href="#垃圾回收机制-之-垃圾回收算法" class="headerlink" title="垃圾回收机制 之 垃圾回收算法"></a>垃圾回收机制 之 垃圾回收算法</h2><h4 id="标记-清除算法"><a href="#标记-清除算法" class="headerlink" title="标记-清除算法"></a>标记-清除算法</h4><p>算法分为标记和清除两个阶段：首先标记出所有需要回收的对象，在标记完成后统一回收所有被标记的对象。后续的收集算法都是基于这种思路并对其不足加以改进而已。</p>
+<ol>
+<li>标记和清除这两个过程的效率都不高</li>
+<li>标记清除后会产生大量不连续的内存碎片，以后需要分配较大对象时，无法找到足够连续内存而不得不提前触发另一次垃圾收集。</li>
+</ol>
+<h4 id="复制算法-新生代回收算法"><a href="#复制算法-新生代回收算法" class="headerlink" title="复制算法(新生代回收算法)"></a>复制算法(新生代回收算法)</h4><p>它将可用内存按容量划分为两块，每次只使用其中一块(并不是50%).当这块内存需要进行垃圾回收时，会将此区域还存活着的对象复制到另一块上面，然后再把已经使用过的内存区域一次清理掉。</p>
+<p>现在的商用虚拟机(包括HotSpot)都是采用这种收集算法来回收新生代。</p>
+<p>新生代中98%的对象很快就需要回收, 经过一次 复制活着的对象后, 只需要少量的空间来存放这部分活着的对象,  所以不需要1:1 ,而是将内存(新生代内存)分为一块较大的Eden空间和两块较小的Survivor空间，每次使用Eden和其中一块Survivor, 当回收时，将Eden和Survivor中还存活的对象一次性复制到另一块Survivor空间上，最后清理掉Eden和刚才用过的Survivor空间。<br>默认Eden与Survivor的大小比例是8 : 2    (8:1:1) （两个Survivor是一叫From区，另一个To区）</p>
+<p>部分对象会在From区域和To区域中复制来复制去，如此交换15次(默认)，最终如果还存活，就存入老年代。</p>
+<p>复制收集算法在对象存活率较高时会进行比较多的复制操作，效率会变低。因此在老年代一般不能使用复制算法, 要使用标记-整理算法</p>
+<h4 id="标记-整理算法-老年代回收算法"><a href="#标记-整理算法-老年代回收算法" class="headerlink" title="标记-整理算法(老年代回收算法)"></a>标记-整理算法(老年代回收算法)</h4><p>标记过程仍与“标记-清除”过程一致，但后续步骤不是直接对可回收对象进行清理，而是让所有存活对象向一端移动，然后直接清理掉端边界以外的内存。</p>
+<h4 id="分代收集算法"><a href="#分代收集算法" class="headerlink" title="分代收集算法"></a>分代收集算法</h4><p>不是指某种特定算法。是说针对新生代合老年代采用不同GC算法,(用不同的垃圾收集器)</p>
+<ul>
+<li><p>Minor GC又称为新生代GC :<br>指的是发生在新生代的垃圾收集。因为Java对象大多都具备朝生夕灭的特性，因此Minor GC(采用复制算法)非常频繁，一般回收速度也比较快。</p>
+</li>
+<li><p>Full GC 又称为老年代GC或者Major GC :<br> 指发生在老年代的垃圾收集。出现了Major GC，经常会伴随至少一次的Minor GC(并非绝对，在Parallel Scavenge收集器中就有直接进行Full GC的策略选择过程)。Major GC的速度一般会比Minor GC慢10倍以上。</p>
+</li>
+</ul>
+<h4 id="new-Object-申请堆内存空间过程"><a href="#new-Object-申请堆内存空间过程" class="headerlink" title="new Object() 申请堆内存空间过程"></a>new Object() 申请堆内存空间过程</h4><p>先在 Eden 申请，可用就创建对象；不够 MinorGC(新生代-复制算法)。<br>GC后再次判断Eden，可用就创建, 不够再判断Survivor(from) 还有空间? 有就创建，否则判断 Old，可用就在 Old创建，不够 FullGC。 再次判断Old，可用就创建，否则GC。</p>
+<h2 id="垃圾收集器"><a href="#垃圾收集器" class="headerlink" title="垃圾收集器"></a>垃圾收集器</h2><p>语义：</p>
+<ul>
+<li><p>serial     【串行】   启用的时候会暂停所有线程  只有一个线程来GC   不适用服务器环境</p>
+</li>
+<li><p>Parallel  【并行】    启用的时候会暂停所有线程  多个线程来GC </p>
+</li>
+<li><p>CMS（Concurrent Mark Sweep）      【并发】   一部分线程GC, 其他线程继续运行  （初始标记的时候也会stw，只是收集的过程中并发）</p>
+</li>
+<li><p>G1 （Garbage-First）<br><img src="https://i-blog.csdnimg.cn/blog_migrate/062e891f25e7bc56d09677c396a82c9b.png#pic_center" class="lazyload" data-srcset="https://i-blog.csdnimg.cn/blog_migrate/062e891f25e7bc56d09677c396a82c9b.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="在这里插入图片描述"><br>指定垃圾收集 ：<br>  -XX:+UseSerialGC  </p>
+<pre><code>  新生代 + 老年代 都是串行，即Serial + Serial old（新是复制，老是整理）
+</code></pre>
+<p>  -XX:+UsePerNewGC  </p>
+<pre><code>  PerNew +  Serial old
+</code></pre>
+<p>  -XX:+UseParalleGC  </p>
+<pre><code>  Parallel Sce + Parallel Old 【jdk8的默认]
+</code></pre>
+<p>  -XX:+UseConcMarkSweepGC </p>
+<pre><code>  老年代开启CMS。新生代开启PerNew
+</code></pre>
+<p>  -XX:+UseG1GC</p>
+<pre><code>  G1 同时适用 young 和 old
+  适用大内存，多core。追求更短的stw的时间，在jdk1.7u4支持。在jdk1.9的默认收集器
+  把整个Heap都重新分配了，划分成很多Region，2048个，每个大小范围[1M,32M] 所以Heap最大64G。
+  Region： Eden、Servivor、Old、Humongous(巨大的：超过region一半大小)
+  没有碎片
+</code></pre>
+<p>  其他的收集器：ZGC(jdk11)、Shenandoan（openJDK）</p>
+</li>
+</ul>
+<p>新生代和老年代大小默认比例大约1：2<br>新生代中eden：s0：s1  的比例也和垃圾收集器有关，通常说的是 8：1：1 其实是 SerialGC 的时候<br>而Java8默认Parallel GC 的话，比例大约是 4：1：1<br>也可以手动改比例：-XX:ServivorRatio&#x3D;8</p>
+<h4 id="垃圾收集器如何选择"><a href="#垃圾收集器如何选择" class="headerlink" title="垃圾收集器如何选择"></a>垃圾收集器如何选择</h4><p>对1.8来说，CMS&#x2F;G1中选一个。</p>
+<ul>
+<li>程序很小，单进程：串行就行</li>
+<li>多核、高吞吐：ps</li>
+<li>多核、少暂停时间：cms</li>
+<li>多核、内存连续：G1</li>
+</ul>
+<h4 id="CMS-收集器"><a href="#CMS-收集器" class="headerlink" title="CMS 收集器"></a>CMS 收集器</h4><p>Concurrent Mark Sweep：可并发的标记-清除 （也有碎片）</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:+UseConcMarkSweepGC    <span class="comment"># 老年代开启CMS。新生代开启PerNew</span></span><br></pre></td></tr></table></figure>
+<p>CMS参考：<a target="_blank" rel="noopener" href="https://plumbr.io/handbook/garbage-collection-algorithms-implementations/concurrent-mark-and-sweep">https://plumbr.io/handbook/garbage-collection-algorithms-implementations/concurrent-mark-and-sweep</a></p>
+<ul>
+<li><p>Phase 1: Initial Mark. （会stw）<br>mark all the objects in the Old Generation that are either direct GC roots or are referenced from some live object in the Young Generation.<br>会在old中标记直接由GC root 可达对象、和由young中存活对象引用的old 中的对象</p>
+</li>
+<li><p>Phase 2: Concurrent Mark.  （不会stw）<br>在根据上阶段标记的对象，沿着引用链标记</p>
+</li>
+<li><p>Phase 3: Concurrent Preclean.（不会stw）<br>清除</p>
+</li>
+<li><p>Phase 4: Concurrent Abortable Preclean. （不会stw）</p>
+</li>
+<li><p>Phase 5: Final Remark.（会 stw）<br>最后标记，因为是上一阶段的标记是并发的，标记的过程中可能同时发生新的引用变更，最后需要stw，再标记一次。</p>
+</li>
+<li><p>Phase 6: Concurrent Sweep.(不会 stw)</p>
+</li>
+<li><p>Phase 7: Concurrent Reset.</p>
+</li>
+</ul>
+<p>合并步骤为5步：（三次Mark，一次Sweep）</p>
+<ol>
+<li>Initial Mark.</li>
+<li>Concurrent Mark.</li>
+<li>Final Remark.</li>
+<li>Concurrent Sweep.</li>
+<li>Reset.</li>
+</ol>
+<h4 id="G1-收集器"><a href="#G1-收集器" class="headerlink" title="G1 收集器"></a>G1 收集器</h4><p>Garbage-First</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:+UseG1GC</span><br></pre></td></tr></table></figure>
+<p>G1 同时适用 young 和 old<br>适用大内存，多core。追求更短的stw的时间，在jdk1.7u4支持。在jdk1.9的默认收集器<br>把整个Heap都重新分配了，划分成很多Region，2048个，每个大小范围[1M,32M] 所以Heap最大64G。<br>Region： Eden、Servivor、Old、Humongous(巨大的：超过region一半大小)<br>没有碎片</p>
+<p>G1如何做到可预测停顿时间：通过自己管理的大小不一的region，判断可回收的空间，以及回收的开销大小，做到优先回收回收效率最高的部分region（如 region1 10M，500ms，region2 50M，100ms,优先回收region2）</p>
+<h2 id="GC-日志解析"><a href="#GC-日志解析" class="headerlink" title="GC 日志解析"></a>GC 日志解析</h2><p>日志中语义:<br>DefNew：新生代串行 （Serial ）<br>Tenured：老年代串行 （Serial  old）</p>
+<p>PerNew： 新生代并行 （PerNew ）</p>
+<p>PSYoungGen：新生代并行 （Parallel Sce）<br>ParOldGen：老年代并行 （Parallel Old ）</p>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/5a6276568fea39dc15359efd3ebf79fc.png#pic_center" class="lazyload" data-srcset="https://i-blog.csdnimg.cn/blog_migrate/5a6276568fea39dc15359efd3ebf79fc.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="在这里插入图片描述"><br><img src="https://i-blog.csdnimg.cn/blog_migrate/76382f893f522347a7a4a077a0e6343c.png#pic_center" class="lazyload" data-srcset="https://i-blog.csdnimg.cn/blog_migrate/76382f893f522347a7a4a077a0e6343c.png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="在这里插入图片描述"></p>
+<h2 id="JVM参数"><a href="#JVM参数" class="headerlink" title="JVM参数"></a>JVM参数</h2><ul>
+<li><p>X 参数<br>java -Xmixed -version  【# 开启 mixed mode 】<br>java -Xint -version   【# 开启 interpreted mode (解释模式，字节码直接执行)】</p>
+</li>
+<li><p>XX 参数<br>-XX:[+&#x2F;-] 属性名 （启用&#x2F;禁用某属性）如： -XX:+UseG1GC<br>-XX:name&#x3D;value  (为某属性设置值) 如：-XX:MaxTenuringThreshold&#x3D;10</p>
+</li>
+</ul>
+<h4 id="举例：设置最大、最小堆内存"><a href="#举例：设置最大、最小堆内存" class="headerlink" title="举例：设置最大、最小堆内存"></a>举例：设置最大、最小堆内存</h4><p>-Xmx   -XX:MaxHeapSize 的简写，设置最大堆内存，默认为物理内存的1&#x2F;4</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Xms1024m</span><br></pre></td></tr></table></figure>
+<p>-Xms  -XX:InitialHeapSize 的简写，设置最小堆内存。默认为物理内存的1&#x2F;64</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-Xms1024k</span><br><span class="line"><span class="comment"># 或</span></span><br><span class="line">-Xms2m</span><br></pre></td></tr></table></figure>
+<h4 id="举例：设置栈的大小"><a href="#举例：设置栈的大小" class="headerlink" title="举例：设置栈的大小"></a>举例：设置栈的大小</h4><p>-Xss  -XX:ThreadStackSize 的简写。（不写单位就默认单位字节）</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Xss1024k</span><br></pre></td></tr></table></figure>
+
+<h4 id="举例：查看这个进程是否开启了GC明细输出的开关"><a href="#举例：查看这个进程是否开启了GC明细输出的开关" class="headerlink" title="举例：查看这个进程是否开启了GC明细输出的开关"></a>举例：查看这个进程是否开启了GC明细输出的开关</h4><p>jinfo -flag 命令可以查看JVM参数</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jinfo -flag PrintGCDetails &lt;pid&gt;  </span><br></pre></td></tr></table></figure>
+<p>如果输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:-PrintGCDetails  # 代表没打开</span><br></pre></td></tr></table></figure>
+<p>所以在启动前，可以设置开启GC日志输出</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:+PrintGCDetails </span><br></pre></td></tr></table></figure>
+
+<h4 id="举例：开启类加载过程日志"><a href="#举例：开启类加载过程日志" class="headerlink" title="举例：开启类加载过程日志"></a>举例：开启类加载过程日志</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:+TraceClassLoading</span><br></pre></td></tr></table></figure>
+<p>会发现先从 jre&#x2F;lib&#x2F;rt.jar 加载依赖包，再从当前项目target&#x2F;classes下加载自己创建的类</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2024/09/15/ASCII%E3%80%81Unicode%E3%80%81UTF-8%E7%BC%96%E7%A0%81%E5%85%B3%E7%B3%BB/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-15T15:10:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年9月15日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/【正则表达式】笔记/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
+          
   
   
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/jvm/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>jvm</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/jvm%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>jvm垃圾回收</p></a></div>
+  <span hidden itemprop="keywords">jvm jvm垃圾回收</span>
+  
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2024/09/15/JVM%E7%BB%93%E6%9E%84%E3%80%81JVM%E5%8F%82%E6%95%B0%E3%80%81JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/&title=JVM结构、JVM参数、JVM垃圾回收 - 博客&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2024/09/15/JVM%E7%BB%93%E6%9E%84%E3%80%81JVM%E5%8F%82%E6%95%B0%E3%80%81JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/&title=JVM结构、JVM参数、JVM垃圾回收 - 博客&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2024/09/15/JVM%E7%BB%93%E6%9E%84%E3%80%81JVM%E5%8F%82%E6%95%B0%E3%80%81JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/&title=JVM结构、JVM参数、JVM垃圾回收 - 博客&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2024/09/15/%E4%BB%8E%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A9%B1%E5%8A%A8%E5%8C%85%EF%BC%8C%E7%90%86%E8%A7%A3java%20SPI/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>从加载数据库驱动包，理解java SPI</p>
+          <p class='content'>SPI（Service Provider Interface）从1.6引入，基于ClassLoader 来加载并发现服务的机制
+对于msyql驱动引入依赖
+12345&lt;dependency...</p>
+        </a>
+      
+      
+        <a class='next' href='/2024/09/15/java8%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%EF%BC%8C%E4%BB%A5%E5%8F%8Astream%E6%B5%81%E4%B8%ADmap%E3%80%81peek%E3%80%81foreach%E5%8C%BA%E5%88%AB/'>
+          <p class='title'>java8函数式接口，以及stream流中map、peek、foreach区别<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>java8常用函数式接口12345import java.util.function.Supplier;import java.util.function.Consumer;import jav...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2024/09/15/JVM%E7%BB%93%E6%9E%84%E3%80%81JVM%E5%8F%82%E6%95%B0%E3%80%81JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/%E3%80%90%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E3%80%91%E7%AC%94%E8%AE%B0/"  itemprop="url">
-        【正则表达式】笔记
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        基础正则表达式速查表、正则可视化工具、常用正则
 
-^$表示匹配从^到$  之间的内容，即 ^123$   必须完全匹配123。1234567正则：123输入内容：123    （匹配）输入内容：12345  （匹配）正则：^123$  输入内容：123    （匹配）输入内容：12345  （不匹配）
+    <div id="layoutHelper-comments"></div>
 
-范围：[] 、{} 、()
-[]约束内容。整个[]内只匹配一个字符[abc123]   ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:30:10+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" itemprop="url"><span itemprop="name">正则表达式</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/%E3%80%90%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E3%80%91%E7%AC%94%E8%AE%B0/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/吉他&乐理/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/%E5%90%89%E4%BB%96&%E4%B9%90%E7%90%86/"  itemprop="url">
-        吉他&乐理
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        十二平均律
-全全半全全全半
-1234Do Re Mi Fa SoI La Si Do   --唱名1  2  3  4   5  6  7  1  全 全 半  全  全 全 半     --音程（间隔）C  D  E  F   G  A  B  C    --音名
+  </article>
 
 
-琴弦的顺序是
-1234567        弦         音名       唱名        1         ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:30:10+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%9D%82%E8%AE%B0/" itemprop="url"><span itemprop="name">杂记</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/%E5%90%89%E4%BB%96&%E4%B9%90%E7%90%86/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/磁盘阵列 RAID[0 1 5 10]/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97%20RAID%5B0%201%205%2010%5D/"  itemprop="url">
-        磁盘阵列 RAID[0 1 5 10]
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        RAID （ Redundant Array of Independent Disks ）即独立磁盘冗余阵列，简称为「磁盘阵列」，用多个独立的磁盘组成一个大的磁盘系统，目的实现比单块磁盘更好的存储性能和更高的可靠性。
-RAID方案常见的可以分为：
-
-RAID0
-RAID1
-RAID5
-RAID6
-RAID10
-
-RAID0将数据分为N份，以独立并行实现N块磁盘的读写，那么这N份数据会同时并发...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:30:10+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%9D%82%E8%AE%B0/" itemprop="url"><span itemprop="name">杂记</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97%20RAID%5B0%201%205%2010%5D/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/synchronized 同步方法和同步代码块，以及synchronized 加锁 this 和 类class 的区别/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/synchronized%20%E5%90%8C%E6%AD%A5%E6%96%B9%E6%B3%95%E5%92%8C%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%9D%97%EF%BC%8C%E4%BB%A5%E5%8F%8Asynchronized%20%E5%8A%A0%E9%94%81%20this%20%E5%92%8C%20%E7%B1%BBclass%20%E7%9A%84%E5%8C%BA%E5%88%AB/"  itemprop="url">
-        synchronized 同步方法和同步代码块，以及synchronized 加锁 this 和 类class 的区别
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        同步方法是对整个方法中所有内容加锁；同步代码块选择只同步部分代码而不是整个方法，比同步方法要更细颗粒度，也能选择加锁 this 和 类class，还可以是变量。
-同步方法的锁用的是 这个方法所在的这个对象&#x2F;类上的内置锁。
-同步代码块的锁用的是 synchronized()括号里参数对象上的锁。可以是 this、类.class、变量。要具体分析参与抢锁的对象是否持有相同的对象锁（也就...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:22:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java/">Java</a><span class="sep"></span><a class="category-link" href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Java/" itemprop="url"><span itemprop="name">Java</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" itemprop="url"><span itemprop="name">多线程</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/synchronized%20%E5%90%8C%E6%AD%A5%E6%96%B9%E6%B3%95%E5%92%8C%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%9D%97%EF%BC%8C%E4%BB%A5%E5%8F%8Asynchronized%20%E5%8A%A0%E9%94%81%20this%20%E5%92%8C%20%E7%B1%BBclass%20%E7%9A%84%E5%8C%BA%E5%88%AB/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/多线程之wait、notify-notifyAll使用，并模拟生产-消费者模式/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B9%8Bwait%E3%80%81notify-notifyAll%E4%BD%BF%E7%94%A8%EF%BC%8C%E5%B9%B6%E6%A8%A1%E6%8B%9F%E7%94%9F%E4%BA%A7-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/"  itemprop="url">
-        多线程之wait、notify/notifyAll使用，并模拟生产/消费者模式
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        要点总结：1、wait()、notify&#x2F;notifyAll() 方法是Object的本地final方法，无法被重写。
-2、在当前线程拥有监视器锁的情况下使用，且wait()的对象和锁对象相同，否则将抛出异常IllegalMonitorStateException。一般在synchronized 同步代码块里使用 wait()、notify&#x2F;notifyAll() 方法。...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:20:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java/">Java</a><span class="sep"></span><a class="category-link" href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Java/" itemprop="url"><span itemprop="name">Java</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" itemprop="url"><span itemprop="name">多线程</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B9%8Bwait%E3%80%81notify-notifyAll%E4%BD%BF%E7%94%A8%EF%BC%8C%E5%B9%B6%E6%A8%A1%E6%8B%9F%E7%94%9F%E4%BA%A7-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Autowired和Resource区别，简单测试容器中多个相同bean的情况/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/Autowired%E5%92%8CResource%E5%8C%BA%E5%88%AB%EF%BC%8C%E7%AE%80%E5%8D%95%E6%B5%8B%E8%AF%95%E5%AE%B9%E5%99%A8%E4%B8%AD%E5%A4%9A%E4%B8%AA%E7%9B%B8%E5%90%8Cbean%E7%9A%84%E6%83%85%E5%86%B5/"  itemprop="url">
-        @Autowired和@Resource区别，简单测试容器中多个相同bean的情况
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        @Autowired 和  @Resource 区别
-@Autowired 来自Spring， @Resource 来自java；
-@Autowired 默认按类型注入，容器中存在多个相同类型的 Bean，将抛出异常。 可以配合使用 @Qualifier 指定名称。
-
-两个相同类型（都 implements Formatter）的 Bean：
-123456@Component(&quot;f...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Spring/">Spring</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Spring/" itemprop="url"><span itemprop="name">Spring</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/Autowired%E5%92%8CResource%E5%8C%BA%E5%88%AB%EF%BC%8C%E7%AE%80%E5%8D%95%E6%B5%8B%E8%AF%95%E5%AE%B9%E5%99%A8%E4%B8%AD%E5%A4%9A%E4%B8%AA%E7%9B%B8%E5%90%8Cbean%E7%9A%84%E6%83%85%E5%86%B5/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/HDFS常用命令/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/HDFS%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"  itemprop="url">
-        HDFS常用命令
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        HDFS常用命令hdfs 命令最常用的就是： hdfs dfs -[linux的命令]
-通过查看Hadoop的命令 与 hdfs 的命令并不相同，且不存在包含关系。仅仅是 hadoop fs 与 hdfs dfs 可以等价。
-hadoop 常用命令查看hadoop 命令所有参数：
-1hadoop
-12345hadoop checknative  // 检查当前版本hadoop内库支持哪些压缩...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a><span class="sep"></span><a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/">HDFS</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" itemprop="url"><span itemprop="name">大数据</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/" itemprop="url"><span itemprop="name">HDFS</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/HDFS%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Spring注解式编程/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/"  itemprop="url">
-        Spring注解式编程
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        spring注解编程-IOC
-配置类&amp;Bean注解@Configuration123加了这个注解的类就相当于传统的一个applicationContext-xxx.xml ，告诉spring这是一个注解类 最初的Spring只支持xml方式配置Bean，从Spring 3.0起支持：基于Java类的配置方式，Java开发者可以从标签语法里解放了出来。
-
-配置放在哪里  
-
-配置类要与...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Spring/">Spring</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Spring/" itemprop="url"><span itemprop="name">Spring</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Oracle为什么要用三层嵌套实现分页/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/"  itemprop="url">
-        Oracle为什么要用三层嵌套实现分页
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Oracle为什么要用三层嵌套实现分页
-先说结论：嵌套出两层SELECT对应的两个原因：  
 
 
-ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存在同一趟SELECT中，order by排序后的ROWNUM不是有序的，不会和查询结果行号对应，所以不能做条件过滤。需要在一次select  order by 后得到的虚拟表中，再获取ROWNUM这样order by才能生效...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/">Oracle</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/" itemprop="url"><span itemprop="name">Oracle</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-      <br>
-      <div class="prev-next">
-        
-        <p class="current">
-          1 / 2
-        </p>
-        
-          <a class="next" rel="next" href="/page/2/">
-            <section class="post next white-box shadow floatable blur">
-              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-            </section>
-          </a>
-        
-      </div>
-    
-  
 
 
 </div>
@@ -3273,194 +2874,31 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
     
     
       
-<section class="widget blogger desktop mobile ">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">博客</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Java/" href="/categories/Java/"
-            active-action="action-categoriesJava"
-            ><div class='name'>Java</div><div class='badge'>(6)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Java/jvm/" href="/categories/Java/jvm/"
-            active-action="action-categoriesJavajvm"
-            ><div class='name'>jvm</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"
-            active-action="action-categoriesJavaE5A49AE7BABFE7A88B"
-            ><div class='name'>多线程</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Linux/" href="/categories/Linux/"
-            active-action="action-categoriesLinux"
-            ><div class='name'>Linux</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Spring/" href="/categories/Spring/"
-            active-action="action-categoriesSpring"
-            ><div class='name'>Spring</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"
-            active-action="action-categoriesE5A4A7E695B0E68DAE"
-            ><div class='name'>大数据</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/"
-            active-action="action-categoriesE5A4A7E695B0E68DAEHDFS"
-            ><div class='name'>HDFS</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"
-            active-action="action-categoriesE695B0E68DAEE5BA93"
-            ><div class='name'>数据库</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/"
-            active-action="action-categoriesE695B0E68DAEE5BA93Oracle"
-            ><div class='name'>Oracle</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/TiDB/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/TiDB/"
-            active-action="action-categoriesE695B0E68DAEE5BA93TiDB"
-            ><div class='name'>TiDB</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/"
-            active-action="action-categoriesE695B0E68DAEE5BA93mysql"
-            ><div class='name'>mysql</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%9D%82%E8%AE%B0/" href="/categories/%E6%9D%82%E8%AE%B0/"
-            active-action="action-categoriesE69D82E8AEB0"
-            ><div class='name'>杂记</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"
-            active-action="action-categoriesE6ADA3E58899E8A1A8E8BEBEE5BC8F"
-            ><div class='name'>正则表达式</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%BC%96%E7%A0%81/" href="/categories/%E7%BC%96%E7%A0%81/"
-            active-action="action-categoriesE7BC96E7A081"
-            ><div class='name'>编码</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/ASCII/" style="font-size: 14px; color: #999">ASCII</a> <a href="/tags/HDFS/" style="font-size: 14px; color: #999">HDFS</a> <a href="/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/tags/NAS/" style="font-size: 14px; color: #999">NAS</a> <a href="/tags/Oracle/" style="font-size: 14px; color: #999">Oracle</a> <a href="/tags/Spring/" style="font-size: 19px; color: #777">Spring</a> <a href="/tags/TiDB/" style="font-size: 14px; color: #999">TiDB</a> <a href="/tags/UTF-8/" style="font-size: 14px; color: #999">UTF-8</a> <a href="/tags/Unicode/" style="font-size: 14px; color: #999">Unicode</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/juc/" style="font-size: 19px; color: #777">juc</a> <a href="/tags/jvm/" style="font-size: 14px; color: #999">jvm</a> <a href="/tags/jvm%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/" style="font-size: 14px; color: #999">jvm垃圾回收</a> <a href="/tags/linux/" style="font-size: 19px; color: #777">linux</a> <a href="/tags/log4j/" style="font-size: 14px; color: #999">log4j</a> <a href="/tags/logback/" style="font-size: 14px; color: #999">logback</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/node-js/" style="font-size: 14px; color: #999">node.js</a> <a href="/tags/slf4j/" style="font-size: 14px; color: #999">slf4j</a> <a href="/tags/%E7%A3%81%E7%9B%98RAID/" style="font-size: 14px; color: #999">磁盘RAID</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#java-%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4"><span class="toc-text">java 一些命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84"><span class="toc-text">JVM内存结构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%88%E5%86%85%E5%AD%98%E4%B8%8E%E5%A0%86%E5%86%85%E5%AD%98"><span class="toc-text">栈内存与堆内存</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E9%87%8F%E6%B1%A0"><span class="toc-text">常量池</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B%EF%BC%88JMM%EF%BC%89"><span class="toc-text">JVM内存模型（JMM）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6-%E4%B9%8B-%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E5%AF%B9%E8%B1%A1%E5%B7%B2%E2%80%9C%E6%AD%BB%E2%80%9D"><span class="toc-text">垃圾回收机制 之 如何判断对象已“死”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6-%E4%B9%8B-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95"><span class="toc-text">垃圾回收机制 之 垃圾回收算法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%87%E8%AE%B0-%E6%B8%85%E9%99%A4%E7%AE%97%E6%B3%95"><span class="toc-text">标记-清除算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95-%E6%96%B0%E7%94%9F%E4%BB%A3%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95"><span class="toc-text">复制算法(新生代回收算法)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%87%E8%AE%B0-%E6%95%B4%E7%90%86%E7%AE%97%E6%B3%95-%E8%80%81%E5%B9%B4%E4%BB%A3%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95"><span class="toc-text">标记-整理算法(老年代回收算法)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E4%BB%A3%E6%94%B6%E9%9B%86%E7%AE%97%E6%B3%95"><span class="toc-text">分代收集算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#new-Object-%E7%94%B3%E8%AF%B7%E5%A0%86%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4%E8%BF%87%E7%A8%8B"><span class="toc-text">new Object() 申请堆内存空间过程</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8"><span class="toc-text">垃圾收集器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9"><span class="toc-text">垃圾收集器如何选择</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CMS-%E6%94%B6%E9%9B%86%E5%99%A8"><span class="toc-text">CMS 收集器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#G1-%E6%94%B6%E9%9B%86%E5%99%A8"><span class="toc-text">G1 收集器</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GC-%E6%97%A5%E5%BF%97%E8%A7%A3%E6%9E%90"><span class="toc-text">GC 日志解析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM%E5%8F%82%E6%95%B0"><span class="toc-text">JVM参数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BE%E4%BE%8B%EF%BC%9A%E8%AE%BE%E7%BD%AE%E6%9C%80%E5%A4%A7%E3%80%81%E6%9C%80%E5%B0%8F%E5%A0%86%E5%86%85%E5%AD%98"><span class="toc-text">举例：设置最大、最小堆内存</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BE%E4%BE%8B%EF%BC%9A%E8%AE%BE%E7%BD%AE%E6%A0%88%E7%9A%84%E5%A4%A7%E5%B0%8F"><span class="toc-text">举例：设置栈的大小</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BE%E4%BE%8B%EF%BC%9A%E6%9F%A5%E7%9C%8B%E8%BF%99%E4%B8%AA%E8%BF%9B%E7%A8%8B%E6%98%AF%E5%90%A6%E5%BC%80%E5%90%AF%E4%BA%86GC%E6%98%8E%E7%BB%86%E8%BE%93%E5%87%BA%E7%9A%84%E5%BC%80%E5%85%B3"><span class="toc-text">举例：查看这个进程是否开启了GC明细输出的开关</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BE%E4%BE%8B%EF%BC%9A%E5%BC%80%E5%90%AF%E7%B1%BB%E5%8A%A0%E8%BD%BD%E8%BF%87%E7%A8%8B%E6%97%A5%E5%BF%97"><span class="toc-text">举例：开启类加载过程日志</span></a></li></ol></li></ol></li></ol>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -3950,7 +3388,7 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"博客"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"博客","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"博客"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/Java/","name":"Java"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/Java/jvm/","name":"jvm"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/09/15/JVM结构、JVM参数、JVM垃圾回收/","name":"JVM结构、JVM参数、JVM垃圾回收"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"博客","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"JVM结构、JVM参数、JVM垃圾回收","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/09/15/JVM%E7%BB%93%E6%9E%84%E3%80%81JVM%E5%8F%82%E6%95%B0%E3%80%81JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/09/15/JVM%E7%BB%93%E6%9E%84%E3%80%81JVM%E5%8F%82%E6%95%B0%E3%80%81JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/","wordCount":0,"datePublished":"2024-09-15T07:10:00.000Z","dateModified":"2024-09-15T07:10:00.000Z","articleSection":"Java","keywords":"jvm,jvm垃圾回收","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

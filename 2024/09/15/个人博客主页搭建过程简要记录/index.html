@@ -2114,7 +2114,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726473320997),
+    lastupdate: new Date(1726480442139),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2529,7 +2529,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <p>本站借助Hexo搭建，并托管在GitHub。作为本站搭建过程的记录，遂成为本站发表的第一篇文章。</p>
-<h1 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h1><p>篇幅有限，安装Git、注册GitHub、生成ssh密钥并配置到GitHub，这些基础步骤本文不再说明。</p>
+<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><p>篇幅有限，安装Git、注册GitHub、生成ssh密钥并配置到GitHub，这些基础步骤本文不再说明。</p>
 <h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><p>下载地址：<a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a><br>在本地磁盘D新建了一个文件夹 nodejs，安装在这个文件夹里。<br>检验是否安装成功：可以用 node -v 和 npm -v 命令检查版本。</p>
 <ul>
 <li>设置npm在安装全局模块时的路径</li>
@@ -2553,7 +2553,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
 <p>输入 hexo s 命令可以查看部署在本地的端口</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>可以看到输出了：<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a><br>进入 <a target="_blank" rel="noopener" href="http://localhost:4000/"> http://localhost:4000</a> 就能看到一个默认的、初始的网页。</p>
+<p>可以看到输出了：<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a><br>进入 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 就能看到一个默认的、初始的网页。</p>
 <p>但这样仅仅是本机上部署成功，接下来需要发布到GitHub，以及对这个网页更换主题、编写文章并发布。</p>
 <p>在后文中，都会将上述命令组合使用，节省篇幅。</p>
 <p>这里补充一下各条命令的作用：</p>
@@ -2572,7 +2572,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="创建Github仓库"><a href="#创建Github仓库" class="headerlink" title="创建Github仓库"></a>创建Github仓库</h3><p>在GitHub上创立一个仓库，名称格式为：xxx.github.io。 其中xxx必须是当前Github账号的用户名。<br>如我的用户名是： liqiang995，那么仓库名：liqiang995.github.io</p>
-<h1 id="将Hexo初始静态网页部署到GitHub"><a href="#将Hexo初始静态网页部署到GitHub" class="headerlink" title="将Hexo初始静态网页部署到GitHub"></a>将Hexo初始静态网页部署到GitHub</h1><h3 id="关联GitHub"><a href="#关联GitHub" class="headerlink" title="关联GitHub"></a>关联GitHub</h3><p>进入Blog 文件夹，打开 _config.yml 文件，填上如下内容：</p>
+<h2 id="将Hexo初始静态网页部署到GitHub"><a href="#将Hexo初始静态网页部署到GitHub" class="headerlink" title="将Hexo初始静态网页部署到GitHub"></a>将Hexo初始静态网页部署到GitHub</h2><h3 id="关联GitHub"><a href="#关联GitHub" class="headerlink" title="关联GitHub"></a>关联GitHub</h3><p>进入Blog 文件夹，打开 _config.yml 文件，填上如下内容：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 注意yml语法，键和值之间除了冒号，还有一个空格</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:liqiang995/liqiang995.github.io.git  #自己的仓库地址，可以是ssh、https</span><br><span class="line">  branch: main  #自己仓库的分支，注意默认主分支是main，不再是master</span><br></pre></td></tr></table></figure>
 
 <h3 id="安装Hexo发布Git插件"><a href="#安装Hexo发布Git插件" class="headerlink" title="安装Hexo发布Git插件"></a>安装Hexo发布Git插件</h3><p>还是Blog 文件夹，打开 Git Bash Here，安装Hexo发布Git插件：</p>
@@ -2582,7 +2582,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean   #清除缓存文件 db.json 和已生成的静态文件 public</span><br><span class="line">hexo g       #生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)</span><br><span class="line">hexo d       #部署到设定的远程仓库(hexo deploy 的缩写)</span><br></pre></td></tr></table></figure>
 
 <p>完成以后，（会有几分钟内的延迟）打开浏览器，输入 <a target="_blank" rel="noopener" href="https://liqiang995.github.io/">https://liqiang995.github.io</a> 就可以打开和上述相同的默认的网页，不过现在发布在公网，而不是在本地。</p>
-<h1 id="设置主题"><a href="#设置主题" class="headerlink" title="设置主题"></a>设置主题</h1><p>由 hexo init 初始化出来的网页，主题是默认的。但其实Hexo开源主题非常多。</p>
+<h2 id="设置主题"><a href="#设置主题" class="headerlink" title="设置主题"></a>设置主题</h2><p>由 hexo init 初始化出来的网页，主题是默认的。但其实Hexo开源主题非常多。</p>
 <p><a target="_blank" rel="noopener" href="https://blog.lixiaomu.fun/posts/43857/">Hexo 10款好看的主题｜新手建站必备！</a></p>
 <p>不管使用哪个主题，都需要找到这个主题的仓库地址，将它clone到我们的博客文件夹中。</p>
 <p>在此之前</p>
@@ -2607,7 +2607,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 本地预览</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 部署到远程</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 
-<h1 id="创建文章并发布"><a href="#创建文章并发布" class="headerlink" title="创建文章并发布"></a>创建文章并发布</h1><h3 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h3><p>进入站点根目录Blog，使用如下命令创建新文章：</p>
+<h2 id="创建文章并发布"><a href="#创建文章并发布" class="headerlink" title="创建文章并发布"></a>创建文章并发布</h2><h3 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h3><p>进入站点根目录Blog，使用如下命令创建新文章：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &lt;title&gt;</span><br></pre></td></tr></table></figure>
 <p>执行后，Hexo会在 Blog&#x2F;source&#x2F;_posts目录下创建一篇以 &lt;title&gt;命名新的文章，接下来在这篇文章里使用 MarkDown 语法编写文章即可。</p>
 <h3 id="编辑文章内容"><a href="#编辑文章内容" class="headerlink" title="编辑文章内容"></a>编辑文章内容</h3><p>打开 Hexo 创建的文章可以看到，注意开头有一段以”- - -“包括起来的内容，这是前置信息，用于给 Hexo 渲染该 md 文档，除了这三项，还有很多的配置项可以自己添加</p>
@@ -2657,8 +2657,34 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="重新部署到远程GitHub"><a href="#重新部署到远程GitHub" class="headerlink" title="重新部署到远程GitHub"></a>重新部署到远程GitHub</h3><p> 文章写好之后，回到 Blog 文件夹，打开Git Bash，</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 
+<h2 id="开启评论"><a href="#开启评论" class="headerlink" title="开启评论"></a>开启评论</h2><p>按前文创建好后，浏览文章到最后的评论区，会发现是不可用的，Error。</p>
+<p>评论功能需要借助评论系统，评论系统有很多，其中 Giscus是基于 Github Discussions的，本站也是放托管在 Github的，本文就选择 Giscus吧。</p>
+<p>使用Giscus后，访客想要发表评论，必须登录GitHub，按 GitHub OAuth流程授权 Giscus app代表他发帖。或者访客也可以直接在 GitHub Discussion里评论，作者可以在 GitHub上管理评论。</p>
+<ol>
+<li><p>安装 giscus app<br>点击 <a target="_blank" rel="noopener" href="https://github.com/apps/giscus">https://github.com/apps/giscus</a> 进入 giscus app 的 安装界面.<br>点右侧 Install。会提示选择一个仓库，这里选择 Only select repositories，再选择博客本身这个仓库[liqiang995&#x2F;liqiang995.github.io]就好，后续 giscus 就会从该仓库读取数据。</p>
+</li>
+<li><p>仓库要开启 Discussions<br>去到GitHub中刚才选择的仓库，进入Settings设置界面，勾选上 Discussions 以开启该仓库的 Discussions。</p>
+</li>
+<li><p>从 giscus 官网创建配置文件</p>
+<p> 访问 <a target="_blank" rel="noopener" href="https://giscus.app/zh-CN">giscus 官网</a> 创建配置信息，具体如下：</p>
+<ul>
+<li>选择仓库：填入刚才指定的仓库地址。 经过校验后会“成功，该仓库满足所有条件”</li>
+<li>在页面 与 discussion 映射关系中，选择（默认已选）Discussion 的标题包含页面的 pathname。</li>
+<li>在 Discussion 分类中，选择 Announcements, 并勾选”只搜索该分类的 discussion”</li>
+<li>在 特性 中，可以勾选 “启用主帖子上的反应(reaction)”</li>
+</ul>
+<p> 其他选项都不需要配置，配置完成后，页面往下滑，会生成一个配置文件：<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;https://giscus.app/client.js&quot;</span><br><span class="line">       data-repo=&quot;liqiang995/liqiang995.github.io&quot;</span><br><span class="line">       data-repo-id=&quot;***&quot;</span><br><span class="line">       data-category=&quot;Announcements&quot;</span><br><span class="line">       data-category-id=&quot;****&quot;</span><br><span class="line">       data-mapping=&quot;pathname&quot;</span><br><span class="line">       data-reactions-enabled=&quot;1&quot;</span><br><span class="line">       data-emit-metadata=&quot;0&quot;</span><br><span class="line">       async&gt;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+</li>
+<li><p>将上述配置到博客</p>
+</li>
+</ol>
+<p>打开 _config.volantis.yml。搜索 Comments，大概在385行左右就能找到：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">############################### Comments ############################### &gt; start</span><br><span class="line">comments:</span><br><span class="line">  service: giscus</span><br><span class="line">  giscus:</span><br><span class="line">    # 以下配置按照 yml 格式增删填写即可</span><br><span class="line">    # repo: xxx/xxx.github.io</span><br><span class="line">    # repo-id: xxxx</span><br><span class="line">    # category: Announcements</span><br><span class="line">    # category-id: xxxxx</span><br><span class="line">    # mapping: &quot;pathname&quot;</span><br><span class="line">    # reactions-enabled: &quot;1&quot;</span><br><span class="line">    # emit-metadata: &quot;0&quot;</span><br><span class="line">    # lang: &quot;zh-CN&quot;</span><br><span class="line">   </span><br><span class="line">....</span><br><span class="line">############################### Comments ############################### &gt; end</span><br></pre></td></tr></table></figure>
+<p>将注释符号”# “去掉，再将从giscus 官网获取来的配置对应填上就好。</p>
+<p>最后，回到 Blog 文件夹，打开Git Bash， 重新部署到远程GitHub</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 
-<h1 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h1><p>托管在GitHub后，地址一般是 xxx.github.io，并不容易记住，所以绑定到已购买的域名上。</p>
+<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><p>托管在GitHub后，地址一般是 xxx.github.io，并不容易记住，所以绑定到已购买的域名上。</p>
 <ol>
 <li>添加域名解析</li>
 </ol>
@@ -2784,26 +2810,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2024/09/15/%E4%BA%91%E4%B8%BB%E6%9C%BA%E9%83%A8%E7%BD%B2TiDB%E6%B5%8B%E8%AF%95%E9%9B%86%E7%BE%A4/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>云主机部署TiDB测试集群</p>
-          <p class='content'>环境准备购买了4台按量付费云主机
-
-
-
-主机名称
-公网ip
-局域网ip
-
-
-
-tidb0
-47.109.27.111
-172.16.69.205
-
-
-tidb1
-47.108.114.70
-17...</p>
+        <a class='prev' href='/2024/09/15/%E6%97%A7%E7%94%B5%E8%84%91%E6%94%B9NAS%EF%BC%88%E9%BB%91%E7%BE%A4%E6%99%96DS3622XS-42218%EF%BC%89%E8%BF%87%E7%A8%8B%E5%9B%9E%E9%A1%BE%E5%92%8C%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>旧电脑改NAS（黑群晖DS3622XS+42218）过程回顾和问题记录</p>
+          <p class='content'>硬件：1、大学时购买的华硕笔记本，CPU奔腾2117U，4G内存。（第一台电脑，不舍得扔，期望继续发光发热）2、闲置MSATA硬盘一张，SSD，容量32G。内置硬盘引导安装黑群晖。3、闲置机械盘...</p>
         </a>
       
       
@@ -2865,7 +2874,7 @@ tidb1
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85nodejs"><span class="toc-text">安装nodejs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAGithub%E4%BB%93%E5%BA%93"><span class="toc-text">创建Github仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E8%81%94GitHub"><span class="toc-text">关联GitHub</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Hexo%E5%8F%91%E5%B8%83Git%E6%8F%92%E4%BB%B6"><span class="toc-text">安装Hexo发布Git插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo%E7%94%9F%E6%88%90%E7%BD%91%E7%AB%99%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%E3%80%81%E5%8F%91%E5%B8%83%E5%88%B0GitHub"><span class="toc-text">Hexo生成网站静态文件、发布到GitHub</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E7%AB%A0"><span class="toc-text">创建新文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E8%BE%91%E6%96%87%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="toc-text">编辑文章内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%A8%8BGitHub"><span class="toc-text">重新部署到远程GitHub</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87"><span class="toc-text">环境准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85nodejs"><span class="toc-text">安装nodejs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAGithub%E4%BB%93%E5%BA%93"><span class="toc-text">创建Github仓库</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%86Hexo%E5%88%9D%E5%A7%8B%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E9%83%A8%E7%BD%B2%E5%88%B0GitHub"><span class="toc-text">将Hexo初始静态网页部署到GitHub</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E8%81%94GitHub"><span class="toc-text">关联GitHub</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Hexo%E5%8F%91%E5%B8%83Git%E6%8F%92%E4%BB%B6"><span class="toc-text">安装Hexo发布Git插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo%E7%94%9F%E6%88%90%E7%BD%91%E7%AB%99%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%E3%80%81%E5%8F%91%E5%B8%83%E5%88%B0GitHub"><span class="toc-text">Hexo生成网站静态文件、发布到GitHub</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E4%B8%BB%E9%A2%98"><span class="toc-text">设置主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0%E5%B9%B6%E5%8F%91%E5%B8%83"><span class="toc-text">创建文章并发布</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E7%AB%A0"><span class="toc-text">创建新文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E8%BE%91%E6%96%87%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="toc-text">编辑文章内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%A8%8BGitHub"><span class="toc-text">重新部署到远程GitHub</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA"><span class="toc-text">开启评论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D"><span class="toc-text">绑定域名</span></a></li></ol>
   </div>
 </section>
 
@@ -3061,7 +3070,7 @@ tidb1
   function p_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"},"repo":"liqiang995/liqiang995.github.io","repo-id":"R_kgDOGukaTQ","category":"Announcements","category-id":"DIC_kwDOGukaTc4CigWK","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{

@@ -2113,7 +2113,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726473320997),
+    lastupdate: new Date(1726480442139),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -3026,13 +3026,10 @@ telnet ip 22    【ssh 是通的】
   
     <div class="prev-next">
       
-        <a class='prev' href='/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Oracle为什么要用三层嵌套实现分页</p>
-          <p class='content'>Oracle为什么要用三层嵌套实现分页
-先说结论：嵌套出两层SELECT对应的两个原因：  
-
-
-ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存在同一趟SELECT中，...</p>
+        <a class='prev' href='/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Spring注解式编程</p>
+          <p class='content'>spring注解编程-IOC
+配置类&amp;Bean注解@Configuration123加了这个注解的类就相当于传统的一个applicationContext-xxx.xml ，告诉spri...</p>
         </a>
       
       
@@ -3303,7 +3300,7 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
   function p_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"},"repo":"liqiang995/liqiang995.github.io","repo-id":"R_kgDOGukaTQ","category":"Announcements","category-id":"DIC_kwDOGukaTc4CigWK","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{

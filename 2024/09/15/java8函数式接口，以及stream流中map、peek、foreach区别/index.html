@@ -2113,7 +2113,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726473320997),
+    lastupdate: new Date(1726480442139),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2729,9 +2729,26 @@ filter也是要求传入 Predicate，有参数，且返回布尔值，返回原�
         </a>
       
       
-        <a class='next' href='/2024/09/15/%E6%97%A7%E7%94%B5%E8%84%91%E6%94%B9NAS%EF%BC%88%E9%BB%91%E7%BE%A4%E6%99%96DS3622XS-42218%EF%BC%89%E8%BF%87%E7%A8%8B%E5%9B%9E%E9%A1%BE%E5%92%8C%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/'>
-          <p class='title'>旧电脑改NAS（黑群晖DS3622XS+42218）过程回顾和问题记录<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>硬件：1、大学时购买的华硕笔记本，CPU奔腾2117U，4G内存。（第一台电脑，不舍得扔，期望继续发光发热）2、闲置MSATA硬盘一张，SSD，容量32G。内置硬盘引导安装黑群晖。3、闲置机械盘...</p>
+        <a class='next' href='/2024/09/15/%E4%BA%91%E4%B8%BB%E6%9C%BA%E9%83%A8%E7%BD%B2TiDB%E6%B5%8B%E8%AF%95%E9%9B%86%E7%BE%A4/'>
+          <p class='title'>云主机部署TiDB测试集群<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>环境准备购买了4台按量付费云主机
+
+
+
+主机名称
+公网ip
+局域网ip
+
+
+
+tidb0
+47.109.27.111
+172.16.69.205
+
+
+tidb1
+47.108.114.70
+17...</p>
         </a>
       
     </div>
@@ -2988,7 +3005,7 @@ filter也是要求传入 Predicate，有参数，且返回布尔值，返回原�
   function p_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"},"repo":"liqiang995/liqiang995.github.io","repo-id":"R_kgDOGukaTQ","category":"Announcements","category-id":"DIC_kwDOGukaTc4CigWK","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{

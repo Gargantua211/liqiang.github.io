@@ -34,14 +34,14 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>个人博客&主页搭建过程简要记录 - 博客</title>
+  <title>个人博客&主页搭建过程简要记录 - blog昱东</title>
   <meta name="keywords" content="node.js,Hexo,null">
-  <meta desc name="description" content="久有凌云志，重上井冈山 - 昱东 - 博客">
+  <meta desc name="description" content="久有凌云志，重上井冈山 - 昱东 - blog昱东">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="个人博客&amp;主页搭建过程简要记录">
 <meta property="og:url" content="http://example.com/2024/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E7%AE%80%E8%A6%81%E8%AE%B0%E5%BD%95/index.html">
-<meta property="og:site_name" content="博客">
+<meta property="og:site_name" content="blog昱东">
 <meta property="og:description" content="本站借助Hexo搭建，并托管在GitHub。作为本站搭建过程的记录，遂成为本站发表的第一篇文章。 环境准备篇幅有限，安装Git、注册GitHub、生成ssh密钥并配置到GitHub，这些基础步骤本文不再说明。 安装nodejs下载地址：https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;在本地磁盘D新建了一个文件夹 nodejs，安装在这个文件夹里。检验是否安装成功：可以用 node -v 和 npm -">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2114,7 +2114,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726537717458),
+    lastupdate: new Date(1726543938313),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2447,10 +2447,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/个人博客主页搭建过程简要记录/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="博客">
+    <meta itemprop="name" content="blog昱东">
   </span>
   <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="博客">
+    <meta itemprop="name" content="blog昱东">
     <meta itemprop="description" content="久有凌云志，重上井冈山">
   </span>
   
@@ -2612,10 +2612,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &lt;page_name&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="categories分类"><a href="#categories分类" class="headerlink" title="categories分类"></a>categories分类</h3><p>创建categories分类</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>找到 Blog&#x2F;source&#x2F;categories&#x2F;index.md<br>打开 index.md这个文件，打开后默认内容是这样的：</p>
+<p>找到 Blog&#x2F;source&#x2F;categories&#x2F;index.md 打开后默认内容：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2034-09-15 00:00:00</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <p>添加一项 type: “categories”到内容中：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2024-09-15 00:00:00</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2024-09-15 00:00:00</span><br><span class="line">type: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>找到 Blog\scaffolds\post.md 打开后默认内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>这个就是使用 hexo new 创建文章时的模板。添加一项 categories: </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">categories: </span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
 <p>当下文使用 hexo new &lt;title&gt; 创建的文章，才会在配置项中增加一项categories，通过对文章中categories设置值，hexo便会创建对应的分类，以及提供检索。</p>
 <p>保存退出后，重新生成预览。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
@@ -2623,12 +2629,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="tags标签"><a href="#tags标签" class="headerlink" title="tags标签"></a>tags标签</h3><p>同样的步骤</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
 <p>找到 Blog&#x2F;source&#x2F;tags&#x2F;index.md 并打开，修改为</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章标签</span><br><span class="line">date: 2024-09-15 00:00:00</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章标签</span><br><span class="line">date: 2024-09-15 00:00:00</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <p>保存退出后，重新生成预览。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
 <p>执行完命令，会在 Blog\public\tags\下创建index.html</p>
 <h3 id="同理创建-friends-和-about"><a href="#同理创建-friends-和-about" class="headerlink" title="同理创建 friends 和 about"></a>同理创建 friends 和 about</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new page friends</span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>
-<p>执行完 <strong>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</strong>，会分别创建 public\friends\index.html 和 public\about\index.html<br>再点击导航栏里的友链、关于 都不会再报错了。</p>
+<p>执行完hexo clean &amp;&amp; hexo g &amp;&amp; hexo s，会分别创建 public\friends\index.html 和 public\about\index.html<br>再点击导航栏里的友链、关于 都不会再报错了。</p>
 <h3 id="分类和标签增加内容"><a href="#分类和标签增加内容" class="headerlink" title="分类和标签增加内容"></a>分类和标签增加内容</h3><p>已经创建categories、tags对应的页面了，但是从导航栏访问分类、标签时，没有具体的分类内容、标签内容。</p>
 <ol>
 <li>解决办法：</li>
@@ -2795,7 +2801,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2024/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E7%AE%80%E8%A6%81%E8%AE%B0%E5%BD%95/&title=个人博客&主页搭建过程简要记录 - 博客&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2024/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E7%AE%80%E8%A6%81%E8%AE%B0%E5%BD%95/&title=个人博客&主页搭建过程简要记录 - blog昱东&summary="
           
           >
           
@@ -2807,7 +2813,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2024/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E7%AE%80%E8%A6%81%E8%AE%B0%E5%BD%95/&title=个人博客&主页搭建过程简要记录 - 博客&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2024/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E7%AE%80%E8%A6%81%E8%AE%B0%E5%BD%95/&title=个人博客&主页搭建过程简要记录 - blog昱东&summary="
           
           >
           
@@ -2819,7 +2825,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2024/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E7%AE%80%E8%A6%81%E8%AE%B0%E5%BD%95/&title=个人博客&主页搭建过程简要记录 - 博客&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2024/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E7%AE%80%E8%A6%81%E8%AE%B0%E5%BD%95/&title=个人博客&主页搭建过程简要记录 - blog昱东&summary="
           
           >
           
@@ -3410,7 +3416,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"博客"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/杂记/","name":"杂记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/09/15/个人博客主页搭建过程简要记录/","name":"个人博客&主页搭建过程简要记录"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"博客","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"个人博客&主页搭建过程简要记录","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E7%AE%80%E8%A6%81%E8%AE%B0%E5%BD%95/"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E7%AE%80%E8%A6%81%E8%AE%B0%E5%BD%95/","wordCount":0,"datePublished":"2024-09-15T04:00:00.000Z","dateModified":"2024-09-15T04:00:00.000Z","articleSection":"杂记","keywords":"node.js,Hexo","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"blog昱东"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/杂记/","name":"杂记"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/09/15/个人博客主页搭建过程简要记录/","name":"个人博客&主页搭建过程简要记录"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"blog昱东","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"个人博客&主页搭建过程简要记录","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E7%AE%80%E8%A6%81%E8%AE%B0%E5%BD%95/"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"blog昱东","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/09/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E7%AE%80%E8%A6%81%E8%AE%B0%E5%BD%95/","wordCount":0,"datePublished":"2024-09-15T04:00:00.000Z","dateModified":"2024-09-15T04:00:00.000Z","articleSection":"杂记","keywords":"node.js,Hexo","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

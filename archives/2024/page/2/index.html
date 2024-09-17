@@ -2110,7 +2110,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726546889099),
+    lastupdate: new Date(1726548706555),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2507,6 +2507,220 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <section class="post-list">
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/16/Linux补充概念-CentOS、RedHat；Ubuntu、Debian；tar、rpm、yum、deb、apt-get/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="blog昱东">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="blog昱东">
+    <meta itemprop="description" content="久有凌云志，重上井冈山">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/09/16/Linux%E8%A1%A5%E5%85%85%E6%A6%82%E5%BF%B5-CentOS%E3%80%81RedHat%EF%BC%9BUbuntu%E3%80%81Debian%EF%BC%9Btar%E3%80%81rpm%E3%80%81yum%E3%80%81deb%E3%80%81apt-get/"  itemprop="url">
+        Linux两分类:CentOS、RedHat；Ubuntu、Debian；tar、rpm、yum、deb、apt-get
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+
+Linux系统基本上分两大类：
+RedHat系列：Redhat、Centos、Fedora等
+Debian系列：Debian、Ubuntu等
+
+CentOS与Red hat区别：
+CentOS（Community ENTerprise Operating System）基于Red Hat Enterprise Linux 开放源代码规定编译而成。有些要求高度稳定性的服务器以CentOS替...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-09-16T10:00:10+08:00">2024-09-16</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Linux/">Linux</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/Linux/" itemprop="url"><span itemprop="name">Linux</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/09/16/Linux%E8%A1%A5%E5%85%85%E6%A6%82%E5%BF%B5-CentOS%E3%80%81RedHat%EF%BC%9BUbuntu%E3%80%81Debian%EF%BC%9Btar%E3%80%81rpm%E3%80%81yum%E3%80%81deb%E3%80%81apt-get/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/16/shell脚本/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="blog昱东">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="blog昱东">
+    <meta itemprop="description" content="久有凌云志，重上井冈山">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/09/16/shell%E8%84%9A%E6%9C%AC/"  itemprop="url">
+        shell脚本
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+
+编写 shell 脚本Hello word
+创建并进入编写一个 xx.sh脚本文件
+1vi first.sh
+1234#! /bin/bashecho &quot;Hello Word!&quot;
+
+运行 .sh脚本
+1sh first.sh
+或
+1./first.sh
+加上 -x 可以查看脚本的运行记录
+1sh -x first.sh
+1234[root@shell ~]# sh -...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-09-16T10:00:10+08:00">2024-09-16</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Linux/">Linux</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/Linux/" itemprop="url"><span itemprop="name">Linux</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/09/16/shell%E8%84%9A%E6%9C%AC/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/16/为什么要有Python虚拟环境/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="blog昱东">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="blog昱东">
+    <meta itemprop="description" content="久有凌云志，重上井冈山">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/09/16/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9C%89Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"  itemprop="url">
+        为什么要有Python虚拟环境
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+
+为什么要有Python虚拟环境
+当我们在开发机上安装一个 Python 程序或者库的时候，都要安装 1一些包（import非内置的包时），比如说， pip install django。这些包默认都会安装到 Python 环境的 site-packages 目录下面。
+不同的项目可能会用到相同包，的不同版本，或依赖的其他包，这样就没法区分当前项目使用哪个版本，即版本不兼容。
+简而言之，虚...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-09-16T09:50:08+08:00">2024-09-16</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Python/">Python</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/Python/" itemprop="url"><span itemprop="name">Python</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/09/16/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9C%89Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -3001,222 +3215,6 @@ RAID0将数据分为N份，以独立并行实现N块磁盘的读写，那么这N
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Autowired和Resource区别，简单测试容器中多个相同bean的情况/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="blog昱东">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="blog昱东">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/Autowired%E5%92%8CResource%E5%8C%BA%E5%88%AB%EF%BC%8C%E7%AE%80%E5%8D%95%E6%B5%8B%E8%AF%95%E5%AE%B9%E5%99%A8%E4%B8%AD%E5%A4%9A%E4%B8%AA%E7%9B%B8%E5%90%8Cbean%E7%9A%84%E6%83%85%E5%86%B5/"  itemprop="url">
-        @Autowired和@Resource区别，简单测试容器中多个相同bean的情况
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        
-
-@Autowired 和  @Resource 区别
-@Autowired 来自Spring， @Resource 来自java；
-@Autowired 默认按类型注入，容器中存在多个相同类型的 Bean，将抛出异常。 可以配合使用 @Qualifier 指定名称。
-
-两个相同类型（都 implements Formatter）的 Bean：
-123456@Component(&quot...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Spring/">Spring</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Spring/" itemprop="url"><span itemprop="name">Spring</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/Autowired%E5%92%8CResource%E5%8C%BA%E5%88%AB%EF%BC%8C%E7%AE%80%E5%8D%95%E6%B5%8B%E8%AF%95%E5%AE%B9%E5%99%A8%E4%B8%AD%E5%A4%9A%E4%B8%AA%E7%9B%B8%E5%90%8Cbean%E7%9A%84%E6%83%85%E5%86%B5/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/HDFS常用命令/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="blog昱东">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="blog昱东">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/HDFS%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"  itemprop="url">
-        HDFS常用命令
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        
-
-HDFS常用命令hdfs 命令最常用的就是： hdfs dfs -[linux的命令]
-通过查看Hadoop的命令 与 hdfs 的命令并不相同，且不存在包含关系。仅仅是 hadoop fs 与 hdfs dfs 可以等价。
-hadoop 常用命令查看hadoop 命令所有参数：
-1hadoop
-12345hadoop checknative  // 检查当前版本hadoop内库支持哪些...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a><span class="sep"></span><a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/">HDFS</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" itemprop="url"><span itemprop="name">大数据</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/" itemprop="url"><span itemprop="name">HDFS</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/HDFS%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Oracle为什么要用三层嵌套实现分页/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="blog昱东">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="blog昱东">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/"  itemprop="url">
-        Oracle为什么要用三层嵌套实现分页
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        
-
-Oracle为什么要用三层嵌套实现分页
-先说结论：嵌套出两层SELECT对应的两个原因：  
-
-
-ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存在同一趟SELECT中，order by排序后的ROWNUM不是有序的，不会和查询结果行号对应，所以不能做条件过滤。需要在一次select  order by 后得到的虚拟表中，再获取ROWNUM这样order by才能...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/">Oracle</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/" itemprop="url"><span itemprop="name">Oracle</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -3371,17 +3369,17 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
           <li><a class="flat-box"
             title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"
             active-action="action-categoriesE5A4A7E695B0E68DAE"
-            ><div class='name'>大数据</div><div class='badge'>(4)</div></a></li>
+            ><div class='name'>大数据</div><div class='badge'>(7)</div></a></li>
         
           <li><a class="flat-box child"
-            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/"
-            active-action="action-categoriesE5A4A7E695B0E68DAEHDFS"
-            ><div class='name'>HDFS</div><div class='badge'>(1)</div></a></li>
+            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/"
+            active-action="action-categoriesE5A4A7E695B0E68DAEHadoop"
+            ><div class='name'>Hadoop</div><div class='badge'>(3)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hive/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hive/"
             active-action="action-categoriesE5A4A7E695B0E68DAEHive"
-            ><div class='name'>Hive</div><div class='badge'>(3)</div></a></li>
+            ><div class='name'>Hive</div><div class='badge'>(4)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"
@@ -3441,7 +3439,7 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
 
 
     <div class='content'>
-      <a href="/tags/ASCII/" style="font-size: 14px; color: #999">ASCII</a> <a href="/tags/HDFS/" style="font-size: 14px; color: #999">HDFS</a> <a href="/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/tags/Hive/" style="font-size: 14px; color: #999">Hive</a> <a href="/tags/Junit/" style="font-size: 14px; color: #999">Junit</a> <a href="/tags/NAS/" style="font-size: 14px; color: #999">NAS</a> <a href="/tags/Oracle/" style="font-size: 14px; color: #999">Oracle</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/Spring/" style="font-size: 20.67px; color: #6c6c6c">Spring</a> <a href="/tags/TiDB/" style="font-size: 14px; color: #999">TiDB</a> <a href="/tags/UTF-8/" style="font-size: 14px; color: #999">UTF-8</a> <a href="/tags/Unicode/" style="font-size: 14px; color: #999">Unicode</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/juc/" style="font-size: 17.33px; color: #828282">juc</a> <a href="/tags/jvm/" style="font-size: 14px; color: #999">jvm</a> <a href="/tags/jvm%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/" style="font-size: 14px; color: #999">jvm垃圾回收</a> <a href="/tags/kill-9/" style="font-size: 14px; color: #999">kill -9</a> <a href="/tags/linux/" style="font-size: 24px; color: #555">linux</a> <a href="/tags/log4j/" style="font-size: 14px; color: #999">log4j</a> <a href="/tags/logback/" style="font-size: 14px; color: #999">logback</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/node-js/" style="font-size: 14px; color: #999">node.js</a> <a href="/tags/rpm/" style="font-size: 14px; color: #999">rpm</a> <a href="/tags/shell/" style="font-size: 14px; color: #999">shell</a> <a href="/tags/slf4j/" style="font-size: 14px; color: #999">slf4j</a> <a href="/tags/yum/" style="font-size: 14px; color: #999">yum</a> <a href="/tags/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE/" style="font-size: 14px; color: #999">双亲委派</a> <a href="/tags/%E7%A3%81%E7%9B%98RAID/" style="font-size: 14px; color: #999">磁盘RAID</a> <a href="/tags/%E7%B1%BB%E5%8A%A0%E8%BD%BD/" style="font-size: 14px; color: #999">类加载</a>
+      <a href="/tags/ASCII/" style="font-size: 14px; color: #999">ASCII</a> <a href="/tags/Hadoop/" style="font-size: 20.67px; color: #6c6c6c">Hadoop</a> <a href="/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/tags/Hive/" style="font-size: 17.33px; color: #828282">Hive</a> <a href="/tags/Junit/" style="font-size: 14px; color: #999">Junit</a> <a href="/tags/NAS/" style="font-size: 14px; color: #999">NAS</a> <a href="/tags/Oracle/" style="font-size: 14px; color: #999">Oracle</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/Spring/" style="font-size: 20.67px; color: #6c6c6c">Spring</a> <a href="/tags/TiDB/" style="font-size: 14px; color: #999">TiDB</a> <a href="/tags/UTF-8/" style="font-size: 14px; color: #999">UTF-8</a> <a href="/tags/Unicode/" style="font-size: 14px; color: #999">Unicode</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/juc/" style="font-size: 17.33px; color: #828282">juc</a> <a href="/tags/jvm/" style="font-size: 14px; color: #999">jvm</a> <a href="/tags/jvm%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/" style="font-size: 14px; color: #999">jvm垃圾回收</a> <a href="/tags/kill-9/" style="font-size: 14px; color: #999">kill -9</a> <a href="/tags/linux/" style="font-size: 24px; color: #555">linux</a> <a href="/tags/log4j/" style="font-size: 14px; color: #999">log4j</a> <a href="/tags/logback/" style="font-size: 14px; color: #999">logback</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/node-js/" style="font-size: 14px; color: #999">node.js</a> <a href="/tags/rpm/" style="font-size: 14px; color: #999">rpm</a> <a href="/tags/shell/" style="font-size: 14px; color: #999">shell</a> <a href="/tags/slf4j/" style="font-size: 14px; color: #999">slf4j</a> <a href="/tags/yum/" style="font-size: 14px; color: #999">yum</a> <a href="/tags/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE/" style="font-size: 14px; color: #999">双亲委派</a> <a href="/tags/%E7%A3%81%E7%9B%98RAID/" style="font-size: 14px; color: #999">磁盘RAID</a> <a href="/tags/%E7%B1%BB%E5%8A%A0%E8%BD%BD/" style="font-size: 14px; color: #999">类加载</a>
     </div>
   </section>
 

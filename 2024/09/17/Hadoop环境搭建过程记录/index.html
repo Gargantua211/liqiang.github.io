@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/tags/yum/"/>
+  
+  <link rel="canonical" href="http://example.com/2024/09/17/hadoop环境搭建过程记录/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：yum - blog昱东</title>
-  <meta name="keywords" content="null">
+  <title>Hadoop环境搭建过程记录 - blog昱东</title>
+  <meta name="keywords" content="Hadoop,null">
   <meta desc name="description" content="久有凌云志，重上井冈山 - 昱东 - blog昱东">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="blog昱东">
-<meta property="og:url" content="http://example.com/tags/yum/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hadoop环境搭建过程记录">
+<meta property="og:url" content="http://example.com/2024/09/17/Hadoop%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="blog昱东">
-<meta property="og:description" content="久有凌云志，重上井冈山">
+<meta property="og:description" content="常用命令[liqiang@Gargantua ~]$ cd $HADOOP_HOME;pwd &#x2F;home&#x2F;liqiang&#x2F;app&#x2F;hadoop  【启动、停止】 [liqiang@Gargantua ~]$ cd $HADOOP_HOME&#x2F;sbin       # 启动 hdfs 、启动 yarn   start-dfs.sh   start-yarn.sh   start-all.sh  #">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-09-17T04:41:00.000Z">
+<meta property="article:modified_time" content="2024-09-17T04:44:18.789Z">
 <meta property="article:author" content="昱东">
+<meta property="article:tag" content="Hadoop">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2102,7 +2105,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2439,25 +2442,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/16/Linux补充概念-CentOS、RedHat；Ubuntu、Debian；tar、rpm、yum、deb、apt-get/">
+  <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/17/Hadoop环境搭建过程记录/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="blog昱东">
   </span>
@@ -2466,73 +2453,649 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="久有凌云志，重上井冈山">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/16/Linux%E8%A1%A5%E5%85%85%E6%A6%82%E5%BF%B5-CentOS%E3%80%81RedHat%EF%BC%9BUbuntu%E3%80%81Debian%EF%BC%9Btar%E3%80%81rpm%E3%80%81yum%E3%80%81deb%E3%80%81apt-get/"  itemprop="url">
-        Linux两分类:CentOS、RedHat；Ubuntu、Debian；tar、rpm、yum、deb、apt-get
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
+    
+      <h1 class="title" itemprop="name headline">
+        Hadoop环境搭建过程记录
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">李强</p>
+  </a>
+</div>
 
-Linux系统基本上分两大类：
-RedHat系列：Redhat、Centos、Fedora等
-Debian系列：Debian、Ubuntu等
-
-CentOS与Red hat区别：
-CentOS（Community ENTerprise Operating System）基于Red Hat Enterprise Linux 开放源代码规定编译而成。有些要求高度稳定性的服务器以CentOS替...
-      
+          
+        
+          
+            
+  
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a><span class="sep"></span><a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/">Hadoop</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+        <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" itemprop="url"><span itemprop="name">大数据</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+        <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/" itemprop="url"><span itemprop="name">Hadoop</span></a>
+      </span>
     
   </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-16T10:00:10+08:00">2024-09-16</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Linux/">Linux</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Linux/" itemprop="url"><span itemprop="name">Linux</span></a>
-            </span>
+
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-09-17T12:41:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年9月17日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <meta name="referrer" content="no-referrer"/>
+
+<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><pre><code>[liqiang@Gargantua ~]$ cd $HADOOP_HOME;pwd
+/home/liqiang/app/hadoop
+
+【启动、停止】
+[liqiang@Gargantua ~]$ cd $HADOOP_HOME/sbin     
+
+# 启动 hdfs 、启动 yarn 
+ start-dfs.sh 
+ start-yarn.sh 
+ start-all.sh 
+# 关闭 
+ stop-alll.sh
+  stop-dfs.sh
+  stop-yarn.sh
+ 
+【操作hdfs文件】
+[liqiang@Gargantua ~]$ cd $HADOOP_HOME/bin   
+
+# path可以是绝对路径，也可以是相对路径。不指定path则操作当前用户工作主目录
+
+ hdfs dfs -ls       # 列出工作主目录下的信息
+  hdfs dfs -ls /     # 列出hdfs根路径下的信息
+
+ hdfs dfs -ls /input            【hadoop dfs -ls】
+ hdfs dfs -cat /input/wc.data    【hadoop dfs -cat】
+ hdfs dfs -text /input/data.lzo   [可用于查看压缩文件,不会乱码]
+ 
+ hdfs dfs -mkdir /input         【hadoop dfs -mkdir】
+ hdfs dfs -put wc.log /input    【hadoop dfs -put】
+ hdfs dfs -get /input ~/data    【hadoop dfs -get】
+ 
+ hdfs dfs -rm [-r] [-f] &lt;uri&gt;  # 删除目录或文件，-r -f不能组合成-rf
+ hdfs dfs -rm -r -f /test      # 删除根目录下的test目录
+ hdfs dfs -rmdir /test         # 删除目录：只能删除空目录
+
+【运行jar】
+ bin/hadoop jar xxx.jar grep input output ‘dfs[a-z.]+’
+[当设置环境变量后]
+ yarn jar xxx.jar wordcount /input /output
+</code></pre>
+<p>更多命令总结：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_45494908/article/details/121667986">HDFS常用命令</a></p>
+<h4 id="HADOOP-HOME-下的目录"><a href="#HADOOP-HOME-下的目录" class="headerlink" title="HADOOP_HOME 下的目录"></a>HADOOP_HOME 下的目录</h4><h6 id="bin目录下有如下可执行文件，如以上操作hdfs文件-hdfs-dfs命令、yarn-命令"><a href="#bin目录下有如下可执行文件，如以上操作hdfs文件-hdfs-dfs命令、yarn-命令" class="headerlink" title="bin目录下有如下可执行文件，如以上操作hdfs文件 hdfs dfs命令、yarn 命令"></a>bin目录下有如下可执行文件，如以上操作hdfs文件 hdfs dfs命令、yarn 命令</h6><pre><code>$HADOOP_HOME/bin 【/home/liqiang/app/hadoop/bin】 
+
+-rwxr-xr-x 1 liqiang liqiang   8707 Jan  3  2021 hadoop   【cd hadoop: Not a directory】
+-rwxr-xr-x 1 liqiang liqiang  11274 Jan  3  2021 hdfs
+-rwxr-xr-x 1 liqiang liqiang   6237 Jan  3  2021 mapred
+-rwxr-xr-x 1 liqiang liqiang  12112 Jan  3  2021 yarn
+</code></pre>
+<h6 id="sbin目录下启动-、停止的命令"><a href="#sbin目录下启动-、停止的命令" class="headerlink" title="sbin目录下启动 、停止的命令"></a>sbin目录下启动 、停止的命令</h6><pre><code>$HADOOP_HOME/sbin 【/home/liqiang/app/hadoop/sbin】 
+
+-rwxr-xr-x 1 liqiang liqiang 2756 Jan  3  2021 distribute-exclude.sh
+drwxr-xr-x 4 liqiang liqiang 4096 Jan  3  2021 FederationStateStore
+-rwxr-xr-x 1 liqiang liqiang 1983 Jan  3  2021 hadoop-daemon.sh
+-rwxr-xr-x 1 liqiang liqiang 2522 Jan  3  2021 hadoop-daemons.sh
+-rwxr-xr-x 1 liqiang liqiang 1542 Jan  3  2021 httpfs.sh
+-rwxr-xr-x 1 liqiang liqiang 1500 Jan  3  2021 kms.sh
+-rwxr-xr-x 1 liqiang liqiang 1841 Jan  3  2021 mr-jobhistory-daemon.sh
+-rwxr-xr-x 1 liqiang liqiang 2086 Jan  3  2021 refresh-namenodes.sh
+-rwxr-xr-x 1 liqiang liqiang 2221 Jan  3  2021 start-all.sh       【启动全部】
+-rwxr-xr-x 1 liqiang liqiang 1880 Jan  3  2021 start-balancer.sh
+-rwxr-xr-x 1 liqiang liqiang 5170 Jan  3  2021 start-dfs.sh       【启动hdfs】
+-rwxr-xr-x 1 liqiang liqiang 1793 Jan  3  2021 start-secure-dns.sh
+-rwxr-xr-x 1 liqiang liqiang 3342 Jan  3  2021 start-yarn.sh      【启动yarn】
+-rwxr-xr-x 1 liqiang liqiang 2166 Jan  3  2021 stop-all.sh        【停止全部】
+-rwxr-xr-x 1 liqiang liqiang 1783 Jan  3  2021 stop-balancer.sh
+-rwxr-xr-x 1 liqiang liqiang 3898 Jan  3  2021 stop-dfs.sh
+-rwxr-xr-x 1 liqiang liqiang 1756 Jan  3  2021 stop-secure-dns.sh
+-rwxr-xr-x 1 liqiang liqiang 3083 Jan  3  2021 stop-yarn.sh
+-rwxr-xr-x 1 liqiang liqiang 1982 Jan  3  2021 workers.sh
+-rwxr-xr-x 1 liqiang liqiang 1814 Jan  3  2021 yarn-daemon.sh
+-rwxr-xr-x 1 liqiang liqiang 2328 Jan  3  2021 yarn-daemons.sh
+</code></pre>
+<h6 id="etc-hadoop-目录下是关于hadoop的配置文件"><a href="#etc-hadoop-目录下是关于hadoop的配置文件" class="headerlink" title="etc&#x2F;hadoop 目录下是关于hadoop的配置文件"></a>etc&#x2F;hadoop 目录下是关于hadoop的配置文件</h6><pre><code>$HADOOP_HOME/etc/hadoop  【/home/liqiang/app/hadoop/etc/hadoop】
+# 常用：
+-rw-r--r-- 1 liqiang liqiang 16356 Dec 28 02:13 hadoop-env.sh   【JAVA_HOME、HADOOP_PID_DIR】
+-rw-r--r-- 1 liqiang liqiang   634 Dec 31 01:20 core-site.xml   【fs.defaultFS即hdfs对外提供的ip:端口、：NN数据目录...】【按需配置(9000)而9870是web端保持默认即可】
+-rw-r--r-- 1 liqiang liqiang  1881 Jan  9 20:51 hdfs-site.xml   【dfs.replication即block副本数量】
+-rw-r--r-- 1 liqiang liqiang    10 Dec 28 01:09 workers         【指定DN启动的hosts (是文件 Not a directory)】
+
+-rw-r--r-- 1 liqiang liqiang  1764 Jan  3  2021 mapred-env.sh
+-rw-r--r-- 1 liqiang liqiang   519 Dec 28 20:15 mapred-site.xml 【指定mr计算框架、运行时classpath目录等】
+-rw-r--r-- 1 liqiang liqiang  6272 Jan  3  2021 yarn-env.sh
+-rw-r--r-- 1 liqiang liqiang  1456 Dec 28 20:18 yarn-site.xml   【yarn作业web界面端口默认8088(123)】
+
+-rw-r--r-- 1 liqiang liqiang  9213 Jan  3  2021 capacity-scheduler.xml
+-rw-r--r-- 1 liqiang liqiang  1335 Jan  3  2021 configuration.xsl
+-rw-r--r-- 1 liqiang liqiang  1940 Jan  3  2021 container-executor.cfg
+-rw-r--r-- 1 liqiang liqiang  3321 Jan  3  2021 hadoop-metrics2.properties
+-rw-r--r-- 1 liqiang liqiang 11392 Jan  3  2021 hadoop-policy.xml
+-rw-r--r-- 1 liqiang liqiang  3414 Jan  3  2021 hadoop-user-functions.sh.example
+-rw-r--r-- 1 liqiang liqiang  1484 Jan  3  2021 httpfs-env.sh
+-rw-r--r-- 1 liqiang liqiang  1657 Jan  3  2021 httpfs-log4j.properties
+-rw-r--r-- 1 liqiang liqiang    21 Jan  3  2021 httpfs-signature.secret
+-rw-r--r-- 1 liqiang liqiang   620 Jan  3  2021 httpfs-site.xml
+-rw-r--r-- 1 liqiang liqiang  3518 Jan  3  2021 kms-acls.xml
+-rw-r--r-- 1 liqiang liqiang  1351 Jan  3  2021 kms-env.sh
+-rw-r--r-- 1 liqiang liqiang  1860 Jan  3  2021 kms-log4j.properties
+-rw-r--r-- 1 liqiang liqiang   682 Jan  3  2021 kms-site.xml
+-rw-r--r-- 1 liqiang liqiang 14713 Jan  3  2021 log4j.properties
+drwxr-xr-x 2 liqiang liqiang  4096 Jan  3  2021 shellprofile.d
+-rw-r--r-- 1 liqiang liqiang  2316 Jan  3  2021 ssl-client.xml.example
+-rw-r--r-- 1 liqiang liqiang  2697 Jan  3  2021 ssl-server.xml.example
+-rw-r--r-- 1 liqiang liqiang  2642 Jan  3  2021 user_ec_policies.xml.template
+
+-rw-r--r-- 1 liqiang liqiang  4113 Jan  3  2021 mapred-queues.xml.template
+-rw-r--r-- 1 liqiang liqiang  2591 Jan  3  2021 yarnservice-log4j.properties
+</code></pre>
+<h6 id="share-hadoop-目录下是关于hdfs、mr、yarn…-的各种jar包"><a href="#share-hadoop-目录下是关于hdfs、mr、yarn…-的各种jar包" class="headerlink" title="share&#x2F;hadoop 目录下是关于hdfs、mr、yarn… 的各种jar包"></a>share&#x2F;hadoop 目录下是关于hdfs、mr、yarn… 的各种jar包</h6><pre><code>drwxr-xr-x 2 liqiang liqiang 4096 Jan  3  2021 client
+drwxr-xr-x 6 liqiang liqiang 4096 Jan  3  2021 common
+drwxr-xr-x 6 liqiang liqiang 4096 Jan  3  2021 hdfs
+drwxr-xr-x 6 liqiang liqiang 4096 Jan  3  2021 mapreduce
+drwxr-xr-x 6 liqiang liqiang 4096 Jan  3  2021 tools
+drwxr-xr-x 8 liqiang liqiang 4096 Jan  3  2021 yarn
+</code></pre>
+<p>如下文中提到 使用 <strong>find .&#x2F; -name ‘*example*‘</strong> 查找官方提供mr案例的jar其实就在</p>
+<pre><code>~/app/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.2.jar
+</code></pre>
+<h6 id="logs-目录下是关于hadoop的日志"><a href="#logs-目录下是关于hadoop的日志" class="headerlink" title="logs 目录下是关于hadoop的日志"></a>logs 目录下是关于hadoop的日志</h6><p>如部署后namenode启动失败，可：</p>
+<pre><code>[liqiang@Gargantua ~]$ cd $HADOOP_HOME/logs;ll
+-rw-rw-r-- 1 liqiang liqiang 1256356 Jan  9 21:56 hadoop-liqiang-namenode-Gargantua.log
+-rw-rw-r-- 1 liqiang liqiang 1294353 Jan  9 21:56 hadoop-liqiang-secondarynamenode-Gargantua.log
+-rw-rw-r-- 1 liqiang liqiang  623236 Jan  9 20:55 hadoop-liqiang-datanode-Gargantua.log
+-rw-rw-r-- 1 liqiang liqiang  731136 Jan  9 22:16 hadoop-liqiang-nodemanager-Gargantua.log
+-rw-rw-r-- 1 liqiang liqiang  551680 Jan  9 22:06 hadoop-liqiang-resourcemanager-Gargantua.log
+</code></pre>
+<p>查看 namenode 日志</p>
+<pre><code># 全部加载并根据 ERROR过滤保留前后10行 【可以补充下针对大文件更高效的方式 less】
+cat hadoop-liqiang-namenode-Gargantua.log|grep ERROR -C10
+
+# 实时查看
+tail  -200f  hadoop-liqiang-namenode-Gargantua.log
+</code></pre>
+<h3 id="部署过程参考官方文档"><a href="#部署过程参考官方文档" class="headerlink" title="部署过程参考官方文档"></a>部署过程参考官方文档</h3><p><a target="_blank" rel="noopener" href="https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html">https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html</a></p>
+<h3 id="配置jdk"><a href="#配置jdk" class="headerlink" title="配置jdk"></a>配置jdk</h3><p>hadoop依赖jdk<br>jdk部署参考上篇博文：<a target="_blank" rel="noopener" href="https://editor.csdn.net/md/?articleId=121432910">https://editor.csdn.net/md/?articleId=121432910</a><br>本机JAVA_HOME：&#x2F;usr&#x2F;java&#x2F;jdk1.8.0_121</p>
+<h3 id="安装-配置"><a href="#安装-配置" class="headerlink" title="安装&amp;配置"></a>安装&amp;配置</h3><h5 id="上传hadoop"><a href="#上传hadoop" class="headerlink" title="上传hadoop"></a>上传hadoop</h5><blockquote>
+<p>官网hadoop.apache.org下载hadoop-3.2.2.tar.gz，版本：3.2.2<br>rz &#x2F; xftp上传到服务器&#x2F;tmp下。 	[ &#x2F;tmp目录会定时清除没有使用的文件，默认30天。]</p>
+</blockquote>
+<h5 id="新建用户、工作目录"><a href="#新建用户、工作目录" class="headerlink" title="新建用户、工作目录"></a>新建用户、工作目录</h5><blockquote>
+<p>useradd liqiang<br>id liqiang<br>su - liqiang<br>mkdir sourcecode software app log data lib tmp</p>
+</blockquote>
+<h5 id="移动解压"><a href="#移动解压" class="headerlink" title="移动解压"></a>移动解压</h5><pre><code>[root@Gargantua tmp]# mv /tmp/hadoop-3.2.2.tar.gz /home/liqiang/software/
+
+ [root@Gargantua tmp]# tar -zxvf /home/liqiang/software/hadoop-3.2.2.tar.gz -C /home/liqiang/app/
+ 【-C 解压到指定目录】
+
+[root@Gargantua app]# ln -s hadoop-3.2.2/ hadoop
+
+【root用户执行的解压和创建软连接，所以需要将权限修正】
+[root@Gargantua app]# chown liqiang:liqiang hadoop
+[root@Gargantua app]# chown liqiang:liqiang hadoop/*
+[root@Gargantua hadoop]# chown liqiang:liqiang app/*
+</code></pre>
+<p>hadoop解压后文件夹说明</p>
+<pre><code>bin      # hadoop相关命令
+etc      # 配置文件
+include
+lib      # 存放Hadoop的本地库（对数据进行压缩解压缩功能）
+libexec
+sbin    # hadoop服务启动停止脚本 【sbin/start-dfs.sh、sbin/start-yarn.sh】
+share   # 存放Hadoop的依赖jar包、文档、和官方案例
+logs   # 日志文件
+</code></pre>
+<h3 id="配置ssh-远程登录"><a href="#配置ssh-远程登录" class="headerlink" title="配置ssh: 远程登录"></a>配置ssh: 远程登录</h3><pre><code>[liqiang@Gargantua ~]$ ssh
+ssh    ssh-add     ssh-agent    ssh-copy-id  sshd    sshd-keygen  ssh-keygen 	ssh-keyscan  
+[liqiang@Gargantua ~]$ ssh-keygen 【ssh与keygen之间只有-没有空格】
+
+【三次回车，得到公钥和私钥】
+Your identification has been saved in /home/liqiang/.ssh/id_rsa.
+Your public key has been saved in /home/liqiang/.ssh/id_rsa.pub.
+</code></pre>
+<p>将公钥追加到 ~&#x2F;.ssh&#x2F;authorized_keys</p>
+<pre><code>[liqiang@Gargantua ~]$ cat ~/.ssh/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys
+</code></pre>
+<p>刷新权限，否则ssh连接时仍然会提示输入密码</p>
+<pre><code>[liqiang@Gargantua ~]$ chmod 0600 ~/.ssh/authorized_keys
+# 测试
+ssh Gargantua # 第一次需要输入yes
+# 如果还需要输入密码，那么ssh配置或者600权限有问题。
+</code></pre>
+<h3 id="配置伪分布式模式"><a href="#配置伪分布式模式" class="headerlink" title="配置伪分布式模式"></a>配置伪分布式模式</h3><h4 id="配置JAVA-HOME"><a href="#配置JAVA-HOME" class="headerlink" title="配置JAVA_HOME"></a>配置JAVA_HOME</h4><p>hadoop不能识别到&#x2F;etc&#x2F;profile里的JAVA_HOME，需要在<strong>hadoop-env.sh</strong>自己配置一遍</p>
+<blockquote>
+<p>[root@Gargantua &#x2F;]# su - liqiang<br>[liqiang@Gargantua ~]$ cd app&#x2F;hadoop&#x2F;etc&#x2F;hadoop<br>[liqiang@Gargantua hadoop]$ vi  hadoop-env.sh</p>
+</blockquote>
+<pre><code># 加入以下配置
+export JAVA_HOME=/usr/java/jdk1.8.0_121
+ export HADOOP_PID_DIR=/home/liqiang/tmp
+</code></pre>
+<blockquote>
+<ul>
+<li>配置HADOOP_PID_DIR 的目的：</li>
+<li>查看 &#x2F;tmp目录下发现，hadoop好几个数据和文件都是默认存放在 &#x2F;tmp下，而 &#x2F;tmp下的内容是会被定期删除的，非常危险。<br>假如未做HADOOP_PID_DIR(hadoop-env.sh) 和 hadoop.tmp.dir(core-site.xml)配置：<br>  [liqiang@Gargantua hadoop]$ ll &#x2F;tmp&#x2F;<br>  drwxr-xr-x 3 liqiang liqiang     4096 Dec 27 22:57 hadoop<br>  drwxrwxr-x 4 liqiang liqiang     4096 Dec 27 22:57 hadoop-liqiang   【# 默认的数据存储目录hadoop.tmp.dir，在core-site.xml改掉】<br>  -rw-rw-r– 1 liqiang liqiang        5 Dec 28 00:27 hadoop-liqiang-datanode.pid 【# 默认pid文件的存储目录，在hadoop-env.sh改掉】<br>  -rw-rw-r– 1 liqiang liqiang        5 Dec 28 00:27 hadoop-liqiang-namenode.pid<br>  -rw-rw-r– 1 liqiang liqiang        5 Dec 28 00:27 hadoop-liqiang-secondarynamenode.pid</li>
+<li>以上pid文件集群中记录每个进程启动的pid编号。当执行sbin&#x2F;stop-dfs.sh或stop-all.sh等命令的时候，hadoop会根据pid文件找到每个进程的pid，然后执行kill -9 pid来关闭进程。如果 pid 文件丢失，将会导致节点在执行stop命令是并没有关闭，进而无法重启使新配置文件生效。（记得修改hadoop-env.sh前先stop-all不然stop时就已经找不到pid文件了）</li>
+</ul>
+</blockquote>
+<h4 id="配置启动节点"><a href="#配置启动节点" class="headerlink" title="配置启动节点"></a>配置启动节点</h4><p>hadoop的配置文件都在HADOOP_HOME&#x2F;etc目录下：</p>
+<blockquote>
+<p>[liqiang@Gargantua hadoop]$ pwd<br>&#x2F;home&#x2F;liqiang&#x2F;app&#x2F;hadoop&#x2F;etc&#x2F;hadoop<br>[liqiang@Gargantua hadoop]$ vi core-site.xml<br>[liqiang@Gargantua hadoop]$ vi hdfs-site.xml</p>
+</blockquote>
+<h5 id="core-site-xml"><a href="#core-site-xml" class="headerlink" title="core-site.xml"></a>core-site.xml</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--配置NameNode的启动端点--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>fs.defaultFS<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>hdfs://Gargantua:9000<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 配置hadoop namenode 数据目录 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>hadoop.tmp.dir<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>/home/liqiang/tmp/hadoop-$&#123;user.name&#125;<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>说明：</p>
+<ul>
+<li><p>fs.defaultFS 代表配置namecode以Gargantua启动，[确保 &#x2F;etc&#x2F;profile中已有Gargantua配置本机内网Ip]。而datanode需要在  ~&#x2F;app&#x2F;hadoop&#x2F;etc&#x2F;hadoop&#x2F;workers 中将 localhost修改为Gargantua。将NN,SNN,DN节点都以同一host而不是ip启动，可以方便如果ip变更，则只需要在hosts文件中修改一次即可。</p>
+</li>
+<li><p>hadoop.tmp.dir 最好在hadoop第一次启动前做好配置，否则namenode 数据目录按默认目录是在 &#x2F;tmp下，而 &#x2F;tmp下的内容是会被定期删除的，非常危险。<br>如果在没有变更配置的情况下已经启动过，再直接改配置文件的此项配置，会导致NameNode服务启动失败。hadoop的每个进程每次启动都会生成一个版本文件，确保除第一次启动外这个文件只有一个（改完配置记得把文件也复制过去）【需要1.stop-all.sh，2.修改core-site.xml，3.拷贝hadoop文件到该去的地方，4.start-all.sh】</p>
+</li>
+</ul>
+<h5 id="hdfs-site-xml"><a href="#hdfs-site-xml" class="headerlink" title="hdfs-site.xml"></a>hdfs-site.xml</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--配置block副本数量，默认为3--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>dfs.replication<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>1<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--配置Secondary NameNode的启动端点(http协议)--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>dfs.namenode.secondary.http-address<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>Gargantua:9868<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--配置Secondary NameNode的启动端点(https协议)--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>dfs.namenode.secondary.https-address<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>Gargantua:9869<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--如果一台机器挂载了多个数据盘，那么需要做一下配置：</span></span><br><span class="line"><span class="comment">        &lt;property&gt;</span></span><br><span class="line"><span class="comment">            &lt;name&gt;dfs.datanode.data.dir&lt;/name&gt;</span></span><br><span class="line"><span class="comment">            &lt;value&gt;/data01/dfs/dn,/data02/dfs/dn,/data03/dfs/dn&lt;/value&gt;</span></span><br><span class="line"><span class="comment">        &lt;/property&gt;</span></span><br><span class="line"><span class="comment">    --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>说明：</p>
+<ul>
+<li>配置Secondary以Gargantua启动。</li>
+<li>如果一台机器挂载了多块物理磁盘，需要对dfs.datanode.data.dir做配置。<br>例如：一块磁盘的写能力30M&#x2F;s，装载10快磁盘后，就是300M&#x2F;s，写同样的数据，后者更高效。多块磁盘是为了存储空间更大，且高效率的读写IO。 肯定比单块磁盘更快。所以在生产上，DataNode的dfs.datanode.data.dir参数必须根据机器的实际情况配置。</li>
+</ul>
+<h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><h5 id="写在前：若启动失败-logs"><a href="#写在前：若启动失败-logs" class="headerlink" title="写在前：若启动失败(logs)"></a>写在前：若启动失败(logs)</h5><p>如果某个节点启动不成功，可以在尝试在$HADOOP_HOME&#x2F;logs 里找节点对应的日志文件</p>
+<pre><code>[liqiang@Gargantua ~]$ cd $HADOOP_HOME/logs;ll
+
+-rw-rw-r-- 1 liqiang liqiang 145676 Dec 28 02:14 hadoop-liqiang-datanode-Gargantua.log
+-rw-rw-r-- 1 liqiang liqiang    692 Dec 28 02:14 hadoop-liqiang-datanode-Gargantua.out
+-rw-rw-r-- 1 liqiang liqiang    692 Dec 28 02:06 hadoop-liqiang-datanode-Gargantua.out.1
+
+-rw-rw-r-- 1 liqiang liqiang 183747 Dec 28 02:15 hadoop-liqiang-namenode-Gargantua.log
+-rw-rw-r-- 1 liqiang liqiang    692 Dec 28 02:14 hadoop-liqiang-namenode-Gargantua.out
+-rw-rw-r-- 1 liqiang liqiang    692 Dec 28 02:06 hadoop-liqiang-namenode-Gargantua.out.1
+
+-rw-rw-r-- 1 liqiang liqiang 154067 Dec 28 02:15 hadoop-liqiang-secondarynamenode-Gargantua.log
+-rw-rw-r-- 1 liqiang liqiang    692 Dec 28 02:14 hadoop-liqiang-secondarynamenode-Gargantua.out
+-rw-rw-r-- 1 liqiang liqiang    692 Dec 28 02:06 hadoop-liqiang-secondarynamenode-Gargantua.out.1
+</code></pre>
+<p>如namenode启动失败：</p>
+<blockquote>
+<p> cat hadoop-liqiang-namenode-Gargantua.log|grep ERROR -C10<br> 或<br> tail  -200f  hadoop-liqiang-namenode-Gargantua.log</p>
+</blockquote>
+<h5 id="1-格式化hdfs文件目录"><a href="#1-格式化hdfs文件目录" class="headerlink" title="1.格式化hdfs文件目录"></a>1.格式化hdfs文件目录</h5><blockquote>
+<p>[liqiang@Gargantua hadoop]$ pwd<br>&#x2F;home&#x2F;liqiang&#x2F;app&#x2F;hadoop<br>[liqiang@Gargantua hadoop]$ bin&#x2F;hdfs namenode -format</p>
+</blockquote>
+<h5 id="2-启动主节点和数据节点"><a href="#2-启动主节点和数据节点" class="headerlink" title="2.启动主节点和数据节点"></a>2.启动主节点和数据节点</h5><p>NameNode：存储的是数据的元数据，例如文件名称，路径，大小等信息。<br>    DataNode：存储的是数据。</p>
+<pre><code>[liqiang@Gargantua hadoop]$ sbin/start-dfs.sh
+Starting namenodes on [Gargantua]
+Starting datanodes
+localhost: Warning: Permanently added &#39;localhost&#39; (ECDSA) to the list of known hosts.
+Starting secondary namenodes [Gargantua]
+</code></pre>
+<p>【启动成功之后，使用jps查看 、 或 ps -ef|grep hadoop】</p>
+<pre><code>[liqiang@Gargantua hadoop]$ jps
+5425 SecondaryNameNode
+5205 DataNode
+5558 Jps
+5087 NameNode
+</code></pre>
+<h5 id="web端访问：外网IP-9870"><a href="#web端访问：外网IP-9870" class="headerlink" title="web端访问：外网IP:9870"></a>web端访问：外网IP:9870</h5><p>hadoop2.x  hdfs web界面 默认端口号是 50070<br>hadoop3.x 默认端口号 9870</p>
+<h5 id="操作-hdfs"><a href="#操作-hdfs" class="headerlink" title="操作 hdfs"></a>操作 hdfs</h5><blockquote>
+<p>[liqiang@Gargantua hadoop]$ pwd<br>&#x2F;home&#x2F;liqiang&#x2F;app&#x2F;hadoop</p>
+</blockquote>
+<blockquote>
+<p>[liqiang@Gargantua hadoop]$ bin&#x2F;hdfs dfs -mkdir &#x2F;user<br>[liqiang@Gargantua hadoop]$ bin&#x2F;hdfs dfs -ls &#x2F;<br>drwxr-xr-x   - liqiang supergroup          0 2021-12-27 22:42 &#x2F;user</p>
+</blockquote>
+<blockquote>
+<p>[liqiang@Gargantua hadoop]$ bin&#x2F;hdfs dfs -mkdir &#x2F;user&#x2F;liqiang<br>[liqiang@Gargantua hadoop]$ bin&#x2F;hdfs dfs -mkdir input 【会默认也在liqiang目录下创建input】</p>
+</blockquote>
+<blockquote>
+<p>[liqiang@Gargantua hadoop]$ bin&#x2F;hdfs dfs -ls &#x2F;user&#x2F;liqiang<br>drwxr-xr-x   - liqiang supergroup          0 2021-12-27 22:45 &#x2F;user&#x2F;liqiang&#x2F;input</p>
+</blockquote>
+<p>再次确认一下需要复制过去的xml文件权限</p>
+<blockquote>
+<p>[liqiang@Gargantua hadoop]$ ll etc&#x2F;hadoop&#x2F;*.xml</p>
+</blockquote>
+<pre><code>-rw-r--r-- 1 liqiang liqiang  9213 Jan  3  2021 etc/hadoop/capacity-scheduler.xml
+-rw-r--r-- 1 liqiang liqiang   884 Dec 27 22:17 etc/hadoop/core-site.xml
+-rw-r--r-- 1 liqiang liqiang 11392 Jan  3  2021 etc/hadoop/hadoop-policy.xml
+-rw-r--r-- 1 liqiang liqiang   867 Dec 27 22:24 etc/hadoop/hdfs-site.xml
+-rw-r--r-- 1 liqiang liqiang   620 Jan  3  2021 etc/hadoop/httpfs-site.xml
+-rw-r--r-- 1 liqiang liqiang  3518 Jan  3  2021 etc/hadoop/kms-acls.xml
+-rw-r--r-- 1 liqiang liqiang   682 Jan  3  2021 etc/hadoop/kms-site.xml
+-rw-r--r-- 1 liqiang liqiang   758 Jan  3  2021 etc/hadoop/mapred-site.xml
+-rw-r--r-- 1 liqiang liqiang   690 Jan  3  2021 etc/hadoop/yarn-site.xml
+</code></pre>
+<p> 复制到hdfs</p>
+<blockquote>
+<p>[liqiang@Gargantua hadoop]$ bin&#x2F;hdfs dfs -put etc&#x2F;hadoop&#x2F;*.xml input<br>[liqiang@Gargantua hadoop]$ bin&#x2F;hdfs dfs -ls &#x2F;user&#x2F;liqiang&#x2F;input&#x2F; 【查看input中文件】</p>
+</blockquote>
+<p>Run some of the examples provided:尝试运行一个计算实例</p>
+<blockquote>
+<p>bin&#x2F;hadoop jar share&#x2F;hadoop&#x2F;mapreduce&#x2F;hadoop-mapreduce-examples-3.2.2.jar grep input output ‘dfs[a-z.]+’</p>
+</blockquote>
+<p>将hdfs中output的内容下载查看or 直接cat查看</p>
+<blockquote>
+<p>[liqiang@Gargantua hadoop]$ bin&#x2F;hdfs dfs -get output output<br>[liqiang@Gargantua hadoop]$ cat output&#x2F;*<br>1	dfsadmin<br>1	dfs.replication</p>
+</blockquote>
+<blockquote>
+<p>[liqiang@Gargantua hadoop]$ bin&#x2F;hdfs dfs -cat output&#x2F;*<br>1	dfsadmin<br>1	dfs.replication</p>
+</blockquote>
+<h3 id="启动Yern"><a href="#启动Yern" class="headerlink" title="启动Yern"></a>启动Yern</h3><h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><p>hadoop的配置文件都在 $HADOOP_HOME&#x2F;etc目录下：</p>
+<pre><code> [liqiang@Gargantua hadoop]$ pwd
+/home/liqiang/app/hadoop/etc/hadoop
+[liqiang@Gargantua hadoop]$ vi core-site.xml
+[liqiang@Gargantua hadoop]$ vi hdfs-site.xml
+
+[liqiang@Gargantua hadoop]$ vi mapred-site.xml
+[liqiang@Gargantua hadoop]$ vi yarn-site.xml
+</code></pre>
+<h5 id="mapred-site-xml"><a href="#mapred-site-xml" class="headerlink" title="mapred-site.xml"></a>mapred-site.xml</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--配置mr作业的计算框架--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>mapreduce.framework.name<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>yarn<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--配置mr运行application的classpath目录--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>mapreduce.application.classpath<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*:$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h5 id="yarn-site-xml"><a href="#yarn-site-xml" class="headerlink" title="yarn-site.xml"></a>yarn-site.xml</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--NodeManager上运行的附属服务--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>yarn.nodemanager.aux-services<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>mapreduce_shuffle<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--环境变量白名单--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>yarn.nodemanager.env-whitelist<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_HOME,PATH,LANG,TZ,JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_HOME,PATH,LANG,TZ,HADOOP_MAPRED_HOME<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--yarn作业web界面，如果不配置，则采用yarn的8088端口极容易遭到8088挖矿，记得改端口--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>yarn.resourcemanager.webapp.address<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>Gargantua:8088<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h5 id="启动yarn"><a href="#启动yarn" class="headerlink" title="启动yarn"></a>启动yarn</h5><pre><code> [liqiang@Gargantua hadoop]$ pwd
+ /home/liqiang/app/hadoop 
+ [liqiang@Gargantua hadoop]$ sbin/start-yarn.sh
+</code></pre>
+<h5 id="web端访问：外网ip-8088-cluster"><a href="#web端访问：外网ip-8088-cluster" class="headerlink" title="web端访问：外网ip:8088&#x2F;cluster"></a>web端访问：外网ip:8088&#x2F;cluster</h5><p>(8088已改8123)</p>
+<h3 id="wordcount案例"><a href="#wordcount案例" class="headerlink" title="wordcount案例"></a>wordcount案例</h3><h5 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h5><blockquote>
+<p>[liqiang@Gargantua ~]$ vi .bashrc</p>
+</blockquote>
+<pre><code>export HADOOP_HOME=/home/liqiang/app/hadoop
+export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH
+</code></pre>
+<blockquote>
+<p>[liqiang@Gargantua ~]$ . .bashrc<br>[liqiang@Gargantua ~]$ which hadoop<br>~&#x2F;app&#x2F;hadoop&#x2F;bin&#x2F;hadoop</p>
+</blockquote>
+<h5 id="准备一个文件并上传到hdfs"><a href="#准备一个文件并上传到hdfs" class="headerlink" title="准备一个文件并上传到hdfs"></a>准备一个文件并上传到hdfs</h5><blockquote>
+<p>[liqiang@Gargantua ~]$ vi wc.log</p>
+</blockquote>
+<pre><code>jepson
+ruoze
+xingxing
+a b c
+b a c
+jepson
+gargantua a b c
+</code></pre>
+<blockquote>
+<p>[liqiang@Gargantua ~]$ hdfs dfs -mkdir &#x2F;input<br>[liqiang@Gargantua ~]$ hdfs dfs -put wc.log &#x2F;input<br>[liqiang@Gargantua ~]$ hdfs dfs -cat &#x2F;input&#x2F;wc.log</p>
+</blockquote>
+<h5 id="找到官方案例jar包"><a href="#找到官方案例jar包" class="headerlink" title="找到官方案例jar包"></a>找到官方案例jar包</h5><blockquote>
+<p>[liqiang@Gargantua ~]$ find .&#x2F; -name ‘*example*‘</p>
+</blockquote>
+<pre><code>./app/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.2.jar
+</code></pre>
+<blockquote>
+<p>尝试找到命令运行此jar包<br>[liqiang@Gargantua ~]$ hadoop –help</p>
+</blockquote>
+<pre><code>jar &lt;jar&gt;     run a jar file. NOTE: please use &quot;yarn jar&quot; to launch YARN applications, not this command.
+</code></pre>
+<blockquote>
+<p>[liqiang@Gargantua ~]$ yarn jar .&#x2F;app&#x2F;hadoop-3.2.2&#x2F;share&#x2F;hadoop&#x2F;mapreduce&#x2F;hadoop-mapreduce-examples-3.2.2.jar  </p>
+</blockquote>
+<pre><code>【# RunJar jarFile [mainClass] args... 还需要写出这个jar的主类main】
+
+An example program must be given as the first argument.
+Valid program names are:
+     aggregatewordcount: An Aggregate based map/reduce program that counts the words in the input files.
+    aggregatewordhist: An Aggregate based map/reduce program that computes the histogram of the words in the input files.
+    bbp: A map/reduce program that uses Bailey-Borwein-Plouffe to compute exact digits of Pi.
+     dbcount: An example job that count the pageview counts from a database.
+    distbbp: A map/reduce program that uses a BBP-type formula to compute exact bits of Pi.
+    grep: A map/reduce program that counts the matches of a regex in the input.
+    join: A job that effects a join over sorted, equally partitioned datasets
+     multifilewc: A job that counts words from several files.
+     pentomino: A map/reduce tile laying program to find solutions to pentomino problems.
+      pi: A map/reduce program that estimates Pi using a quasi-Monte Carlo method.
+      randomtextwriter: A map/reduce program that writes 10GB of random textual data per node.
+      randomwriter: A map/reduce program that writes 10GB of random data per node.
+      secondarysort: An example defining a secondary sort to the reduce.
+      sort: A map/reduce program that sorts the data written by the random writer.
+      sudoku: A sudoku solver.
+      teragen: Generate data for the terasort
+      terasort: Run the terasort
+      teravalidate: Checking results of terasort
+      wordcount: A map/reduce program that counts the words in the input files.
+      wordmean: A map/reduce program that counts the average length of the words in the input files.
+      wordmedian: A map/reduce program that counts the median length of the words in the input files.
+      wordstandarddeviation: A map/reduce program that counts the standard deviation of the length of the words in the input files.
+</code></pre>
+<h5 id="运行jar"><a href="#运行jar" class="headerlink" title="运行jar"></a>运行jar</h5><p>wordcount &#x2F;input &#x2F;output  ：指定主类 wc 和输入&#x2F;输出目录 </p>
+<blockquote>
+<ul>
+<li>[liqiang@Gargantua ~]$ yarn jar .&#x2F;app&#x2F;hadoop-3.2.2&#x2F;share&#x2F;hadoop&#x2F;mapreduce&#x2F;hadoop-mapreduce-examples-3.2.2.jar wordcount &#x2F;input &#x2F;output</li>
+</ul>
+</blockquote>
+<p>正常来说，接下来就会执行作业。</p>
+<pre><code>2021-11-26 22:43:01,129 INFO mapreduce.JobSubmitter: number of splits:1  【切片是1 规则 】
+// ...
+     File System Counters
+     Job Counters 
+            Launched map tasks=1  【map 任务 1】
+            Launched reduce tasks=1 【reduce 任务 1】
+     Map-Reduce Framework
+        // ...
+     Shuffle Errors
+// ...
+</code></pre>
+<h5 id="查看wc结果"><a href="#查看wc结果" class="headerlink" title="查看wc结果"></a>查看wc结果</h5><blockquote>
+<p>[liqiang@Gargantua ~]$ hdfs dfs -cat &#x2F;output&#x2F;part-r-00000</p>
+</blockquote>
+<pre><code>a	3
+b	3
+c	3
+gargantua	1
+jepson	2
+ruoze	2
+xingxing	1
+</code></pre>
+<p>如果遇到<br>&#x2F;bin&#x2F;bash: &#x2F;bin&#x2F;java: No such file or directory<br>尝试建立一个软连接指向我们到JAVA_HOME（mysql时有个【mysql.sock】也是这样临时解决）<br>ln -s &#x2F;usr&#x2F;java&#x2F;jdk1.8.0_121&#x2F;bin&#x2F;java &#x2F;bin&#x2F;java</p>
+<p>一般是有些bug ，该读javahome的时候没有去读取系统环境变量，所以找不到java；<br>或者某些默认配置还在&#x2F;tmp下，而不久被系统删掉所以找不到。</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2024/09/16/Linux%E8%A1%A5%E5%85%85%E6%A6%82%E5%BF%B5-CentOS%E3%80%81RedHat%EF%BC%9BUbuntu%E3%80%81Debian%EF%BC%9Btar%E3%80%81rpm%E3%80%81yum%E3%80%81deb%E3%80%81apt-get/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-17T12:44:18+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年9月17日</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
-    
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hadoop/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Hadoop</p></a></div>
+  <span hidden itemprop="keywords">Hadoop</span>
   
 
 
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2024/09/17/Hadoop%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/&title=Hadoop环境搭建过程记录 - blog昱东&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2024/09/17/Hadoop%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/&title=Hadoop环境搭建过程记录 - blog昱东&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2024/09/17/Hadoop%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/&title=Hadoop环境搭建过程记录 - blog昱东&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2024/09/17/Hadoop%E6%94%AF%E6%8C%81LZO%E5%8E%8B%E7%BC%A9%E9%85%8D%E7%BD%AE/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Hadoop支持LZO压缩配置</p>
+          <p class='content'>
+
+环境准备准备lzo格式压缩文件#检查是否有lzop命令
+[hadoop@Gargantua software]$ which lzop
+/bin/lzop
+#若没有执行如下安装命令
+[roo...</p>
+        </a>
+      
+      
+        <a class='next' href='/2024/09/17/Hive%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E4%B8%8E%E8%87%AA%E5%AE%9A%E4%B9%89UDF%E5%87%BD%E6%95%B0/'>
+          <p class='title'>Hive内置函数&自定义UDF函数<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+
+Build-in 内置函数官网 https://cwiki.apache.org/confluence/display/Hive/Home DML&#x2F;Operators and UD...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2024/09/17/Hadoop%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="https://schema.org.cn/WPSideBar">
   
@@ -2541,205 +3104,31 @@ CentOS（Community ENTerprise Operating System）基于Red Hat Enterprise Linux 
     
     
       
-<section class="widget blogger desktop mobile ">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">blog昱东</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/swpu_lq@163.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-award flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop">
-    
-  <header>
-    
-      <a href='/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Java/" href="/categories/Java/"
-            active-action="action-categoriesJava"
-            ><div class='name'>Java</div><div class='badge'>(8)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Java/jvm/" href="/categories/Java/jvm/"
-            active-action="action-categoriesJavajvm"
-            ><div class='name'>jvm</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"
-            active-action="action-categoriesJavaE5A49AE7BABFE7A88B"
-            ><div class='name'>多线程</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Linux/" href="/categories/Linux/"
-            active-action="action-categoriesLinux"
-            ><div class='name'>Linux</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Python/" href="/categories/Python/"
-            active-action="action-categoriesPython"
-            ><div class='name'>Python</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Spring/" href="/categories/Spring/"
-            active-action="action-categoriesSpring"
-            ><div class='name'>Spring</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Spring/Spring-Boot/" href="/categories/Spring/Spring-Boot/"
-            active-action="action-categoriesSpringSpring-Boot"
-            ><div class='name'>Spring Boot</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/maven/" href="/categories/maven/"
-            active-action="action-categoriesmaven"
-            ><div class='name'>maven</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"
-            active-action="action-categoriesE5A4A7E695B0E68DAE"
-            ><div class='name'>大数据</div><div class='badge'>(7)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/"
-            active-action="action-categoriesE5A4A7E695B0E68DAEHadoop"
-            ><div class='name'>Hadoop</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hive/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hive/"
-            active-action="action-categoriesE5A4A7E695B0E68DAEHive"
-            ><div class='name'>Hive</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"
-            active-action="action-categoriesE695B0E68DAEE5BA93"
-            ><div class='name'>数据库</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/"
-            active-action="action-categoriesE695B0E68DAEE5BA93Oracle"
-            ><div class='name'>Oracle</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/TiDB/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/TiDB/"
-            active-action="action-categoriesE695B0E68DAEE5BA93TiDB"
-            ><div class='name'>TiDB</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/"
-            active-action="action-categoriesE695B0E68DAEE5BA93mysql"
-            ><div class='name'>mysql</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%9D%82%E8%AE%B0/" href="/categories/%E6%9D%82%E8%AE%B0/"
-            active-action="action-categoriesE69D82E8AEB0"
-            ><div class='name'>杂记</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"
-            active-action="action-categoriesE6ADA3E58899E8A1A8E8BEBEE5BC8F"
-            ><div class='name'>正则表达式</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%BC%96%E7%A0%81/" href="/categories/%E7%BC%96%E7%A0%81/"
-            active-action="action-categoriesE7BC96E7A081"
-            ><div class='name'>编码</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile">
-    
-  <header>
-    
-      <a href='/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/ASCII/" style="font-size: 14px; color: #999">ASCII</a> <a href="/tags/Hadoop/" style="font-size: 20.67px; color: #6c6c6c">Hadoop</a> <a href="/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/tags/Hive/" style="font-size: 17.33px; color: #828282">Hive</a> <a href="/tags/Junit/" style="font-size: 14px; color: #999">Junit</a> <a href="/tags/NAS/" style="font-size: 14px; color: #999">NAS</a> <a href="/tags/Oracle/" style="font-size: 14px; color: #999">Oracle</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/Spring/" style="font-size: 20.67px; color: #6c6c6c">Spring</a> <a href="/tags/TiDB/" style="font-size: 14px; color: #999">TiDB</a> <a href="/tags/UTF-8/" style="font-size: 14px; color: #999">UTF-8</a> <a href="/tags/Unicode/" style="font-size: 14px; color: #999">Unicode</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/juc/" style="font-size: 17.33px; color: #828282">juc</a> <a href="/tags/jvm/" style="font-size: 14px; color: #999">jvm</a> <a href="/tags/jvm%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/" style="font-size: 14px; color: #999">jvm垃圾回收</a> <a href="/tags/kill-9/" style="font-size: 14px; color: #999">kill -9</a> <a href="/tags/linux/" style="font-size: 24px; color: #555">linux</a> <a href="/tags/log4j/" style="font-size: 14px; color: #999">log4j</a> <a href="/tags/logback/" style="font-size: 14px; color: #999">logback</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/node-js/" style="font-size: 14px; color: #999">node.js</a> <a href="/tags/rpm/" style="font-size: 14px; color: #999">rpm</a> <a href="/tags/shell/" style="font-size: 14px; color: #999">shell</a> <a href="/tags/slf4j/" style="font-size: 14px; color: #999">slf4j</a> <a href="/tags/yum/" style="font-size: 14px; color: #999">yum</a> <a href="/tags/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE/" style="font-size: 14px; color: #999">双亲委派</a> <a href="/tags/%E7%A3%81%E7%9B%98RAID/" style="font-size: 14px; color: #999">磁盘RAID</a> <a href="/tags/%E7%B1%BB%E5%8A%A0%E8%BD%BD/" style="font-size: 14px; color: #999">类加载</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HADOOP-HOME-%E4%B8%8B%E7%9A%84%E7%9B%AE%E5%BD%95"><span class="toc-text">HADOOP_HOME 下的目录</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E8%BF%87%E7%A8%8B%E5%8F%82%E8%80%83%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3"><span class="toc-text">部署过程参考官方文档</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEjdk"><span class="toc-text">配置jdk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-%E9%85%8D%E7%BD%AE"><span class="toc-text">安装&amp;配置</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%8A%E4%BC%A0hadoop"><span class="toc-text">上传hadoop</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7%E3%80%81%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95"><span class="toc-text">新建用户、工作目录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E8%A7%A3%E5%8E%8B"><span class="toc-text">移动解压</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEssh-%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95"><span class="toc-text">配置ssh: 远程登录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E6%A8%A1%E5%BC%8F"><span class="toc-text">配置伪分布式模式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEJAVA-HOME"><span class="toc-text">配置JAVA_HOME</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%90%AF%E5%8A%A8%E8%8A%82%E7%82%B9"><span class="toc-text">配置启动节点</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#core-site-xml"><span class="toc-text">core-site.xml</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#hdfs-site-xml"><span class="toc-text">hdfs-site.xml</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8"><span class="toc-text">启动</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%EF%BC%9A%E8%8B%A5%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5-logs"><span class="toc-text">写在前：若启动失败(logs)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E6%A0%BC%E5%BC%8F%E5%8C%96hdfs%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95"><span class="toc-text">1.格式化hdfs文件目录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%90%AF%E5%8A%A8%E4%B8%BB%E8%8A%82%E7%82%B9%E5%92%8C%E6%95%B0%E6%8D%AE%E8%8A%82%E7%82%B9"><span class="toc-text">2.启动主节点和数据节点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#web%E7%AB%AF%E8%AE%BF%E9%97%AE%EF%BC%9A%E5%A4%96%E7%BD%91IP-9870"><span class="toc-text">web端访问：外网IP:9870</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C-hdfs"><span class="toc-text">操作 hdfs</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8Yern"><span class="toc-text">启动Yern</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%86%E5%A4%87"><span class="toc-text">准备</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#mapred-site-xml"><span class="toc-text">mapred-site.xml</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#yarn-site-xml"><span class="toc-text">yarn-site.xml</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8yarn"><span class="toc-text">启动yarn</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#web%E7%AB%AF%E8%AE%BF%E9%97%AE%EF%BC%9A%E5%A4%96%E7%BD%91ip-8088-cluster"><span class="toc-text">web端访问：外网ip:8088&#x2F;cluster</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#wordcount%E6%A1%88%E4%BE%8B"><span class="toc-text">wordcount案例</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-text">环境变量</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E5%B9%B6%E4%B8%8A%E4%BC%A0%E5%88%B0hdfs"><span class="toc-text">准备一个文件并上传到hdfs</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%89%BE%E5%88%B0%E5%AE%98%E6%96%B9%E6%A1%88%E4%BE%8Bjar%E5%8C%85"><span class="toc-text">找到官方案例jar包</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%90%E8%A1%8Cjar"><span class="toc-text">运行jar</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8Bwc%E7%BB%93%E6%9E%9C"><span class="toc-text">查看wc结果</span></a></li></ol></li></ol>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -2747,6 +3136,7 @@ CentOS（Community ENTerprise Operating System）基于Red Hat Enterprise Linux 
   
   <!-- Custom Files side end -->
 </aside>
+
 
 
         </div>
@@ -3228,7 +3618,7 @@ CentOS（Community ENTerprise Operating System）基于Red Hat Enterprise Linux 
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"blog昱东"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/tags/yum/","name":"yum"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"blog昱东","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"blog昱东","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"blog昱东"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/大数据/","name":"大数据"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/大数据/Hadoop/","name":"Hadoop"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/09/17/Hadoop环境搭建过程记录/","name":"Hadoop环境搭建过程记录"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"blog昱东","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Hadoop环境搭建过程记录","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/09/17/Hadoop%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"blog昱东","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/09/17/Hadoop%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/","wordCount":0,"datePublished":"2024-09-17T04:41:00.000Z","dateModified":"2024-09-17T04:44:18.789Z","articleSection":"大数据","keywords":"Hadoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

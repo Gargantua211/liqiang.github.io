@@ -2110,7 +2110,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726546889099),
+    lastupdate: new Date(1726548706555),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2461,79 +2461,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Oracle为什么要用三层嵌套实现分页/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="blog昱东">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="blog昱东">
-    <meta itemprop="description" content="久有凌云志，重上井冈山">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/"  itemprop="url">
-        Oracle为什么要用三层嵌套实现分页
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        
-
-Oracle为什么要用三层嵌套实现分页
-先说结论：嵌套出两层SELECT对应的两个原因：  
-
-
-ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存在同一趟SELECT中，order by排序后的ROWNUM不是有序的，不会和查询结果行号对应，所以不能做条件过滤。需要在一次select  order by 后得到的虚拟表中，再获取ROWNUM这样order by才能...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/">Oracle</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/" itemprop="url"><span itemprop="name">Oracle</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
   <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/MySQL部署-CentOS7-2/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="blog昱东">
@@ -2598,6 +2525,79 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
       
         <div>
           <a class='readmore' href='/2024/09/15/MySQL%E9%83%A8%E7%BD%B2-CentOS7-2/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Oracle为什么要用三层嵌套实现分页/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="blog昱东">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="blog昱东">
+    <meta itemprop="description" content="久有凌云志，重上井冈山">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/"  itemprop="url">
+        Oracle为什么要用三层嵌套实现分页
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+
+Oracle为什么要用三层嵌套实现分页
+先说结论：嵌套出两层SELECT对应的两个原因：  
+
+
+ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存在同一趟SELECT中，order by排序后的ROWNUM不是有序的，不会和查询结果行号对应，所以不能做条件过滤。需要在一次select  order by 后得到的虚拟表中，再获取ROWNUM这样order by才能...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/">Oracle</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/" itemprop="url"><span itemprop="name">Oracle</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2843,17 +2843,17 @@ tidb0 将用于部...
           <li><a class="flat-box"
             title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"
             active-action="action-categoriesE5A4A7E695B0E68DAE"
-            ><div class='name'>大数据</div><div class='badge'>(4)</div></a></li>
+            ><div class='name'>大数据</div><div class='badge'>(7)</div></a></li>
         
           <li><a class="flat-box child"
-            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/"
-            active-action="action-categoriesE5A4A7E695B0E68DAEHDFS"
-            ><div class='name'>HDFS</div><div class='badge'>(1)</div></a></li>
+            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/"
+            active-action="action-categoriesE5A4A7E695B0E68DAEHadoop"
+            ><div class='name'>Hadoop</div><div class='badge'>(3)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hive/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hive/"
             active-action="action-categoriesE5A4A7E695B0E68DAEHive"
-            ><div class='name'>Hive</div><div class='badge'>(3)</div></a></li>
+            ><div class='name'>Hive</div><div class='badge'>(4)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"
@@ -2913,7 +2913,7 @@ tidb0 将用于部...
 
 
     <div class='content'>
-      <a href="/tags/ASCII/" style="font-size: 14px; color: #999">ASCII</a> <a href="/tags/HDFS/" style="font-size: 14px; color: #999">HDFS</a> <a href="/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/tags/Hive/" style="font-size: 14px; color: #999">Hive</a> <a href="/tags/Junit/" style="font-size: 14px; color: #999">Junit</a> <a href="/tags/NAS/" style="font-size: 14px; color: #999">NAS</a> <a href="/tags/Oracle/" style="font-size: 14px; color: #999">Oracle</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/Spring/" style="font-size: 20.67px; color: #6c6c6c">Spring</a> <a href="/tags/TiDB/" style="font-size: 14px; color: #999">TiDB</a> <a href="/tags/UTF-8/" style="font-size: 14px; color: #999">UTF-8</a> <a href="/tags/Unicode/" style="font-size: 14px; color: #999">Unicode</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/juc/" style="font-size: 17.33px; color: #828282">juc</a> <a href="/tags/jvm/" style="font-size: 14px; color: #999">jvm</a> <a href="/tags/jvm%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/" style="font-size: 14px; color: #999">jvm垃圾回收</a> <a href="/tags/kill-9/" style="font-size: 14px; color: #999">kill -9</a> <a href="/tags/linux/" style="font-size: 24px; color: #555">linux</a> <a href="/tags/log4j/" style="font-size: 14px; color: #999">log4j</a> <a href="/tags/logback/" style="font-size: 14px; color: #999">logback</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/node-js/" style="font-size: 14px; color: #999">node.js</a> <a href="/tags/rpm/" style="font-size: 14px; color: #999">rpm</a> <a href="/tags/shell/" style="font-size: 14px; color: #999">shell</a> <a href="/tags/slf4j/" style="font-size: 14px; color: #999">slf4j</a> <a href="/tags/yum/" style="font-size: 14px; color: #999">yum</a> <a href="/tags/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE/" style="font-size: 14px; color: #999">双亲委派</a> <a href="/tags/%E7%A3%81%E7%9B%98RAID/" style="font-size: 14px; color: #999">磁盘RAID</a> <a href="/tags/%E7%B1%BB%E5%8A%A0%E8%BD%BD/" style="font-size: 14px; color: #999">类加载</a>
+      <a href="/tags/ASCII/" style="font-size: 14px; color: #999">ASCII</a> <a href="/tags/Hadoop/" style="font-size: 20.67px; color: #6c6c6c">Hadoop</a> <a href="/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/tags/Hive/" style="font-size: 17.33px; color: #828282">Hive</a> <a href="/tags/Junit/" style="font-size: 14px; color: #999">Junit</a> <a href="/tags/NAS/" style="font-size: 14px; color: #999">NAS</a> <a href="/tags/Oracle/" style="font-size: 14px; color: #999">Oracle</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/Spring/" style="font-size: 20.67px; color: #6c6c6c">Spring</a> <a href="/tags/TiDB/" style="font-size: 14px; color: #999">TiDB</a> <a href="/tags/UTF-8/" style="font-size: 14px; color: #999">UTF-8</a> <a href="/tags/Unicode/" style="font-size: 14px; color: #999">Unicode</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/juc/" style="font-size: 17.33px; color: #828282">juc</a> <a href="/tags/jvm/" style="font-size: 14px; color: #999">jvm</a> <a href="/tags/jvm%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/" style="font-size: 14px; color: #999">jvm垃圾回收</a> <a href="/tags/kill-9/" style="font-size: 14px; color: #999">kill -9</a> <a href="/tags/linux/" style="font-size: 24px; color: #555">linux</a> <a href="/tags/log4j/" style="font-size: 14px; color: #999">log4j</a> <a href="/tags/logback/" style="font-size: 14px; color: #999">logback</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/node-js/" style="font-size: 14px; color: #999">node.js</a> <a href="/tags/rpm/" style="font-size: 14px; color: #999">rpm</a> <a href="/tags/shell/" style="font-size: 14px; color: #999">shell</a> <a href="/tags/slf4j/" style="font-size: 14px; color: #999">slf4j</a> <a href="/tags/yum/" style="font-size: 14px; color: #999">yum</a> <a href="/tags/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE/" style="font-size: 14px; color: #999">双亲委派</a> <a href="/tags/%E7%A3%81%E7%9B%98RAID/" style="font-size: 14px; color: #999">磁盘RAID</a> <a href="/tags/%E7%B1%BB%E5%8A%A0%E8%BD%BD/" style="font-size: 14px; color: #999">类加载</a>
     </div>
   </section>
 

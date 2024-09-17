@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/categories/大数据/hdfs/"/>
+  <link rel="canonical" href="http://example.com/categories/大数据/hadoop/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,13 +34,13 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>分类：HDFS - blog昱东</title>
+  <title>分类：Hadoop - blog昱东</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="久有凌云志，重上井冈山 - 昱东 - blog昱东">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="blog昱东">
-<meta property="og:url" content="http://example.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/index.html">
+<meta property="og:url" content="http://example.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/index.html">
 <meta property="og:site_name" content="blog昱东">
 <meta property="og:description" content="久有凌云志，重上井冈山">
 <meta property="og:locale" content="zh_CN">
@@ -2110,7 +2110,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726546889099),
+    lastupdate: new Date(1726548706555),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2450,9 +2450,165 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/17/Hadoop支持LZO压缩配置/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="blog昱东">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="blog昱东">
+    <meta itemprop="description" content="久有凌云志，重上井冈山">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/09/17/Hadoop%E6%94%AF%E6%8C%81LZO%E5%8E%8B%E7%BC%A9%E9%85%8D%E7%BD%AE/"  itemprop="url">
+        Hadoop支持LZO压缩配置
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+
+环境准备准备lzo格式压缩文件#检查是否有lzop命令
+[hadoop@Gargantua software]$ which lzop
+/bin/lzop
+#若没有执行如下安装命令
+[root@Gargantua ~]# yum install -y svn ncurses-devel
+[root@Gargantua ~]# yum install -y gcc gcc-c++ make...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-09-17T12:43:37+08:00">2024-09-17</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a><span class="sep"></span><a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/">Hadoop</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" itemprop="url"><span itemprop="name">大数据</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/" itemprop="url"><span itemprop="name">Hadoop</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/09/17/Hadoop%E6%94%AF%E6%8C%81LZO%E5%8E%8B%E7%BC%A9%E9%85%8D%E7%BD%AE/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/17/Hadoop环境搭建过程记录/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="blog昱东">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="blog昱东">
+    <meta itemprop="description" content="久有凌云志，重上井冈山">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/09/17/Hadoop%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/"  itemprop="url">
+        Hadoop环境搭建过程记录
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+
+常用命令[liqiang@Gargantua ~]$ cd $HADOOP_HOME;pwd
+/home/liqiang/app/hadoop
+
+【启动、停止】
+[liqiang@Gargantua ~]$ cd $HADOOP_HOME/sbin     
+
+# 启动 hdfs 、启动 yarn 
+ start-dfs.sh 
+ start-yarn.sh 
+ start-all.sh...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-09-17T12:41:00+08:00">2024-09-17</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a><span class="sep"></span><a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/">Hadoop</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" itemprop="url"><span itemprop="name">大数据</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/" itemprop="url"><span itemprop="name">Hadoop</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/09/17/Hadoop%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2500,14 +2656,14 @@ hadoop 常用命令查看hadoop 命令所有参数：
         <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a><span class="sep"></span><a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/">HDFS</a>
+          <a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a><span class="sep"></span><a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/">Hadoop</a>
           
             <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
               <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" itemprop="url"><span itemprop="name">大数据</span></a>
             </span>
           
             <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/" itemprop="url"><span itemprop="name">HDFS</span></a>
+              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/" itemprop="url"><span itemprop="name">Hadoop</span></a>
             </span>
           
         
@@ -2661,17 +2817,17 @@ hadoop 常用命令查看hadoop 命令所有参数：
           <li><a class="flat-box"
             title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"
             active-action="action-categoriesE5A4A7E695B0E68DAE"
-            ><div class='name'>大数据</div><div class='badge'>(4)</div></a></li>
+            ><div class='name'>大数据</div><div class='badge'>(7)</div></a></li>
         
           <li><a class="flat-box child"
-            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/HDFS/"
-            active-action="action-categoriesE5A4A7E695B0E68DAEHDFS"
-            ><div class='name'>HDFS</div><div class='badge'>(1)</div></a></li>
+            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/"
+            active-action="action-categoriesE5A4A7E695B0E68DAEHadoop"
+            ><div class='name'>Hadoop</div><div class='badge'>(3)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hive/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hive/"
             active-action="action-categoriesE5A4A7E695B0E68DAEHive"
-            ><div class='name'>Hive</div><div class='badge'>(3)</div></a></li>
+            ><div class='name'>Hive</div><div class='badge'>(4)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"
@@ -2731,7 +2887,7 @@ hadoop 常用命令查看hadoop 命令所有参数：
 
 
     <div class='content'>
-      <a href="/tags/ASCII/" style="font-size: 14px; color: #999">ASCII</a> <a href="/tags/HDFS/" style="font-size: 14px; color: #999">HDFS</a> <a href="/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/tags/Hive/" style="font-size: 14px; color: #999">Hive</a> <a href="/tags/Junit/" style="font-size: 14px; color: #999">Junit</a> <a href="/tags/NAS/" style="font-size: 14px; color: #999">NAS</a> <a href="/tags/Oracle/" style="font-size: 14px; color: #999">Oracle</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/Spring/" style="font-size: 20.67px; color: #6c6c6c">Spring</a> <a href="/tags/TiDB/" style="font-size: 14px; color: #999">TiDB</a> <a href="/tags/UTF-8/" style="font-size: 14px; color: #999">UTF-8</a> <a href="/tags/Unicode/" style="font-size: 14px; color: #999">Unicode</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/juc/" style="font-size: 17.33px; color: #828282">juc</a> <a href="/tags/jvm/" style="font-size: 14px; color: #999">jvm</a> <a href="/tags/jvm%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/" style="font-size: 14px; color: #999">jvm垃圾回收</a> <a href="/tags/kill-9/" style="font-size: 14px; color: #999">kill -9</a> <a href="/tags/linux/" style="font-size: 24px; color: #555">linux</a> <a href="/tags/log4j/" style="font-size: 14px; color: #999">log4j</a> <a href="/tags/logback/" style="font-size: 14px; color: #999">logback</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/node-js/" style="font-size: 14px; color: #999">node.js</a> <a href="/tags/rpm/" style="font-size: 14px; color: #999">rpm</a> <a href="/tags/shell/" style="font-size: 14px; color: #999">shell</a> <a href="/tags/slf4j/" style="font-size: 14px; color: #999">slf4j</a> <a href="/tags/yum/" style="font-size: 14px; color: #999">yum</a> <a href="/tags/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE/" style="font-size: 14px; color: #999">双亲委派</a> <a href="/tags/%E7%A3%81%E7%9B%98RAID/" style="font-size: 14px; color: #999">磁盘RAID</a> <a href="/tags/%E7%B1%BB%E5%8A%A0%E8%BD%BD/" style="font-size: 14px; color: #999">类加载</a>
+      <a href="/tags/ASCII/" style="font-size: 14px; color: #999">ASCII</a> <a href="/tags/Hadoop/" style="font-size: 20.67px; color: #6c6c6c">Hadoop</a> <a href="/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/tags/Hive/" style="font-size: 17.33px; color: #828282">Hive</a> <a href="/tags/Junit/" style="font-size: 14px; color: #999">Junit</a> <a href="/tags/NAS/" style="font-size: 14px; color: #999">NAS</a> <a href="/tags/Oracle/" style="font-size: 14px; color: #999">Oracle</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/Spring/" style="font-size: 20.67px; color: #6c6c6c">Spring</a> <a href="/tags/TiDB/" style="font-size: 14px; color: #999">TiDB</a> <a href="/tags/UTF-8/" style="font-size: 14px; color: #999">UTF-8</a> <a href="/tags/Unicode/" style="font-size: 14px; color: #999">Unicode</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/juc/" style="font-size: 17.33px; color: #828282">juc</a> <a href="/tags/jvm/" style="font-size: 14px; color: #999">jvm</a> <a href="/tags/jvm%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/" style="font-size: 14px; color: #999">jvm垃圾回收</a> <a href="/tags/kill-9/" style="font-size: 14px; color: #999">kill -9</a> <a href="/tags/linux/" style="font-size: 24px; color: #555">linux</a> <a href="/tags/log4j/" style="font-size: 14px; color: #999">log4j</a> <a href="/tags/logback/" style="font-size: 14px; color: #999">logback</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/node-js/" style="font-size: 14px; color: #999">node.js</a> <a href="/tags/rpm/" style="font-size: 14px; color: #999">rpm</a> <a href="/tags/shell/" style="font-size: 14px; color: #999">shell</a> <a href="/tags/slf4j/" style="font-size: 14px; color: #999">slf4j</a> <a href="/tags/yum/" style="font-size: 14px; color: #999">yum</a> <a href="/tags/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE/" style="font-size: 14px; color: #999">双亲委派</a> <a href="/tags/%E7%A3%81%E7%9B%98RAID/" style="font-size: 14px; color: #999">磁盘RAID</a> <a href="/tags/%E7%B1%BB%E5%8A%A0%E8%BD%BD/" style="font-size: 14px; color: #999">类加载</a>
     </div>
   </section>
 
@@ -3231,7 +3387,7 @@ hadoop 常用命令查看hadoop 命令所有参数：
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"blog昱东"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/HDFS/","name":"HDFS"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"blog昱东","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"blog昱东","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"blog昱东"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/Hadoop/","name":"Hadoop"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"blog昱东","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"blog昱东","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

@@ -2110,7 +2110,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726543938313),
+    lastupdate: new Date(1726546889099),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2448,7 +2448,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/Oracle为什么要用三层嵌套实现分页/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/MySQL部署-CentOS7-2/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="blog昱东">
   </span>
@@ -2466,19 +2466,27 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/"  itemprop="url">
-        Oracle为什么要用三层嵌套实现分页
+      <a href="/2024/09/15/MySQL%E9%83%A8%E7%BD%B2-CentOS7-2/"  itemprop="url">
+        MySQL部署[CentOS7.2]
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        Oracle为什么要用三层嵌套实现分页
-先说结论：嵌套出两层SELECT对应的两个原因：  
+        
+
+总结在前
+设置mysql 跟随mysqladmin用户切换启动
+  su - mysqladmin -c &quot;/etc/init.d/mysql start --federated&quot;
 
 
-ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存在同一趟SELECT中，order by排序后的ROWNUM不是有序的，不会和查询结果行号对应，所以不能做条件过滤。需要在一次select  order by 后得到的虚拟表中，再获取ROWNUM这样order by才能生效...
+解决切换用户丢失样式
+  cp /etc/skel/.* /usr/local/mysql
+
+
+设置mysql允许外界以什么ip什么用户密码来访问
+  mysql&gt;grant a...
       
     
   </div>
@@ -2489,21 +2497,21 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
         <time itemprop="dateCreated datePublished" datetime="2024-09-15T15:15:00+08:00">2024-09-15</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/">Oracle</a>
+          <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/">mysql</a>
           
             <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
               <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
             </span>
           
             <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Oracle/" itemprop="url"><span itemprop="name">Oracle</span></a>
+              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" itemprop="url"><span itemprop="name">mysql</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/2024/09/15/Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%B8%89%E5%B1%82%E5%B5%8C%E5%A5%97%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/' itemprop="url">
+          <a class='readmore' href='/2024/09/15/MySQL%E9%83%A8%E7%BD%B2-CentOS7-2/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2545,12 +2553,14 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
   <div class='md article-desc' itemprop="articleBody">
     
       
-        spring注解编程-IOC
+        
+
+spring注解编程-IOC
 配置类&amp;Bean注解@Configuration123加了这个注解的类就相当于传统的一个applicationContext-xxx.xml ，告诉spring这是一个注解类 最初的Spring只支持xml方式配置Bean，从Spring 3.0起支持：基于Java类的配置方式，Java开发者可以从标签语法里解放了出来。
 
 配置放在哪里  
 
-配置类要与...
+配置类...
       
     
   </div>
@@ -2613,7 +2623,9 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
   <div class='md article-desc' itemprop="articleBody">
     
       
-        日志打印
+        
+
+日志打印
 建议用{}占位而不是字符串拼接
 打日志前先判断日志级别是否可用：
 
@@ -2623,7 +2635,7 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
 
 日志框架Slf4JSlf4J  不是底层日志框架，只是门面框架（抽象），需要配合jul、log4j、logback、log4j2等底层框架(真正干活的)使用。
 
-避免日志对代码的耦合，更换日志框架时也不需改动任何代码。不论使...
+避免日志对代码的耦合，更换日志框架时也不需改动任何代码。不...
       
     
   </div>
@@ -2686,7 +2698,9 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
   <div class='md article-desc' itemprop="articleBody">
     
       
-        初识 linux~：家目录 root 用户~规定为 &#x2F;root  
+        
+
+初识 linux~：家目录 root 用户~规定为 &#x2F;root  
 
 [root@localhost ~]$ pwd&#x2F;root 
 
@@ -2695,7 +2709,7 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
 [liqiang@localhost ~]$ pwd&#x2F;home&#x2F;liqiang 
 
  pwd 显示当前光标所在路径
-~ 与 &#x2F; 的区别  ...
+~ 与 &#x2F; 的区别...
       
     
   </div>
@@ -2758,8 +2772,10 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
   <div class='md article-desc' itemprop="articleBody">
     
       
-        参考总结自：https://blog.csdn.net/qq_39147299/article/details/108972206https://www.cnblogs.com/mabingxue/p/10281132.htmlhttps://zhidao.baidu.com/question/277761048.html
-使用vi 打开文件时，默认是命令行模式（普通），编辑模式、尾行模式的...
+        
+
+参考总结自：https://blog.csdn.net/qq_39147299/article/details/108972206https://www.cnblogs.com/mabingxue/p/10281132.htmlhttps://zhidao.baidu.com/question/277761048.html
+使用vi 打开文件时，默认是命令行模式（普通），编辑模式、尾行模...
       
     
   </div>
@@ -2822,9 +2838,11 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
   <div class='md article-desc' itemprop="articleBody">
     
       
-        SPI（Service Provider Interface）从1.6引入，基于ClassLoader 来加载并发现服务的机制
+        
+
+SPI（Service Provider Interface）从1.6引入，基于ClassLoader 来加载并发现服务的机制
 对于msyql驱动引入依赖
-12345&lt;dependency&gt;  &lt;groupId&gt;mysql&lt;/groupId&gt;  &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt...
+12345&lt;dependency&gt;  &lt;groupId&gt;mysql&lt;/groupId&gt;  &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&...
       
     
   </div>
@@ -2887,8 +2905,10 @@ ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存�
   <div class='md article-desc' itemprop="articleBody">
     
       
-        JVM：Java Virtual Machine java虚拟机虚拟机：使用软件技术模拟出与具有完整硬件系统功能、运行在一个隔离环境中的计算机系统。JVM官方文档：https://docs.oracle.com/javase/specs/jvms/se8/html/index.html
-java 一些命令javac 将文件编译成.class文件java 执行 .class文件，若类中没有ma...
+        
+
+JVM：Java Virtual Machine java虚拟机虚拟机：使用软件技术模拟出与具有完整硬件系统功能、运行在一个隔离环境中的计算机系统。JVM官方文档：https://docs.oracle.com/javase/specs/jvms/se8/html/index.html
+java 一些命令javac 将文件编译成.class文件java 执行 .class文件，若类中没有...
       
     
   </div>
@@ -2955,8 +2975,9 @@ java 一些命令javac 将文件编译成.class文件java 执行 .class文件，
   <div class='md article-desc' itemprop="articleBody">
     
       
-        java8常用函数式接口12345import java.util.function.Supplier;import java.util.function.Consumer;import java.util.function.Function;import java.util.function.BiConsumer;import java.util.function.BiFunction;
-...
+        
+
+java8常用函数式接口12345import java.util.function.Supplier;import java.util.function.Consumer;import java.util.function.Function;import java.util.function.BiConsumer;import java.util.function.BiFunction...
       
     
   </div>
@@ -3019,7 +3040,9 @@ java 一些命令javac 将文件编译成.class文件java 执行 .class文件，
   <div class='md article-desc' itemprop="articleBody">
     
       
-        环境准备购买了4台按量付费云主机
+        
+
+环境准备购买了4台按量付费云主机
 
 
 
@@ -3049,7 +3072,7 @@ tidb3
 172.16.69.208
 
 
-tidb0 将用于部署P...
+tidb0 将用于部...
       
     
   </div>
@@ -3116,10 +3139,12 @@ tidb0 将用于部署P...
   <div class='md article-desc' itemprop="articleBody">
     
       
-        硬件：1、大学时购买的华硕笔记本，CPU奔腾2117U，4G内存。（第一台电脑，不舍得扔，期望继续发光发热）2、闲置MSATA硬盘一张，SSD，容量32G。内置硬盘引导安装黑群晖。3、闲置机械盘弱干，用于存储。
+        
+
+硬件：1、大学时购买的华硕笔记本，CPU奔腾2117U，4G内存。（第一台电脑，不舍得扔，期望继续发光发热）2、闲置MSATA硬盘一张，SSD，容量32G。内置硬盘引导安装黑群晖。3、闲置机械盘弱干，用于存储。
 安装过程参考了两个UP主的视频：
 
-【轻松玩NAS！黑群晖7.1&#x2F;7.2保姆级安装、上手教程，打造属于自己的个人NAS和家庭影音中心】https://www.bilibil...
+【轻松玩NAS！黑群晖7.1&#x2F;7.2保姆级安装、上手教程，打造属于自己的个人NAS和家庭影音中心】https://www.bilib...
       
     
   </div>

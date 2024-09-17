@@ -42,11 +42,11 @@
 <meta property="og:title" content="Hive内置函数&amp;自定义UDF函数">
 <meta property="og:url" content="http://example.com/2024/09/17/Hive%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E4%B8%8E%E8%87%AA%E5%AE%9A%E4%B9%89UDF%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="blog昱东">
-<meta property="og:description" content="Build-in 内置函数官网 https:&#x2F;&#x2F;cwiki.apache.org&#x2F;confluence&#x2F;display&#x2F;Hive&#x2F;Home DML&#x2F;Operators and UDFs  一些常用内置UDF、UDAF函数 https:&#x2F;&#x2F;cwiki.apache.org&#x2F;confluence&#x2F;display&#x2F;Hive&#x2F;LanguageManual+UDF  UDTF函数，行列转换coll">
+<meta property="og:description" content="Build-in 内置函数官网 https:&#x2F;&#x2F;cwiki.apache.org&#x2F;confluence&#x2F;display&#x2F;Hive&#x2F;Home DML&#x2F;Operators and UDFs  一些常用内置UDF、UDAF函数 https:&#x2F;&#x2F;cwiki.apache.org&#x2F;confluence&#x2F;display&#x2F;Hive&#x2F;LanguageManual+UDF  UDTF函数，行列转换co">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-09-17T03:30:05.000Z">
-<meta property="article:modified_time" content="2024-09-17T03:31:32.983Z">
+<meta property="article:modified_time" content="2024-09-17T04:12:51.178Z">
 <meta property="article:author" content="昱东">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2112,7 +2112,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726543938313),
+    lastupdate: new Date(1726546889099),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2530,7 +2530,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h2 id="Build-in-内置函数"><a href="#Build-in-内置函数" class="headerlink" title="Build-in 内置函数"></a>Build-in 内置函数</h2><p>官网 <a target="_blank" rel="noopener" href="https://cwiki.apache.org/confluence/display/Hive/Home">https://cwiki.apache.org/confluence/display/Hive/Home</a> DML&#x2F;Operators and UDFs</p>
+    <meta name="referrer" content="no-referrer"/>
+
+<h2 id="Build-in-内置函数"><a href="#Build-in-内置函数" class="headerlink" title="Build-in 内置函数"></a>Build-in 内置函数</h2><p>官网 <a target="_blank" rel="noopener" href="https://cwiki.apache.org/confluence/display/Hive/Home">https://cwiki.apache.org/confluence/display/Hive/Home</a> DML&#x2F;Operators and UDFs</p>
 <ul>
 <li><p>一些常用内置UDF、UDAF函数<br> <a target="_blank" rel="noopener" href="https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF">https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF</a></p>
 </li>
@@ -2631,7 +2633,7 @@ hive &gt; add jar /home/liqiang/lib/hive_demo-1.0-SNAPSHOT.jar;
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-17T11:31:32+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-17T12:12:51+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2024年9月17日</p>
@@ -2713,9 +2715,11 @@ hive &gt; add jar /home/liqiang/lib/hive_demo-1.0-SNAPSHOT.jar;
       
         <a class='next' href='/2024/09/17/IDEA%E5%AF%BC%E5%85%A5Hive%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%B9%B6%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89UDF%E5%87%BD%E6%95%B0/'>
           <p class='title'>IDEA导入Hive源码编译并创建自定义UDF函数<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>下载源码包下载安装包对应的源码包。本次使用 apache-hive-3.1.2-src.tar.gz 。
+          <p class='content'>
+
+下载源码包下载安装包对应的源码包。本次使用 apache-hive-3.1.2-src.tar.gz 。
 编译解压在当前目录后进入，打开命令行窗口，执行：  
-1mvn clean compil...</p>
+1mvn clean comp...</p>
         </a>
       
     </div>
@@ -3270,7 +3274,7 @@ hive &gt; add jar /home/liqiang/lib/hive_demo-1.0-SNAPSHOT.jar;
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"blog昱东"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/大数据/","name":"大数据"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/大数据/Hive/","name":"Hive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/09/17/Hive内置函数与自定义UDF函数/","name":"Hive内置函数&自定义UDF函数"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"blog昱东","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Hive内置函数&自定义UDF函数","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/09/17/Hive%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E4%B8%8E%E8%87%AA%E5%AE%9A%E4%B9%89UDF%E5%87%BD%E6%95%B0/"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"blog昱东","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/09/17/Hive%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E4%B8%8E%E8%87%AA%E5%AE%9A%E4%B9%89UDF%E5%87%BD%E6%95%B0/","wordCount":0,"datePublished":"2024-09-17T03:30:05.000Z","dateModified":"2024-09-17T03:31:32.983Z","articleSection":"大数据","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"blog昱东"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/大数据/","name":"大数据"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/大数据/Hive/","name":"Hive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/09/17/Hive内置函数与自定义UDF函数/","name":"Hive内置函数&自定义UDF函数"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"blog昱东","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Hive内置函数&自定义UDF函数","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/09/17/Hive%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E4%B8%8E%E8%87%AA%E5%AE%9A%E4%B9%89UDF%E5%87%BD%E6%95%B0/"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"blog昱东","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/09/17/Hive%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E4%B8%8E%E8%87%AA%E5%AE%9A%E4%B9%89UDF%E5%87%BD%E6%95%B0/","wordCount":0,"datePublished":"2024-09-17T03:30:05.000Z","dateModified":"2024-09-17T04:12:51.178Z","articleSection":"大数据","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

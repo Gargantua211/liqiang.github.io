@@ -42,11 +42,11 @@
 <meta property="og:title" content="类加载与双亲委派机制">
 <meta property="og:url" content="http://example.com/2024/09/16/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E4%B8%8E%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6/index.html">
 <meta property="og:site_name" content="blog昱东">
-<meta property="og:description" content="学习参考并自行总结自：https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;dd39654231e0https:&#x2F;&#x2F;blog.csdn.net&#x2F;every__day&#x2F;article&#x2F;details&#x2F;125361048https:&#x2F;&#x2F;blog.csdn.net&#x2F;u011490072&#x2F;article&#x2F;details&#x2F;81560295 类加载过程 加载：将class字节码文件加载到内存中，并将这些数据转换">
+<meta property="og:description" content="学习参考并自行总结自：https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;dd39654231e0https:&#x2F;&#x2F;blog.csdn.net&#x2F;every__day&#x2F;article&#x2F;details&#x2F;125361048https:&#x2F;&#x2F;blog.csdn.net&#x2F;u011490072&#x2F;article&#x2F;details&#x2F;81560295 类加载过程 加载：将class字节码文件加载到内存中，并将这些数据">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-09-16T04:30:00.000Z">
-<meta property="article:modified_time" content="2024-09-17T02:35:35.273Z">
+<meta property="article:modified_time" content="2024-09-17T04:18:05.470Z">
 <meta property="article:author" content="昱东">
 <meta property="article:tag" content="类加载">
 <meta property="article:tag" content="双亲委派">
@@ -2114,7 +2114,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726543938313),
+    lastupdate: new Date(1726546889099),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2528,7 +2528,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>学习参考并自行总结自：<br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/dd39654231e0">https://www.jianshu.com/p/dd39654231e0</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/every__day/article/details/125361048">https://blog.csdn.net/every__day/article/details/125361048</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/u011490072/article/details/81560295">https://blog.csdn.net/u011490072/article/details/81560295</a></p>
+    <meta name="referrer" content="no-referrer"/>
+
+<p>学习参考并自行总结自：<br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/dd39654231e0">https://www.jianshu.com/p/dd39654231e0</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/every__day/article/details/125361048">https://blog.csdn.net/every__day/article/details/125361048</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/u011490072/article/details/81560295">https://blog.csdn.net/u011490072/article/details/81560295</a></p>
 <h3 id="类加载过程"><a href="#类加载过程" class="headerlink" title="类加载过程"></a>类加载过程</h3><ol>
 <li>加载：将class字节码文件加载到内存中，并将这些数据转换成方法区中的运行时数据（静态变量、静态代码块、常量池等），在堆中生成一个Class类对象代表这个类（反射原理），作为方法区类数据的访问入口。</li>
 <li>连接<br> a. 验证：验证字节码文件<br> b. 准备：为静态类变量分配内存(方法区) 和 赋予默认值(有final修饰则直接赋初始值)。<br> c. 解析：符号引用替换为内存中直接引用(理解为划分一个栈内存空间给这个对象名)</li>
@@ -2636,7 +2638,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-17T10:35:35+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-17T12:18:05+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2024年9月17日</p>
@@ -2724,16 +2726,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/2024/09/17/Hive%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Hive搭建记录</p>
-          <p class='content'>Hive搭建记录默认会将 hive 数据文件 放在hdfs  “&#x2F;user&#x2F;hive&#x2F;warehouse&#x2F;“ 下即
-1hdfs://Gargantua:9...</p>
+          <p class='content'>
+
+Hive搭建记录默认会将 hive 数据文件 放在hdfs  “&#x2F;user&#x2F;hive&#x2F;warehouse&#x2F;“ 下即
+1hdfs://Gargantua...</p>
         </a>
       
       
         <a class='next' href='/2024/09/16/java%20IO%E6%80%BB%E7%BB%93/'>
           <p class='title'>java IO总结<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>部分参考：https://www.cnblogs.com/oubo/archive/2012/01/06/2394638.html
+          <p class='content'>
+
+部分参考：https://www.cnblogs.com/oubo/archive/2012/01/06/2394638.html
 Java IO 学习总结Java流类图结构
-Java流操作的相...</p>
+Java流操作...</p>
         </a>
       
     </div>
@@ -3288,7 +3294,7 @@ Java流操作的相...</p>
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"blog昱东"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/Java/","name":"Java"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/09/16/类加载与双亲委派机制/","name":"类加载与双亲委派机制"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"blog昱东","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"类加载与双亲委派机制","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/09/16/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E4%B8%8E%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6/"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"blog昱东","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/09/16/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E4%B8%8E%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6/","wordCount":0,"datePublished":"2024-09-16T04:30:00.000Z","dateModified":"2024-09-17T02:35:35.273Z","articleSection":"Java","keywords":"类加载,双亲委派","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"blog昱东"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/Java/","name":"Java"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/09/16/类加载与双亲委派机制/","name":"类加载与双亲委派机制"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"blog昱东","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"类加载与双亲委派机制","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/09/16/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E4%B8%8E%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6/"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"blog昱东","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/09/16/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E4%B8%8E%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6/","wordCount":0,"datePublished":"2024-09-16T04:30:00.000Z","dateModified":"2024-09-17T04:18:05.470Z","articleSection":"Java","keywords":"类加载,双亲委派","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

@@ -42,11 +42,11 @@
 <meta property="og:title" content="IDEA导入Hive源码编译并创建自定义UDF函数">
 <meta property="og:url" content="http://example.com/2024/09/17/IDEA%E5%AF%BC%E5%85%A5Hive%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%B9%B6%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89UDF%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="blog昱东">
-<meta property="og:description" content="下载源码包下载安装包对应的源码包。本次使用 apache-hive-3.1.2-src.tar.gz 。 编译解压在当前目录后进入，打开命令行窗口，执行：   1mvn clean compile -Phadoop-2 -DskipTests 报错： java.io.IOException: Cannot run program &quot;bash&quot; (in directory &amp;qu">
+<meta property="og:description" content="下载源码包下载安装包对应的源码包。本次使用 apache-hive-3.1.2-src.tar.gz 。 编译解压在当前目录后进入，打开命令行窗口，执行：   1mvn clean compile -Phadoop-2 -DskipTests 报错： java.io.IOException: Cannot run program &quot;bash&quot; (in directory &amp;">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-09-17T03:24:33.000Z">
-<meta property="article:modified_time" content="2024-09-17T03:26:43.991Z">
+<meta property="article:modified_time" content="2024-09-17T03:59:08.090Z">
 <meta property="article:author" content="昱东">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2112,7 +2112,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726543938313),
+    lastupdate: new Date(1726546889099),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2530,7 +2530,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="下载源码包"><a href="#下载源码包" class="headerlink" title="下载源码包"></a>下载源码包</h3><p>下载安装包对应的源码包。<br>本次使用 apache-hive-3.1.2-src.tar.gz 。</p>
+    <meta name="referrer" content="no-referrer"/>
+
+<h3 id="下载源码包"><a href="#下载源码包" class="headerlink" title="下载源码包"></a>下载源码包</h3><p>下载安装包对应的源码包。<br>本次使用 apache-hive-3.1.2-src.tar.gz 。</p>
 <h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><p>解压在当前目录后进入，打开命令行窗口，执行：  </p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn clean compile -Phadoop-2 -DskipTests</span><br></pre></td></tr></table></figure>
 <p>报错：</p>
@@ -2587,7 +2589,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-17T11:26:43+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-17T11:59:08+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2024年9月17日</p>
@@ -2668,14 +2670,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/2024/09/17/Hive%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E4%B8%8E%E8%87%AA%E5%AE%9A%E4%B9%89UDF%E5%87%BD%E6%95%B0/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Hive内置函数&自定义UDF函数</p>
-          <p class='content'>Build-in 内置函数官网 https://cwiki.apache.org/confluence/display/Hive/Home DML&#x2F;Operators and UDFs...</p>
+          <p class='content'>
+
+Build-in 内置函数官网 https://cwiki.apache.org/confluence/display/Hive/Home DML&#x2F;Operators and UD...</p>
         </a>
       
       
         <a class='next' href='/2024/09/17/Hive%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/'>
           <p class='title'>Hive搭建记录<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Hive搭建记录默认会将 hive 数据文件 放在hdfs  “&#x2F;user&#x2F;hive&#x2F;warehouse&#x2F;“ 下即
-1hdfs://Gargantua:9...</p>
+          <p class='content'>
+
+Hive搭建记录默认会将 hive 数据文件 放在hdfs  “&#x2F;user&#x2F;hive&#x2F;warehouse&#x2F;“ 下即
+1hdfs://Gargantua...</p>
         </a>
       
     </div>
@@ -3230,7 +3236,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"blog昱东"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/大数据/","name":"大数据"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/大数据/Hive/","name":"Hive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/09/17/IDEA导入Hive源码编译并创建自定义UDF函数/","name":"IDEA导入Hive源码编译并创建自定义UDF函数"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"blog昱东","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"IDEA导入Hive源码编译并创建自定义UDF函数","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/09/17/IDEA%E5%AF%BC%E5%85%A5Hive%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%B9%B6%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89UDF%E5%87%BD%E6%95%B0/"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"blog昱东","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/09/17/IDEA%E5%AF%BC%E5%85%A5Hive%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%B9%B6%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89UDF%E5%87%BD%E6%95%B0/","wordCount":0,"datePublished":"2024-09-17T03:24:33.000Z","dateModified":"2024-09-17T03:26:43.991Z","articleSection":"大数据","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"久有凌云志，重上井冈山"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"blog昱东"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/大数据/","name":"大数据"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/大数据/Hive/","name":"Hive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/09/17/IDEA导入Hive源码编译并创建自定义UDF函数/","name":"IDEA导入Hive源码编译并创建自定义UDF函数"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"blog昱东","url":"http://example.com/","keywords":null,"description":"久有凌云志，重上井冈山","author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"久有凌云志，重上井冈山"},"publisher":{"@type":"Organization","name":"blog昱东","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"IDEA导入Hive源码编译并创建自定义UDF函数","description":"久有凌云志，重上井冈山","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/09/17/IDEA%E5%AF%BC%E5%85%A5Hive%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%B9%B6%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89UDF%E5%87%BD%E6%95%B0/"},"author":{"@type":"Person","name":"昱东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"blog昱东","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/09/17/IDEA%E5%AF%BC%E5%85%A5Hive%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%B9%B6%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89UDF%E5%87%BD%E6%95%B0/","wordCount":0,"datePublished":"2024-09-17T03:24:33.000Z","dateModified":"2024-09-17T03:59:08.090Z","articleSection":"大数据","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

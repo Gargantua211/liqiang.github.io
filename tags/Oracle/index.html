@@ -2110,7 +2110,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726543938313),
+    lastupdate: new Date(1726546889099),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2483,11 +2483,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-        Oracle为什么要用三层嵌套实现分页
+        
+
+Oracle为什么要用三层嵌套实现分页
 先说结论：嵌套出两层SELECT对应的两个原因：  
 
 
-ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存在同一趟SELECT中，order by排序后的ROWNUM不是有序的，不会和查询结果行号对应，所以不能做条件过滤。需要在一次select  order by 后得到的虚拟表中，再获取ROWNUM这样order by才能生效...
+ROWNUM的取值是在数据库物理行号，不受ORDER BY 影响。如果存在同一趟SELECT中，order by排序后的ROWNUM不是有序的，不会和查询结果行号对应，所以不能做条件过滤。需要在一次select  order by 后得到的虚拟表中，再获取ROWNUM这样order by才能...
       
     
   </div>

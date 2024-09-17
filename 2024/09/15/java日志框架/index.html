@@ -42,7 +42,7 @@
 <meta property="og:title" content="java日志框架">
 <meta property="og:url" content="http://example.com/2024/09/15/java%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6/index.html">
 <meta property="og:site_name" content="blog昱东">
-<meta property="og:description" content="日志打印 建议用{}占位而不是字符串拼接 打日志前先判断日志级别是否可用：   先根据等级过滤规则再决定写不写； 先往一个管道写了内容，但再经等级过滤丢弃，徒增开销。  日志框架Slf4JSlf4J  不是底层日志框架，只是门面框架（抽象），需要配合jul、log4j、logback、log4j2等底层框架(真正干活的)使用。  避免日志对代码的耦合，更换日志框架时也不需改动任何代码。不论使用哪种">
+<meta property="og:description" content="日志打印 建议用{}占位而不是字符串拼接 打日志前先判断日志级别是否可用：   先根据等级过滤规则再决定写不写； 先往一个管道写了内容，但再经等级过滤丢弃，徒增开销。  日志框架Slf4JSlf4J  不是底层日志框架，只是门面框架（抽象），需要配合jul、log4j、logback、log4j2等底层框架(真正干活的)使用。  避免日志对代码的耦合，更换日志框架时也不需改动任何代码。不论使用">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-09-15T07:15:00.000Z">
@@ -2115,7 +2115,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726543938313),
+    lastupdate: new Date(1726546889099),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2529,7 +2529,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="日志打印"><a href="#日志打印" class="headerlink" title="日志打印"></a>日志打印</h3><ul>
+    <meta name="referrer" content="no-referrer"/>
+
+<h3 id="日志打印"><a href="#日志打印" class="headerlink" title="日志打印"></a>日志打印</h3><ul>
 <li>建议用{}占位而不是字符串拼接</li>
 <li>打日志前先判断日志级别是否可用：</li>
 </ul>
@@ -2713,18 +2715,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/2024/09/15/Spring%E6%B3%A8%E8%A7%A3%E5%BC%8F%E7%BC%96%E7%A8%8B/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Spring注解式编程</p>
-          <p class='content'>spring注解编程-IOC
-配置类&amp;Bean注解@Configuration123加了这个注解的类就相当于传统的一个applicationContext-xxx.xml ，告诉spri...</p>
+          <p class='content'>
+
+spring注解编程-IOC
+配置类&amp;Bean注解@Configuration123加了这个注解的类就相当于传统的一个applicationContext-xxx.xml ，告诉sp...</p>
         </a>
       
       
         <a class='next' href='/2024/09/15/linux%E5%85%A5%E9%97%A8-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
           <p class='title'>linux入门+常用命令<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>初识 linux~：家目录 root 用户~规定为 &#x2F;root  
+          <p class='content'>
+
+初识 linux~：家目录 root 用户~规定为 &#x2F;root  
 
 [root@localhost ~]$ pwd&#x2F;root 
 
- 普通用户~默认 &#x2F;home&#...</p>
+ 普通用户~默认 &#x2F;home...</p>
         </a>
       
     </div>

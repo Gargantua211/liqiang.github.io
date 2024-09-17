@@ -42,7 +42,7 @@
 <meta property="og:title" content="JVM结构、JVM参数、JVM垃圾回收">
 <meta property="og:url" content="http://example.com/2024/09/15/JVM%E7%BB%93%E6%9E%84%E3%80%81JVM%E5%8F%82%E6%95%B0%E3%80%81JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/index.html">
 <meta property="og:site_name" content="blog昱东">
-<meta property="og:description" content="JVM：Java Virtual Machine java虚拟机虚拟机：使用软件技术模拟出与具有完整硬件系统功能、运行在一个隔离环境中的计算机系统。JVM官方文档：https:&#x2F;&#x2F;docs.oracle.com&#x2F;javase&#x2F;specs&#x2F;jvms&#x2F;se8&#x2F;html&#x2F;index.html java 一些命令javac 将文件编译成.class文件java 执行 .class文件，若类中没有main函">
+<meta property="og:description" content="JVM：Java Virtual Machine java虚拟机虚拟机：使用软件技术模拟出与具有完整硬件系统功能、运行在一个隔离环境中的计算机系统。JVM官方文档：https:&#x2F;&#x2F;docs.oracle.com&#x2F;javase&#x2F;specs&#x2F;jvms&#x2F;se8&#x2F;html&#x2F;index.html java 一些命令javac 将文件编译成.class文件java 执行 .class文件，若类中没有mai">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-09-15T07:10:00.000Z">
@@ -2114,7 +2114,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726543938313),
+    lastupdate: new Date(1726546889099),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2532,7 +2532,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>JVM：Java Virtual Machine java虚拟机<br>虚拟机：使用软件技术模拟出与具有完整硬件系统功能、运行在一个隔离环境中的计算机系统。<br>JVM官方文档：<a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/specs/jvms/se8/html/index.html">https://docs.oracle.com/javase/specs/jvms/se8/html/index.html</a></p>
+    <meta name="referrer" content="no-referrer"/>
+
+<p>JVM：Java Virtual Machine java虚拟机<br>虚拟机：使用软件技术模拟出与具有完整硬件系统功能、运行在一个隔离环境中的计算机系统。<br>JVM官方文档：<a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/specs/jvms/se8/html/index.html">https://docs.oracle.com/javase/specs/jvms/se8/html/index.html</a></p>
 <h2 id="java-一些命令"><a href="#java-一些命令" class="headerlink" title="java 一些命令"></a>java 一些命令</h2><p>javac 将文件编译成.class文件<br>java 执行 .class文件，若类中没有main函数，则不能执行。如 java -cp User.jar User  运行User.jar<br>javap 反编译器，显示编译类中可以访问的方法和数据。 如 javap -c 打开.class</p>
 <p>jar cvf User.jar User.class ：将User.class打jar包 ， 全部打包： jar -cvf xx.jar *<br>jar xvf 解压jar </p>
 <h2 id="JVM内存结构"><a href="#JVM内存结构" class="headerlink" title="JVM内存结构"></a>JVM内存结构</h2><ol>
@@ -2825,15 +2827,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/2024/09/15/%E4%BB%8E%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A9%B1%E5%8A%A8%E5%8C%85%EF%BC%8C%E7%90%86%E8%A7%A3java%20SPI/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>从加载数据库驱动包，理解java SPI</p>
-          <p class='content'>SPI（Service Provider Interface）从1.6引入，基于ClassLoader 来加载并发现服务的机制
+          <p class='content'>
+
+SPI（Service Provider Interface）从1.6引入，基于ClassLoader 来加载并发现服务的机制
 对于msyql驱动引入依赖
-12345&lt;dependency...</p>
+12345&lt;dependen...</p>
         </a>
       
       
         <a class='next' href='/2024/09/15/java8%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%EF%BC%8C%E4%BB%A5%E5%8F%8Astream%E6%B5%81%E4%B8%ADmap%E3%80%81peek%E3%80%81foreach%E5%8C%BA%E5%88%AB/'>
           <p class='title'>java8函数式接口，以及stream流中map、peek、foreach区别<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>java8常用函数式接口12345import java.util.function.Supplier;import java.util.function.Consumer;import jav...</p>
+          <p class='content'>
+
+java8常用函数式接口12345import java.util.function.Supplier;import java.util.function.Consumer;import j...</p>
         </a>
       
     </div>

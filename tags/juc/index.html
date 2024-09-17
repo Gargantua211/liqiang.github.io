@@ -2110,7 +2110,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726543938313),
+    lastupdate: new Date(1726546889099),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2485,9 +2485,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-        同步方法是对整个方法中所有内容加锁；同步代码块选择只同步部分代码而不是整个方法，比同步方法要更细颗粒度，也能选择加锁 this 和 类class，还可以是变量。
+        
+
+同步方法是对整个方法中所有内容加锁；同步代码块选择只同步部分代码而不是整个方法，比同步方法要更细颗粒度，也能选择加锁 this 和 类class，还可以是变量。
 同步方法的锁用的是 这个方法所在的这个对象&#x2F;类上的内置锁。
-同步代码块的锁用的是 synchronized()括号里参数对象上的锁。可以是 this、类.class、变量。要具体分析参与抢锁的对象是否持有相同的对象锁（也就...
+同步代码块的锁用的是 synchronized()括号里参数对象上的锁。可以是 this、类.class、变量。要具体分析参与抢锁的对象是否持有相同的对象锁（...
       
     
   </div>
@@ -2554,8 +2556,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-        要点总结：1、wait()、notify&#x2F;notifyAll() 方法是Object的本地final方法，无法被重写。
-2、在当前线程拥有监视器锁的情况下使用，且wait()的对象和锁对象相同，否则将抛出异常IllegalMonitorStateException。一般在synchronized 同步代码块里使用 wait()、notify&#x2F;notifyAll() 方法。...
+        
+
+要点总结：1、wait()、notify&#x2F;notifyAll() 方法是Object的本地final方法，无法被重写。
+2、在当前线程拥有监视器锁的情况下使用，且wait()的对象和锁对象相同，否则将抛出异常IllegalMonitorStateException。一般在synchronized 同步代码块里使用 wait()、notify&#x2F;notifyAll() 方...
       
     
   </div>
